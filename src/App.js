@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from 'react'
+import "./AllComponent/CSSFile/DashBoard.css"
+// import Header from './AllCOmponents/Header'
+import Sidebar from './AllComponent/AdminDashboardMain/SideBar'
+import Home from './AllComponent/AdminDashboardMain/Main'
 
 function App() {
+  const [openSidebarToggle, setOpenSidebarToggle] = useState(false)
+
+  const OpenSidebar = () => {
+    setOpenSidebarToggle(!openSidebarToggle)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='grid-container'>
+      {/* <Header OpenSidebar={OpenSidebar}/> */}
+      <Sidebar openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar}/>
+      <Home />
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

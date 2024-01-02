@@ -1,0 +1,142 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e3e3e3e3;
+  }
+  
+  .icon {
+    vertical-align: middle;
+    line-height: 1px;
+    font-size: 20px;
+  }
+  .icon_header {
+    vertical-align: middle;
+    line-height: 1px;
+    font-size: 26px;
+  }
+  .icon, .icon_header {
+    margin-right: 5px;
+  }
+  
+  .close_icon {
+    color: red;
+    margin-left: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: 260px 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas:
+      'sidebar main main main'
+      'sidebar main main main';
+    height: 100vh;
+  }
+
+  /* Sidebar  */
+  #sidebar {
+    grid-area: sidebar;
+    overflow-y: auto;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    margin: 20px;
+  }
+  .Sider-Box{
+    height: 100%;
+    background-color: white;
+    border-radius: 10px;
+  }
+  
+  .sidebar-title {
+    display: flex;
+    padding: 0 23px;
+}
+.SideBarLogo{    
+    margin-left: 5px;
+    width: 95%;
+    height: 40px;
+}
+  
+  .sidebar-title > span {
+    display: none;
+  }
+  
+  .sidebar-brand {
+    margin-top: 15px;
+    font-size: 20px;
+    font-weight: 700;
+  }
+  
+  .sidebar-list {
+    padding: 0;
+    margin-top: 20px;
+    list-style-type: none;
+  }
+  
+  .sidebar-list-item {
+    padding: 20px 20px 20px 20px;
+    font-size: 15px;
+  }
+  .BottomLine {
+    width: 70%;
+    margin-top: -25px;
+    margin-left: 10px;
+  }
+  
+  
+  .sidebar-list-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+  }
+  
+  .sidebar-list-item > a {
+    text-decoration: none;
+    color: black;
+  }
+  .red a{
+    color: red;
+    width: 70%;
+    margin-left: 20px;
+  }
+
+  .sidebar-responsive {
+    display: inline !important;
+    position: absolute;
+    /*
+      we want the z-index of the sidebar higher so that
+      the charts are not showing over the sidebar 
+      on small screens
+    */
+    z-index: 12 !important;
+  }
+  
+  /* End Sidebar  */
+  
+   /* Start Main  */ 
+  .main-container {
+    grid-area: main;
+    overflow-y: auto;
+  }
+   /*End Main  */ 
+
+   /* Start Dashborad */
+   .Head{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 22px;
+   }
+   .Head h1{
+     font-size: 1.3rem;
+   }
+   .Head p{
+    font-weight: 600;
+    color: grey;
+    margin-left: 1px;
+    margin-top: -14px;
+    font-size: 0.65rem;
+   }
+   /* End Dashborad */
