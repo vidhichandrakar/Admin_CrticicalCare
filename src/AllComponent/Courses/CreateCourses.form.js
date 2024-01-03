@@ -63,11 +63,12 @@ const CreateForm = ({}) => {
         </Typography>
       </Box>
       <Box className="divider"></Box>
-      <Box sx={{ marginTop: "5%", display: "flex", flexDirection: "row" }}>
+      <Box sx={{ marginTop: "5%" }} className="categoryBox">
         <Box>
           <Typography fontWeight={600}>Category</Typography>
           <FormControl
-            sx={{ m: 1, minWidth: 240, marginLeft: "-2%", marginTop: "4%" }}
+            sx={{ m: 1, minWidth: 240}}
+            className="categorySelect"
           >
             {/* <InputLabel id="demo-simple-select-helper-label"  className="labelDesign">
          360 Critcial Care</InputLabel> */}
@@ -91,10 +92,10 @@ const CreateForm = ({}) => {
             </Select>
           </FormControl>
         </Box>
-        <Box sx={{ marginLeft: "8%" }}>
+        <Box className="rightCat">
           <Typography fontWeight={600}>Sub Category</Typography>
           <FormControl
-            sx={{ m: 1, minWidth: 240, marginLeft: "-2%", marginTop: "4%" }}
+            sx={{ m: 1, minWidth: 240}} className="categorySelect"
           >
             <Select
               displayEmpty

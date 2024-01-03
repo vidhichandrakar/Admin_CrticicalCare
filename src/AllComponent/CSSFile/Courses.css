@@ -153,6 +153,17 @@
   background-color:#0f7af5 !important;
   text-transform: none !important;
 }
+.categoryBox{
+  display: flex;
+  flex-direction: row;
+}
+.categorySelect{
+  margin-left: "-2%";
+  margin-top: 4%
+}
+.rightCat{
+  margin-left: 8%;
+}
 
 
 
@@ -164,8 +175,7 @@
 
 
 
-
-@media screen and (max-width: 550px)  {
+@media screen and (max-width: 580px)  {
   .subHeader{
     font-size: 0.8em !important;
     flex-wrap: wrap;
@@ -181,6 +191,21 @@
   .HeaderRight{
     width:65%;
   }
+  .categoryBox{
+    display: flex;
+    flex-direction: column;
+  }
+  .rightCat{
+    margin-left: 0%;
+  }
+  
+}
+@media screen and (max-width:992px)  {
+  .formMain{
+    width:90%;
+  }
+  
+  
 }
 @media screen and (max-width: 480px)  {
   .subHeader{
@@ -200,6 +225,13 @@
   .selectDesign{
     width: 225px;
     height: 50px;
+  }
+  .categoryBox{
+    display: flex;
+    flex-direction: column;
+  }
+  .rightCat{
+    margin-left: 0%;
   }
 }
 @media screen and (max-width: 280px) {
