@@ -4,6 +4,8 @@ import User from "../DAshBoardRight/People/User";
 import Transaction from "../DAshBoardRight/Analytics/Transaction";
 import MainCourses from "../Courses/MainCourses.component";
 import MyTeam from "../DAshBoardRight/People/MyTeam";
+import TestPortal from "../DAshBoardRight/People/TestPortal";
+import Testimonial from "../DAshBoardRight/Testimonial/Testimonial";
 
 function Main() {
   return (
@@ -11,7 +13,9 @@ function Main() {
       {/* <Dashboard /> */}
       {/* <User/> */}
       {/* <Transaction/> */}
-      <MyTeam/>
+      {/* <MyTeam/> */}
+      {/* <TestPortal/> */}
+      <Testimonial/>
       {/* <MainCourses/> */}
     </main>
   );

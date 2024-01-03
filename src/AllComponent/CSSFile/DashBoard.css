@@ -290,6 +290,7 @@ body {
    /* START OF MY TEAM  */
 
 
+   
 .myTeamCompleteTable{
   height: 95%;
   width: 100%;
@@ -316,6 +317,86 @@ body {
 }
 
    /* END OF MY TEAM  */
+   /* START OF TEST PORTAL  */
+
+
+/* .testPortalsearchnfilter button{
+    border-radius: 15px !important;
+    margin-left: 2%;
+    padding: 2px 28px;
+    border: 0.5px solid grey;
+    background-color: #FFFFFF;
+    font-size: large;
+    color: grey;
+  } */
+/* .filterButton{
+  padding:2px 28px !important;
+} */
+.TestPortalSearchBarSection{
+  /* width: 50%; */
+  display: flex !important;
+  flex-direction: row !important;
+}
+.freeTestButton{
+  color: dodgerblue;
+  border: none !important;
+}
+.addTestButton{
+  background-color: dodgerblue;
+  border-radius: 10px !important;
+  border: none;
+  color: #FFFFFF;
+  padding: 0px 13px;
+  width: 105px;
+  height: 31px !important;
+  margin-left: 710px;
+}
+.TestPortalcompleteTable{
+  height: 95%;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 1%;
+  padding: 20px 35px;
+  font-size: small;
+  padding-bottom: 13% !important;
+}
+.TestPortalhrLine{
+  width:100%;
+}
+.lastData{
+  display: flex;
+  flex-direction: row;
+}
+
+   /* END OF TEST PORTAL  */
+
+   /* START OF ADMIN TESTIMONIAL  */
+
+
+.addTestimonialButton{
+  background-color: dodgerblue;
+  border-radius: 10px !important;
+  border: none;
+  color: #FFFFFF;
+  padding: 0px 13px;
+  width: 141px;
+  height: 31px !important;
+  margin-left: 692px;
+}   
+.TestimonialcompleteTable{
+  height: 95%;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 1%;
+  padding: 20px 35px;
+  font-size: small;
+  padding-bottom: 21% !important;
+}
+.testimonialsComments{
+  /* padding-right: 46%; */
+}
+
+   /* END OF ADMIN TESTIMONIAL  */
 
    .DropDown{
     padding: 6px 0px;
