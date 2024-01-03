@@ -6,25 +6,21 @@ import FormHelperText from '@mui/material/FormHelperText';
 import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 
-const CourseHeader =({})=>{
+const CourseHeader =({Heading,subHeading})=>{
   return(
     <Box className="HeaderBox">
      <Box className="HeaderLeft">
      <Typography className="headerText">
-      Create Course
+      {Heading}
      </Typography>
      <Typography className="subHeader">
-       Add / view content of your course
+       {subHeading}
      </Typography>
      </Box>
       <Box className="HeaderRight">
       <FormControl sx={{ m: 1, minWidth: 240 }}>
-      {/* <InputLabel id="demo-simple-select-helper-label"  className="labelDesign">
-         360 Critcial Care</InputLabel> */}
         <Select
-          // label="360 Critcial Care"
           className="selectDesign"
-          // placeholder=" 360 Critcial Care"
           displayEmpty
           renderValue={() => {return <em className="labelDesign">360 Critcial Care</em>
           }}

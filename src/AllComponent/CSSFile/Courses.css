@@ -158,15 +158,30 @@
   flex-direction: row;
 }
 .categorySelect{
-  margin-left: "-2%";
+  margin-left: -2%;
   margin-top: 4%
+}
+.Editcategory{
+  margin-left: -2%;
 }
 .rightCat{
   margin-left: 8%;
 }
+.rightEditPrice{
+  /* margin-left: 2%; */
+}
 
 
-
+.editFirstBox{
+  display: flex;
+  flex-direction: row;
+}
+.editFirstText{
+  margin-left: 3% !important;
+}
+.marginscndBox{
+  margin-left: 9%;
+}
 
 
 
