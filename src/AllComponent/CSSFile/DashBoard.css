@@ -140,3 +140,114 @@ body {
     font-size: 0.65rem;
    }
    /* End Dashborad */
+
+   /* START OF USER  */
+
+
+.m20{
+  margin: 30px;
+  margin-right: 47px;
+}
+.userHead p{
+  font-size: small;
+  margin-top: -20px;
+}
+.rightDropDown{
+  /* align-items: right !important; */
+  /* justify-content: right !important; */
+
+  background-color: #FFFFFF;
+  border-radius: 3px !important;
+  padding: 5px 29px;
+  border: none !important;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.352) !important;
+}
+.searchnfilter{
+  display: flex;
+  flex-direction: row;
+   margin: 20px -6px;
+  align-items: left !important;
+}
+.searchnfilter img{
+  /* margin-left: 50%; */
+  height: 12%;
+  width: 10%;
+}
+.searchnfilter button{
+  border-radius: 15px !important;
+  margin-left: 2%;
+  padding: 2px 28px;
+  border: 0.5px solid grey;
+  background-color: #FFFFFF;
+  font-size: large;
+  color: grey;
+}
+
+.searchBar{
+  background-color: #FFFFFF !important;
+  border-radius: 15px !important;
+  border: 0.5px solid grey;
+  /* width: 50% !important; */
+}
+
+.textFeildOfSearch{
+  border-radius: 11px !important;
+  padding: 7px 12px;
+  /* margin-left: -29px; */
+}
+
+.completeTable{
+  height: 95%;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 1%;
+  padding: 20px 35px;
+  font-size: small;
+}
+
+.tableHeading{
+  justify-content: left !important;
+  align-items: left !important;
+  text-align: left !important;
+}
+
+.hrLine{
+  width: 268%;
+}
+.bluePara{
+  color: dodgerblue;
+}
+
+
+   /* END OF USER  */
+
+   /* START OF TRANSACTION  */
+
+
+.transactionCards{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3%;
+  /* justify-content: space-between; */
+}
+.boxNoOne, .boxNoThree{
+  background-color: #FFFFFF;
+  border-radius: 10px !important;
+  /* box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.352) !important; */
+  padding: 22px 71px;
+}
+.boxNoTwo{
+  background-color: #FFFFFF;
+  border-radius: 10px !important;
+  /* box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.352) !important; */
+  padding: 22px 71px;
+  margin: 2px 185px;
+}
+
+.transactionTableHeading{
+  text-align: left !important;
+}
+
+
+
+   /* END OF TRANSACTION  */
