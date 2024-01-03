@@ -4,6 +4,7 @@ import { styled, alpha } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+import CourseHeader from '../../Courses/CoursesHeader';
 
 
 const Search = styled('div')(({ theme }) => ({
@@ -51,13 +52,13 @@ function Transaction() {
   return (
     <div className='main-container'>
     <div className=' m20'>
-        <span className='userHead'>
+        {/* <span className='userHead'>
             <h3>Transaction Dashboard</h3>
         </span>
-        <span><button className='rightDropDown'>360 Critical Care</button></span>
+        <span><button className='rightDropDown'>360 Critical Care</button></span> */}
+        <CourseHeader/>
 
         <div className='searchnfilter'>
-            <div>
             {/* <img src="https://assets.stickpng.com/images/585e4ae1cb11b227491c3393.png"/> */}
             <Search className='searchBar'>
             <SearchIconWrapper>
@@ -68,8 +69,6 @@ function Transaction() {
               inputProps={{ 'aria-label': 'search' }}
             />
           </Search>
-           </div>
-            <button> <FilterAltIcon/> Filter</button>
         </div>
 
        <div className='transactionCards'> 
@@ -87,7 +86,7 @@ function Transaction() {
         </div>
         </div>
 
-        <table className='completeTable'>
+        <table className='transactionCompleteTable'>
             <tr className='transactionTableHeading'>
                 <th>
                     Student Name

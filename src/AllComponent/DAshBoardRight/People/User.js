@@ -7,6 +7,11 @@ import { styled, alpha } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
+import Popover from "@mui/material/Popover";
+import Typography from "@mui/material/Typography";
+import Button from "@mui/material/Button";
+import DeleteIcon from '@mui/icons-material/Delete';
+import BlockIcon from '@mui/icons-material/Block';
 // import SearchIcon from '@mui/icons-material/Search';
 
 
@@ -104,7 +109,8 @@ function User() {
                 <td><p className='bluePara'>Sheikhshoeb194@gmail.com</p> <p>+918889844180</p></td>
                 <td><p>Sheikh Shoeb</p></td>
                 <td><p>19/Dec/2023</p></td>
-                <button onClick={(e)=>actionsOptions(e)}> <td><MoreVertIcon/></td> </button> 
+                {/* <button onClick={(e)=>actionsOptions(e)}> <td><MoreVertIcon/></td> </button>  */}
+                <td><MoreVertIcon/></td>
             </tr>
             <tr>
                 <td><p className='bluePara'>jitendra.chandrakar@gmail.com</p> <p>+911234567890</p></td>

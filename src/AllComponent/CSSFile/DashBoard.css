@@ -2,7 +2,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Montserrat', sans-serif;
-    background-color: #e3e3e3e3;
+    background-color: #F4F9FD;
   }
   
   .icon {
@@ -245,23 +245,78 @@ body {
   background-color: #FFFFFF;
   border-radius: 10px !important;
   /* box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.352) !important; */
-  padding: 22px 71px;
+  padding: 24px 106px;
+  justify-content: space-between;
 }
 .boxNoTwo{
   background-color: #FFFFFF;
   border-radius: 10px !important;
   /* box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.352) !important; */
-  padding: 22px 71px;
-  margin: 2px 185px;
+  padding: 24px 120px;
+  margin: 2px 103px;
+  justify-content: space-between;
+}
+.boxValue{
+  font-size: small !important;
+  text-align: left !important;
+  /* margin-right: 104% !important; */
+  /* margin-left: -77% !important; */
+  margin: 0 -77% !important;
+}
+.boxNumber{
+  font-size: large !important;
+  font-weight: bold !important;
+  color:blue;
+  margin-left: 141% !important;
 }
 
 .transactionTableHeading{
   text-align: left !important;
 }
+.transactionCompleteTable{
+  height: 95%;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 1%;
+  padding: 20px 35px;
+  font-size: small;
+  padding-bottom: 14%;
+}
 
 
 
    /* END OF TRANSACTION  */
+
+   /* START OF MY TEAM  */
+
+
+.myTeamCompleteTable{
+  height: 95%;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 1%;
+  padding: 20px 35px;
+  font-size: small;
+  padding-bottom:6%;
+}
+.myTeamhrLine{
+  width:245%;
+}
+.moreVertIcon button{
+  background-color: #FFFFFF !important;
+  color: darkgray !important;
+  border:none !important;
+  box-shadow: none !important;
+}
+.redDelete{
+  color: red !important;
+}
+.blueBlockUser{
+  color: rgb(68, 68, 187) !important;
+}
+
+   /* END OF MY TEAM  */
+
    .DropDown{
     padding: 6px 0px;
     width: 15%;
