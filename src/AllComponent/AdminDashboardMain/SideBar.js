@@ -27,7 +27,7 @@ function SideBar({openSidebarToggle, OpenSidebar}) {
             </li>
             <li className='sidebar-list-item BottomLine'>
                 <a href="/AllCourses">
-                    <MenuBookIcon className='icon'/>ourses
+                    <MenuBookIcon className='icon'/>Courses
                 </a>
             </li>
             <li className='sidebar-list-item BottomLine'>
