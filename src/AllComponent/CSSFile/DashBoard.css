@@ -1,278 +1,112 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #e3e3e3e3;
-  }
-  
-  .icon {
-    vertical-align: middle;
-    line-height: 1px;
-    font-size: 20px;
-  }
-  .icon_header {
-    vertical-align: middle;
-    line-height: 1px;
-    font-size: 26px;
-  }
-  .icon, .icon_header {
-    margin-right: 5px;
-  }
-  
-  .close_icon {
-    color: red;
-    margin-left: 30px;
-    margin-top: 10px;
-    cursor: pointer;
-  }
-  
-  .grid-container {
-    display: grid;
-    grid-template-columns: 260px 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 3fr;
-    grid-template-areas:
-      'sidebar main main main'
-      'sidebar main main main';
-    height: 100vh;
-  }
-
-  /* Sidebar  */
-  #sidebar {
-    grid-area: sidebar;
-    overflow-y: auto;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    margin: 20px;
-  }
-  .Sider-Box{
-    height: 100%;
-    background-color: white;
-    border-radius: 10px;
-  }
-  
-  .sidebar-title {
-    display: flex;
-    padding: 0 23px;
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
-.SideBarLogo{    
-    margin-left: 5px;
-    width: 95%;
-    height: 40px;
+
+html, body{
+  height: 100vh;
 }
-  
-  .sidebar-title > span {
-    display: none;
-  }
-  
-  .sidebar-brand {
-    margin-top: 15px;
-    font-size: 20px;
-    font-weight: 700;
-  }
-  
-  .sidebar-list {
-    padding: 0;
-    margin-top: 20px;
-    list-style-type: none;
-  }
-  
-  .sidebar-list-item {
-    padding: 20px 20px 20px 20px;
-    font-size: 15px;
-  }
-  .BottomLine {
-    width: 70%;
-    margin-top: -20px;
-    margin-left: 10px;
-  }
-  
-  
-  .sidebar-list-item:hover {
-    border-radius: 8px;
-    /* background-color: #00ADE7; */
-    /* opacity: 10.2%; */
-    cursor: pointer;
-    /* color: Black !important; */
-  }
-
-  
-  .sidebar-list-item > a {
-    text-decoration: none;
-    color: grey;
-    font-size: 1rem;
-  }
-  .red a{
-    color: red;
-    width: 70%;
-    margin-left: 20px;
-  }
-
-  .sidebar-responsive {
-    display: inline !important;
-    position: absolute;
-    /*
-      we want the z-index of the sidebar higher so that
-      the charts are not showing over the sidebar 
-      on small screens
-    */
-    z-index: 12 !important;
-  }
-  
-  /* End Sidebar  */
-  
-   /* Start Main  */ 
-   .menu-icon {
-    display: none;
-  }
-  .main-container {
-    grid-area: main;
-    overflow-y: auto;
-  }
-   /*End Main  */ 
-
-   /* Start Dashborad */
-   .DashBoardMAinBox{
-    margin: 20px;
-   }
-   .Head{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 20px;
-   }
-   .Head h1{
-     font-size: 1.3rem;
-   }
-   .Head p{
-    font-weight: 600;
-    color: grey;
-    margin-left: 1px;
-    margin-top: -14px;
-    font-size: 0.65rem;
-   }
-   .DropDown{
-    padding: 6px 0px;
-    width: 15%;
-    height: 0%;
-    border-radius: 9px;
-    margin-top: 13px;
-    border: solid white;
-    font-size: 1rem;
-   }
-   .AdditionalBox{
-    background-color: white;
-    border-radius: 15px;
-    margin: 20px;
-
-   }
-   .TextHeading{
-    font-size: 1.2rem;
-    margin-left: 30px;
-    padding: 18px;
-   }
-   .main-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 45px;
-    margin: 15px 45px;
-  }
-  .card{
-    font-size: 1rem;
-    text-align: center;
-    background-color: #e3e3e3e3;
-    padding-bottom: 20px;
-    margin-bottom: 25px;
-    color: rgb(19, 170, 235);
-    border-radius: 15px;
-  }
-  .AdditionalIcon{
-    margin-top: 10%;
-    vertical-align: bottom;
-    line-height: 1px;
-    font-size: 3rem !important; 
-  }
-  .OurOfferBox {
-    background-color: white;
-    border-radius: 15px;
-    margin: 20px;
-  }
-  .Offer-main-cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 45px;
-    margin: 15px 45px;
-
-  }
-  .Offer-card{
-    border: solid 1px black;
-    text-align: left;
-    padding-bottom: 20px;
-    margin-bottom: 25px;
-    color: rgb(19, 170, 235);
-    border-radius: 15px;
-    background-color: white;
-
-  }
-  .CardRow{
-    display: flex;
-    flex-direction: row;
-    margin: 15px;
-  }
-  .OfferIcon{
-    margin-top: 50%;
-    margin-left: 15%;
-    font-size: 3rem !important; 
-  }
-  .OfferCardText{
-    font-size: 1.2rem;
-    color: black;
-    margin-left: 7%;
-  }
-  .OfferCardText p{
-    margin-top: -13%;
-    color: grey;
-    font-size: 1rem;
-  }
-  .OfferButton{
-    display: flex;
-    flex-direction: row;
-    cursor: pointer;
-    font-size: 1rem;
-    margin-left: 5% ;
-  }
-  .ArrowIcon{
-    margin-top: -2px;
-    margin-left: 1%;
-  }
-   /* End Dashborad */
-
-   @media screen and (max-width: 992px) {
-    .grid-container {
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.2fr 3fr;
-      grid-template-areas:
-        'main'
-        'main';
-    }
-    .header{
-      justify-content: space-between;
-    }
-  
-    #sidebar {
-      display: none;
-    }
-    .menu-icon {
-        display: inline;
-      }
-      .main-cards {
-        grid-template-columns: 1fr 1fr;
-      }
+body{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  color: #fff;
 }
-@media screen and (max-width: 562px) {
-    .main-cards {
-        grid-template-columns: 1fr;
-      }
-    .Offer-main-cards{
-        grid-template-columns: 1fr;
-    }
+
+.main{
+  display: flex;
+  height: 100vh;
+}
+
+
+.container{
+  flex-grow: 1;
+  padding: 2em;
+  /* background-image: radial-gradient(rgba(0, 0, 0, .4), rgba(0, 0, 0, .8)), url('../public/banner.png'); */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.title{
+  font-size: 3em;
+}
+.info{
+  font-size: 1.1em;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  margin: 1.5em;
+  color: rgb(224, 224, 224);
+}
+.btn{
+  margin: 0 auto;
+  border: none;
+  outline: none;
+  padding: .75em 1em;
+  font-size: 1em;
+  letter-spacing: 1px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, .4);
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 3px;
+  background-color: rgb(134, 49, 0);
+  color: #fff;
+}
+
+.sidebar{
+  width: 260px;
+  flex-shrink: 0;
+  background-color: rgba(22, 22, 22, 1);
+  height: 100%;
+  overflow: auto;
+}
+
+
+.sidebar-item{
+  padding: .75em 1em;
+  display: block;
+  transition: background-color .15s;
+  border-radius: 5px;
+}
+.sidebar-item:hover{
+  background-color: rgba(255, 255, 255, .1);
+}
+
+.sidebar-title{
+  display: flex;
+  font-size: 1.2em;
+  justify-content: space-between;
+}
+.sidebar-title span i{
+  display: inline-block;
+  width: 1.5em;
+}
+.sidebar-title .toggle-btn{
+  cursor: pointer;
+  transition: transform .3s;
+}
+.sidebar-item.open > .sidebar-title .toggle-btn{
+  transform: rotate(180deg);
+}
+.sidebar-content{
+  padding-top: .25em;
+  height: 0;
+  overflow: hidden;
+}
+.sidebar-item.open > .sidebar-content{
+  height: auto;
+}
+
+.sidebar-item.plain{
+  color: #fff;
+  text-decoration: none;
+}
+.sidebar-item.plain:hover{
+  text-decoration: underline;
+}
+.sidebar-item.plain i{
+  display: inline-block;
+  width: 1.7em;
 }

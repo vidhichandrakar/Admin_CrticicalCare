@@ -1,5 +1,5 @@
 import React from "react";
-import CloseIcon from "@mui/icons-material/Close";
+import Header from "../Courses/CoursesHeader"
 import CollectionsIcon from "@mui/icons-material/Collections";
 import LoyaltyIcon from "@mui/icons-material/Loyalty";
 import BookmarkAddedIcon from "@mui/icons-material/BookmarkAdded";
@@ -9,15 +9,9 @@ function Dashboard({ OpenSidebar }) {
   return (
     <main className="main-container">
       <div className="DashBoardMAinBox">
-        <div className="Head">
-          <div>
-            <h1>Hi 360 Critical Care,</h1>
-            <p>Welcome to your Dashboard</p>
-          </div>
-          <select className="DropDown">
-            <option>360 Critical Care</option>
-          </select>
-        </div>
+        {/* <div className="Head"> */}
+         <Header />
+        {/* </div> */}
         <div className="AdditionalBox ">
           <h1 className="TextHeading">Additional Offerings</h1>
           <div className="main-cards">
