@@ -8,13 +8,12 @@ const steps = [
   'Edit price',
   'Add Content',
 ];
-const Tracker =({})=>{
+const Tracker =({trackerPage,handleTrackerPage})=>{
   return(
    <Box className="createBoxHeader trackerBox">
-   
-   <Box className="trackerMainBox"> <Stepper className="trackerStep"  alternativeLabel>
-      {steps.map((label) => (
-        <Step key={label}>
+   <Box className="trackerMainBox"> <Stepper activeStep={trackerPage} className="trackerStep"  alternativeLabel>
+      {steps.map((label,index) => (
+        <Step key={index} onClick={()=>handleTrackerPage(index)}>
           <StepLabel className="trackerStepText">{label}</StepLabel>
         </Step>
       ))}

@@ -18,7 +18,7 @@ const VisuallyHiddenInput = styled("input")({
   whiteSpace: "nowrap",
   width: 1,
 });
-const CreateForm = ({}) => {
+const CreateForm = ({handleTrackerPage}) => {
   return (
     <div className="formMain">
       <Typography fontWeight={600}>Name</Typography>
@@ -65,7 +65,7 @@ const CreateForm = ({}) => {
       <Box className="divider"></Box>
       <Box sx={{ marginTop: "5%" }} className="categoryBox">
         <Box>
-          <Typography fontWeight={600}>Category</Typography>
+          <Typography fontWeight={600} className="editFirstText">Category</Typography>
           <FormControl
             sx={{ m: 1, minWidth: 240}}
             className="categorySelect"
@@ -93,7 +93,7 @@ const CreateForm = ({}) => {
           </FormControl>
         </Box>
         <Box className="rightCat">
-          <Typography fontWeight={600}>Sub Category</Typography>
+          <Typography fontWeight={600} className="editFirstText">Sub Category</Typography>
           <FormControl
             sx={{ m: 1, minWidth: 240}} className="categorySelect"
           >
@@ -115,7 +115,7 @@ const CreateForm = ({}) => {
           </FormControl>
         </Box>
       </Box>
-      <Button variant="contained"  className="coursesButton">
+      <Button variant="contained"  className="coursesButton" onClick={()=>handleTrackerPage(1)}>
        Edit price
       </Button>
     </div>
