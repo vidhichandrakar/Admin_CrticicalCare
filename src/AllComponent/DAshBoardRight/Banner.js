@@ -6,7 +6,7 @@ import CardActions from "@mui/material/CardActions";
 import CardContent from "@mui/material/CardContent";
 import CardMedia from "@mui/material/CardMedia";
 import Button from "@mui/material/Button";
-import img from "../../Media/Logo.png"
+import img from "../../Media/Images/banner-1.jpg"
 import Typography from "@mui/material/Typography";
 
 function Banner() {
