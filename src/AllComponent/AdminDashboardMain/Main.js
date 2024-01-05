@@ -6,6 +6,8 @@ import MainCourses from "../Courses/MainCourses.component";
 import MyTeam from "../DAshBoardRight/People/MyTeam";
 import TestPortal from "../DAshBoardRight/People/TestPortal";
 import Testimonial from "../DAshBoardRight/Testimonial/Testimonial";
+import CreateCoupon from "../DAshBoardRight/Courses/CreateCoupon";
+import Trics1FreeMockTest from "../DAshBoardRight/Courses/Trics1FreeMockTest";
 
 function Main() {
   return (
@@ -15,7 +17,9 @@ function Main() {
       {/* <Transaction/> */}
       {/* <MyTeam/> */}
       {/* <TestPortal/> */}
-      <Testimonial/>
+      {/* <Testimonial/> */}
+      {/* <CreateCoupon/> */}
+      <Trics1FreeMockTest/>
       {/* <MainCourses/> */}
     </main>
   );

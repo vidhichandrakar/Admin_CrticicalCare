@@ -398,6 +398,145 @@ body {
 
    /* END OF ADMIN TESTIMONIAL  */
 
+ /* START OF COURSES CREATE COUPON  */
+
+
+.allTheContent{
+  background-color: #FFFFFF;
+  /* padding: 27px 19px; */
+  padding-bottom: 19% !important;
+  margin: 21px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.352) !important;;
+}
+.discountTypediv{
+  padding: 20px 20px !important;
+  /* padding-right: 20px 20px !important; */
+}
+.flatDiscountDiv{
+  padding: 20px 20px !important;
+}
+.StartnEndDiv{
+  padding: 20px 20px !important;
+  margin: 18px 2px;
+  display: flex;
+  flex-direction: row;
+}
+.minOrderDiv{
+  padding: 20px 20px !important;
+}
+.asterisk{
+  color: red;
+}
+.inputFeildOne{
+  border: 0.5px solid grey;
+  padding: 8px 100px;
+  border-radius: 7px !important;
+  text-align: left !important;
+}
+.inputFeildTwo{
+  border-radius: 7px !important;
+  padding: 8px 197px;
+  border: 0.5px solid grey;
+  text-align: left !important;
+}
+.createButton{
+  background-color: rgb(73, 73, 227) !important;
+  border-radius:7px !important;
+  color: #FFFFFF !important;
+  padding: 10px 10px;
+  margin-left: 2% !important;
+}
+
+
+
+   /* END OF COURSES CREATE COUPON  */
+
+   /* START OF COURSE->>TRICS 1 FREE MOCK TEST  */
+
+
+.another-main-container{
+  display: flex;
+  flex-direction: row;
+}
+.completeTricsBox{
+  background-color: #FFFFFF;
+  margin-top: 6%;
+  margin-left: -27%;
+  width: 72%;
+  padding: 20px 30px;
+  border-radius: 10px !important;
+}
+.leftSideRow{
+  width: 20% !important;
+}
+.blackPara{
+  /* font-size: large; */
+  font-weight:bold;
+}
+.greyPara{
+  color: grey;
+  font-size: smaller;
+}
+.PricenOfferPrice{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* padding: 10px 10px; */
+}
+.offerPrice{
+  margin-left: 10%;
+  
+}
+.CatagorynSubCatagory{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.subCatagory{
+  margin-left: 10%;
+}
+.StuEnrViewAll{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.blueViewAll{
+  color: dodgerblue;
+}
+.whiteBoxOfContent{
+  background-color: #FFFFFF;
+  margin-left: 9%;
+  margin-top: 6%;
+  border-radius: 7px;
+  padding: 10px 10px;
+  /* width: 100%; */
+}
+.contentOneContent{
+  border: 1px solid grey;
+  margin: 6px 6px !important;
+  padding: 6px 19px;
+  border-radius: 7px !important;
+}
+.folderIcon{
+  color: dodgerblue;
+}
+.catagorytextofTrics{
+  width: 30%;
+  display: flex !important;
+  flex-direction: row !important;
+  background-color:#FFFFFF !important;
+  color: dodgerblue !important;
+  border-radius: 7px !important;
+  padding: 10px 10px !important;
+}
+.marginscndBoxofTrics{
+  /* padding: 10px 10px !important; */
+}
+   /* END OF COURSE->>TRICS 1 FREE MOCK TEST  */
+
    .DropDown{
     padding: 6px 0px;
     width: 15%;
