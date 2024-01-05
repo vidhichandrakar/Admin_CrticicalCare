@@ -1,0 +1,28 @@
+.BannerMain{
+    margin: 50px;
+}
+.BannerBox{
+    border-radius: 5px;
+    background-color: white;
+    
+}
+.MainBox{
+    display: grid;
+    grid-template-columns: 1fr;
+}
+.HeadText h1{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.HeadText{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 0px 0px;
+    border-bottom: solid;
+}
+.BannerHead{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+}
