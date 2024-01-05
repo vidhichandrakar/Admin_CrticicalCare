@@ -45,44 +45,7 @@ function SideBar({openSidebarToggle, OpenSidebar}) {
                 </a>
         </div>
         
-        {/* <ul className='sidebar-list'>
-            <li className='sidebar-list-item BottomLine'>
-                <a href="/AllCourses">
-                    <DashboardIcon className='icon'/>DashBoard
-                </a>
-            </li>
-            <li className='sidebar-list-item BottomLine'>
-                <a href="/AllCourses">
-                    <MenuBookIcon className='icon'/>Courses
-                </a>
-            </li>
-            <li className='sidebar-list-item BottomLine'>
-                <a href="">
-                    <AssignmentIcon className='icon'/>Test Portal
-                </a>
-            </li>
-            <li className='sidebar-list-item BottomLine'>
-                <a href="/AboutUs">
-                    <ForumIcon className='icon'/>Chats
-                </a>
-            </li>
-            <li className='sidebar-list-item BottomLine'>
-                <a href="/ContactUs">
-                    <SignalCellularAltIcon  className='icon'/>Analytics
-                </a>
-            </li>
-            <li className='sidebar-list-item BottomLine'>
-                <a href="/PrivacyPolicy">
-                    <PersonIcon className='icon'/> People
-                </a>
-            </li>
-            <li className='sidebar-list-item BottomLine'>
-                <a href="/PrivacyPolicy">
-                    <PersonIcon className='icon'/>Push Notification
-                </a>
-            </li>
-          
-        </ul> */}
+       
         </div>
     </aside>
   )

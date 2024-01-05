@@ -18,6 +18,9 @@ body {
 .icon, .icon_header {
   margin-right: 5px;
 }
+.icon{
+  margin-left: 12px;
+}
 
 .close_icon {
   color: red;
@@ -85,26 +88,22 @@ body {
 }
 .BottomLine {
   /* margin-top: -20px; */
-  margin-left: 30px;
+  margin-left: 20px;
 } 
 
 .hoverrr{
-  /* padding: 7px 4px !important; */
-  /* text-align: center; */
-  margin-top: -10px;
+  width: 84%;
+    padding: 6px 0px !important;
+    align-items: center;
+    margin-top: -18px;
+    border-radius: 10px;
 
 }
 
-.hoverrr:hover{
-  /* border-radius: 8px !important; */
-  background-color: #00ADE7 !important;
-  /* opacity: 10.2%; */
+.hoverrr:hover{ 
+  background-color: #c9dded !important; 
   cursor: pointer;
-  color: Black !important;
-  border: solid red;
-  
-  /* padding: 7px 4px; */
-
+  color: grey !important; 
 }
 .sidebar-list-item  :hover {
   
@@ -264,12 +263,424 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 3fr;
     grid-template-areas:
-      'main'
-      'main';
+      'sidebar main'
+      'sidebar main';
   }
   .header{
     justify-content: space-between;
   }
+    /* margin: 20px; */
+   }
+   .Head h1{
+     font-size: 1.3rem;
+   }
+   .Head p{
+    font-weight: 600;
+    color: grey;
+    margin-left: 1px;
+    margin-top: -14px;
+    font-size: 0.65rem;
+   }
+   /* End Dashborad */
+
+   /* START OF USER  */
+
+
+.m20{
+  margin: 30px;
+  margin-right: 47px;
+}
+.userHead p{
+  font-size: small;
+  margin-top: -20px;
+}
+.rightDropDown{
+  /* align-items: right !important; */
+  /* justify-content: right !important; */
+
+  background-color: #FFFFFF;
+  border-radius: 3px !important;
+  padding: 5px 29px;
+  border: none !important;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.352) !important;
+}
+.searchnfilter{
+  display: flex;
+  flex-direction: row;
+   margin: 20px -6px;
+  align-items: left !important;
+}
+.searchnfilter img{
+  /* margin-left: 50%; */
+  height: 12%;
+  width: 10%;
+}
+.searchnfilter button{
+  border-radius: 15px !important;
+  margin-left: 2%;
+  padding: 2px 28px;
+  border: 0.5px solid grey;
+  background-color: #FFFFFF;
+  font-size: large;
+  color: grey;
+}
+
+.searchBar{
+  background-color: #FFFFFF !important;
+  border-radius: 15px !important;
+  border: 0.5px solid grey;
+  /* width: 50% !important; */
+}
+
+.textFeildOfSearch{
+  border-radius: 11px !important;
+  padding: 7px 12px;
+  /* margin-left: -29px; */
+}
+
+.completeTable{
+  height: 95%;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 1%;
+  padding: 20px 35px;
+  font-size: small;
+}
+
+.tableHeading{
+  justify-content: left !important;
+  align-items: left !important;
+  text-align: left !important;
+}
+
+.hrLine{
+  width: 268%;
+}
+.bluePara{
+  color: dodgerblue;
+}
+
+
+   /* END OF USER  */
+
+   /* START OF TRANSACTION  */
+
+
+.transactionCards{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 3%;
+  /* justify-content: space-between; */
+}
+.boxNoOne, .boxNoThree{
+  background-color: #FFFFFF;
+  border-radius: 10px !important;
+  /* box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.352) !important; */
+  padding: 24px 106px;
+  justify-content: space-between;
+}
+.boxNoTwo{
+  background-color: #FFFFFF;
+  border-radius: 10px !important;
+  /* box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.352) !important; */
+  padding: 24px 120px;
+  margin: 2px 103px;
+  justify-content: space-between;
+}
+.boxValue{
+  font-size: small !important;
+  text-align: left !important;
+  /* margin-right: 104% !important; */
+  /* margin-left: -77% !important; */
+  margin: 0 -77% !important;
+}
+.boxNumber{
+  font-size: large !important;
+  font-weight: bold !important;
+  color:blue;
+  margin-left: 141% !important;
+}
+
+.transactionTableHeading{
+  text-align: left !important;
+}
+.transactionCompleteTable{
+  height: 95%;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 1%;
+  padding: 20px 35px;
+  font-size: small;
+  padding-bottom: 14%;
+}
+
+
+
+   /* END OF TRANSACTION  */
+
+   /* START OF MY TEAM  */
+
+
+   
+.myTeamCompleteTable{
+  height: 95%;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 1%;
+  padding: 20px 35px;
+  font-size: small;
+  padding-bottom:6%;
+}
+.myTeamhrLine{
+  width:245%;
+}
+.moreVertIcon button{
+  background-color: #FFFFFF !important;
+  color: darkgray !important;
+  border:none !important;
+  box-shadow: none !important;
+}
+.redDelete{
+  color: red !important;
+}
+.blueBlockUser{
+  color: rgb(68, 68, 187) !important;
+}
+
+   /* END OF MY TEAM  */
+   /* START OF TEST PORTAL  */
+
+
+/* .testPortalsearchnfilter button{
+    border-radius: 15px !important;
+    margin-left: 2%;
+    padding: 2px 28px;
+    border: 0.5px solid grey;
+    background-color: #FFFFFF;
+    font-size: large;
+    color: grey;
+  } */
+/* .filterButton{
+  padding:2px 28px !important;
+} */
+.TestPortalSearchBarSection{
+  /* width: 50%; */
+  display: flex !important;
+  flex-direction: row !important;
+}
+.freeTestButton{
+  color: dodgerblue;
+  border: none !important;
+}
+.addTestButton{
+  background-color: dodgerblue;
+  border-radius: 10px !important;
+  border: none;
+  color: #FFFFFF;
+  padding: 0px 13px;
+  width: 105px;
+  height: 31px !important;
+  margin-left: 710px;
+}
+.TestPortalcompleteTable{
+  height: 95%;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 1%;
+  padding: 20px 35px;
+  font-size: small;
+  padding-bottom: 13% !important;
+}
+.TestPortalhrLine{
+  width:100%;
+}
+.lastData{
+  display: flex;
+  flex-direction: row;
+}
+
+   /* END OF TEST PORTAL  */
+
+   /* START OF ADMIN TESTIMONIAL  */
+
+
+.addTestimonialButton{
+  background-color: dodgerblue;
+  border-radius: 10px !important;
+  border: none;
+  color: #FFFFFF;
+  padding: 0px 13px;
+  width: 141px;
+  height: 31px !important;
+  margin-left: 692px;
+}   
+.TestimonialcompleteTable{
+  height: 95%;
+  width: 100%;
+  background-color: #FFFFFF;
+  border-radius: 1%;
+  padding: 20px 35px;
+  font-size: small;
+  padding-bottom: 21% !important;
+}
+.testimonialsComments{
+  /* padding-right: 46%; */
+}
+
+   /* END OF ADMIN TESTIMONIAL  */
+
+ /* START OF COURSES CREATE COUPON  */
+
+
+.allTheContent{
+  background-color: #FFFFFF;
+  /* padding: 27px 19px; */
+  padding-bottom: 19% !important;
+  margin: 21px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.352) !important;;
+}
+.discountTypediv{
+  padding: 20px 20px !important;
+  /* padding-right: 20px 20px !important; */
+}
+.flatDiscountDiv{
+  padding: 20px 20px !important;
+}
+.StartnEndDiv{
+  padding: 20px 20px !important;
+  margin: 18px 2px;
+  display: flex;
+  flex-direction: row;
+}
+.minOrderDiv{
+  padding: 20px 20px !important;
+}
+.asterisk{
+  color: red;
+}
+.inputFeildOne{
+  border: 0.5px solid grey;
+  padding: 8px 100px;
+  border-radius: 7px !important;
+  text-align: left !important;
+}
+.inputFeildTwo{
+  border-radius: 7px !important;
+  padding: 8px 197px;
+  border: 0.5px solid grey;
+  text-align: left !important;
+}
+.createButton{
+  background-color: rgb(73, 73, 227) !important;
+  border-radius:7px !important;
+  color: #FFFFFF !important;
+  padding: 10px 10px;
+  margin-left: 2% !important;
+}
+
+
+
+   /* END OF COURSES CREATE COUPON  */
+
+   /* START OF COURSE->>TRICS 1 FREE MOCK TEST  */
+
+
+.another-main-container{
+  display: flex;
+  flex-direction: row;
+}
+.completeTricsBox{
+  background-color: #FFFFFF;
+  margin-top: 6%;
+  margin-left: -27%;
+  width: 72%;
+  padding: 20px 30px;
+  border-radius: 10px !important;
+}
+.leftSideRow{
+  width: 20% !important;
+}
+.blackPara{
+  /* font-size: large; */
+  font-weight:bold;
+}
+.greyPara{
+  color: grey;
+  font-size: smaller;
+}
+.PricenOfferPrice{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /* padding: 10px 10px; */
+}
+.offerPrice{
+  margin-left: 10%;
+  
+}
+.CatagorynSubCatagory{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.subCatagory{
+  margin-left: 10%;
+}
+.StuEnrViewAll{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.blueViewAll{
+  color: dodgerblue;
+}
+.whiteBoxOfContent{
+  background-color: #FFFFFF;
+  margin-left: 9%;
+  margin-top: 6%;
+  border-radius: 7px;
+  padding: 10px 10px;
+  /* width: 100%; */
+}
+.contentOneContent{
+  border: 1px solid grey;
+  margin: 6px 6px !important;
+  padding: 6px 19px;
+  border-radius: 7px !important;
+}
+.folderIcon{
+  color: dodgerblue;
+}
+.catagorytextofTrics{
+  width: 30%;
+  display: flex !important;
+  flex-direction: row !important;
+  background-color:#FFFFFF !important;
+  color: dodgerblue !important;
+  border-radius: 7px !important;
+  padding: 10px 10px !important;
+}
+.marginscndBoxofTrics{
+  /* padding: 10px 10px !important; */
+}
+   /* END OF COURSE->>TRICS 1 FREE MOCK TEST  */
+
+   .DropDown{
+    padding: 6px 0px;
+    width: 15%;
+    height: 0%;
+    border-radius: 9px;
+    margin-top: 13px;
+    border: solid white;
+    font-size: 1rem;
+   }
+   .AdditionalBox{
+    background-color: white;
+    border-radius: 15px;
+    margin: 20px;
 
   #sidebar {
     display: none;
@@ -289,3 +700,4 @@ body {
       grid-template-columns: 1fr;
   }
 }
+
