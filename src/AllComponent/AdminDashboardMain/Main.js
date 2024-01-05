@@ -18,8 +18,8 @@ function Main() {
       {/* <MyTeam/> */}
       {/* <TestPortal/> */}
       {/* <Testimonial/> */}
-      {/* <CreateCoupon/> */}
-      <Trics1FreeMockTest/>
+      <CreateCoupon/>
+      {/* <Trics1FreeMockTest/> */}
       {/* <MainCourses/> */}
     </main>
   );
