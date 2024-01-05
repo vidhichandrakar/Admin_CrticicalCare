@@ -103,12 +103,10 @@ body {
 .hoverrr:hover{ 
   background-color: #c9dded !important; 
   cursor: pointer;
-  color: grey !important; 
+  color: grey !important;
+
 }
-.sidebar-list-item  :hover {
-  
-  /* padding: 0px 0px; */
-}
+ 
 
 
 .sidebar-list-item > a {
@@ -523,9 +521,6 @@ body {
   font-size: small;
   padding-bottom: 21% !important;
 }
-.testimonialsComments{
-  /* padding-right: 46%; */
-}
 
    /* END OF ADMIN TESTIMONIAL  */
 
@@ -663,9 +658,7 @@ body {
   border-radius: 7px !important;
   padding: 10px 10px !important;
 }
-.marginscndBoxofTrics{
-  /* padding: 10px 10px !important; */
-}
+
    /* END OF COURSE->>TRICS 1 FREE MOCK TEST  */
 
    .DropDown{
