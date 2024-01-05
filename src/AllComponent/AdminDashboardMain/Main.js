@@ -9,13 +9,14 @@ import TestPortal from "../DAshBoardRight/People/TestPortal";
 import Testimonial from "../DAshBoardRight/Testimonial/Testimonial";
 import CreateCoupon from "../DAshBoardRight/Courses/CreateCoupon";
 import Trics1FreeMockTest from "../DAshBoardRight/Courses/Trics1FreeMockTest";
+import YourCourses from "../Courses/YourCourses";
 
 export default function Main() {
   return (
     <main className="main-container">
       {/* <Dashboard /> */}
       {/* <MainCourses/> */}
-      <Banner />
+      {/* <Banner /> */}
       {/* <User/> */}
       {/* <Transaction/> */}
       {/* <MyTeam/> */}
@@ -25,6 +26,7 @@ export default function Main() {
       {/* <CreateCoupon/> */}
       {/* <Trics1FreeMockTest/> */}
       {/* <MainCourses/> */}
+      <YourCourses />
     </main>
   );
 }
