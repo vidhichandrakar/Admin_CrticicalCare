@@ -254,3 +254,27 @@
     width: 184px;
   }
 }
+/* Upcoming Courses CSS */
+.formMainUpcoming{
+  padding: 3%;
+  width:90%;
+}
+.BoxShadowUpcoming{
+  border-radius: 80px !important;
+  font-size: 0.7rem !important;
+  margin-top: 2% !important;
+
+}
+.divider-upcoming{
+  background-color: #000;
+  margin-top: 4%;
+   padding: 0.5px;
+   width: 50%;
+}
+.checkboxDesign .MuiTypography-root{
+  font-size: 0.85em !important;
+  font-weight: 600 !important;
+}
+.checkbox-icon{
+  font-weight: 300 !important;
+}
