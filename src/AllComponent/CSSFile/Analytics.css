@@ -1,0 +1,107 @@
+.TodayDropDown {
+  width: 30% !important;
+  justify-content: left !important;
+  display: flex;
+  padding: 6PX 11PX !important;
+}
+.selectDesign {
+  background-color: white !important;
+  text-align: left;
+  border-radius: 15px !important;
+}
+.FromControlDropDown {
+  text-align: left;
+  border-radius: 15px !important;
+  
+  padding: 6PX 1PX !important;
+}
+.CardsRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 15px;
+}
+.Card {
+    
+  box-shadow: 1px 1px 1px 1px #17090930!important;
+  padding: 0;
+  border-radius: 15px;
+  color: grey;
+  background-color: white;
+}
+.Card h1 {
+  color: rgb(0, 153, 255);
+  margin-top: -15px;
+}
+.Card p {
+  font-size: 0.8rem;
+  margin-top: -15px;
+}
+.CardsCol {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 25px;
+  margin: 40px 0;
+}
+.CardCol {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 22px 0;
+  border-radius: 15px;  
+  box-shadow: 1px 1px 1px 1px #17090930!important;
+}
+.row{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 80%;
+}
+.RupeeIcon{
+    color: blue;
+    background-color: rgb(170, 233, 252);
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 8%;
+}
+.col{
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+    width: 50%;
+    color: rgb(75, 75, 75);
+}
+
+.col p{
+    color: rgba(128, 128, 128, 0.719);
+    font-size: 0.9rem;
+    margin-top: -17px;
+}
+.RightIcon{
+    margin-right: 3%;
+}
+.SignalIcon{
+    color: grey;
+    background-color: rgb(170, 233, 252);
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 8%;
+    font-weight: 800;
+}
+
+  @media screen and (max-width: 962px) {
+    .CardsRow {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+  }
+  @media screen and (max-width: 562px) {
+    .CardsRow {
+        grid-template-columns: 1fr 1fr;
+      }
+  }
+  @media screen and (max-width: 402px) {
+    .CardsRow {
+        grid-template-columns: 1fr;
+      }
+  }
