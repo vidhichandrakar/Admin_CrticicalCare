@@ -90,3 +90,18 @@
     font-weight: 800;
 }
 
+  @media screen and (max-width: 962px) {
+    .CardsRow {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+  }
+  @media screen and (max-width: 562px) {
+    .CardsRow {
+        grid-template-columns: 1fr 1fr;
+      }
+  }
+  @media screen and (max-width: 402px) {
+    .CardsRow {
+        grid-template-columns: 1fr;
+      }
+  }
