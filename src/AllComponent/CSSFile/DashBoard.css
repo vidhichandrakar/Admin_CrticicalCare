@@ -96,7 +96,7 @@ body {
     padding: 6px 0px !important;
     align-items: center;
     margin-top: -18px;
-    border-radius: 10px;
+    border-radius: 5px;
 
 }
 
@@ -179,16 +179,16 @@ body {
   margin-left: 30px;
   padding: 18px;
  }
- .main-cards {
+ .Additionalmain-cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 45px;
   margin: 15px 45px;
 }
-.card{
+.Addcard{
   font-size: 1rem;
   text-align: center;
-  background-color: #e3e3e3e3;
+  background-color: #F4F9FD !important;
   padding-bottom: 20px;
   margin-bottom: 25px;
   color: rgb(19, 170, 235);
@@ -673,7 +673,7 @@ body {
     background-color: white;
     border-radius: 15px;
     margin: 20px;
-
+   }
   #sidebar {
     display: none;
   }
@@ -683,7 +683,7 @@ body {
     .main-cards {
       grid-template-columns: 1fr 1fr;
     }
-}
+
 @media screen and (max-width: 562px) {
   .main-cards {
       grid-template-columns: 1fr;

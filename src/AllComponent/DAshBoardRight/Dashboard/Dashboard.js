@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../Courses/CoursesHeader"
+import Header from "../../Courses/CoursesHeader"
 import CollectionsIcon from "@mui/icons-material/Collections";
 import LoyaltyIcon from "@mui/icons-material/Loyalty";
 import BookmarkAddedIcon from "@mui/icons-material/BookmarkAdded";
@@ -9,21 +9,19 @@ function Dashboard({ OpenSidebar }) {
   return (
     <main className="main-container">
       <div className="DashBoardMAinBox">
-        {/* <div className="Head"> */}
-         <Header />
-        {/* </div> */}
+         <Header Heading={"Hi 360 Critical Care,"} subHeading={"Welcome to your Dashboard"}/>
         <div className="AdditionalBox ">
           <h1 className="TextHeading">Additional Offerings</h1>
-          <div className="main-cards">
-            <div className="card">
+          <div className="Additionalmain-cards">
+            <div className="Addcard">
               <CollectionsIcon className="AdditionalIcon" />
               <h1>Banners</h1>
             </div>
-            <div className="card">
+            <div className="Addcard">
               <LoyaltyIcon className="AdditionalIcon" />
               <h1>Coupons</h1>
             </div>
-            <div className="card">
+            <div className="Addcard">
               <BookmarkAddedIcon className="AdditionalIcon" />
               <h1>Zoom</h1>
             </div>

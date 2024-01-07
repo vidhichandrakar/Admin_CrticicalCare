@@ -1,6 +1,6 @@
 import React from "react";
-import Dashboard from "../DAshBoardRight/Dashboard";
-import Banner from "../DAshBoardRight/Banner";
+import Dashboard from "../DAshBoardRight/Dashboard/Dashboard";
+import Banner from "../DAshBoardRight/Banner/Banner";
 import User from "../DAshBoardRight/People/User";
 import Transaction from "../DAshBoardRight/Analytics/Transaction";
 import MainCourses from "../Courses/MainCourses.component";
@@ -18,7 +18,7 @@ export default function Main() {
     <main className="main-container">
       {/* <Dashboard /> */}
       {/* <MainCourses/> */}
-      {/* <Banner /> */}
+      <Banner />
       {/* <User/> */}
       {/* <Transaction/> */}
       {/* <MyTeam/> */}
@@ -28,7 +28,7 @@ export default function Main() {
       {/* <CreateCoupon/> */}
       {/* <Trics1FreeMockTest/> */}
       {/* <MainCourses/> */}
-      <UpcomingCoursesMain/>
+      {/* <UpcomingCoursesMain/> */}
       {/* <YourCourses /> */}
       {/* <Analytics /> */}
     </main>
