@@ -12,6 +12,7 @@ import Trics1FreeMockTest from "../DAshBoardRight/Courses/Trics1FreeMockTest";
 import YourCourses from "../Courses/YourCourses";
 import Analytics from "../DAshBoardRight/Analytics/Analytics";
 import UpcomingCoursesMain from "../UpcomingCourses/UpcomingCourses.Main";
+import CouponMain from "../Coupons/Coupons.main";
 
 export default function Main() {
   return (
@@ -28,9 +29,10 @@ export default function Main() {
       {/* <CreateCoupon/> */}
       {/* <Trics1FreeMockTest/> */}
       {/* <MainCourses/> */}
-      <UpcomingCoursesMain/>
+      {/* <UpcomingCoursesMain/> */}
       {/* <YourCourses /> */}
       {/* <Analytics /> */}
+      <CouponMain/>
     </main>
   );
 }
