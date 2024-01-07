@@ -20,10 +20,10 @@ export default function Main() {
       {/* <Dashboard /> */}
       {/* <User/> */}
       {/* <MainCourses/> */}
-      <Banner />
+      {/* <Banner /> */}
       {/* <User/> */}
       {/* <Transaction/> */}
-      <MyTeam/>
+      {/* <MyTeam/> */}
       {/* <TestPortal/> */}
       {/* <Testimonial/> */}
       {/* <CreateCoupon/> */}
