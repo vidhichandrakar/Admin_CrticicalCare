@@ -1,20 +1,20 @@
-.TodayDropDown {
+/* .TodayDropDown {
   width: 30% !important;
   justify-content: left !important;
   display: flex;
   padding: 6PX 11PX !important;
-}
-.selectDesign {
+} */
+/* .selectDesign {
   background-color: white !important;
   text-align: left;
   border-radius: 15px !important;
-}
-.FromControlDropDown {
+} */
+/* .FromControlDropDown {
   text-align: left;
   border-radius: 15px !important;
   
   padding: 6PX 1PX !important;
-}
+} */
 .CardsRow {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
