@@ -10,7 +10,6 @@ const MainCourses = ({})=>{
     {id:0,labels:"Create Course",subLabels:"Add / view content of your course"},
     {id:1,labels:"Nephrology (Course Name)",subLabels:""},
     {id:2,labels:"Nephrology (Course Name)",subLabels:"Add / view content of your course"}
-    {id:3,labels:"My Team (5)", subLabels:"View, Filter & Manage all your users"}
   ]
   const handleHeaderLabels = (value)=>{
     let heading = labels.filter(val=>val.id===value);
