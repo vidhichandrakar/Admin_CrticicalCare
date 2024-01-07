@@ -8,7 +8,6 @@ import CourseHeader from "../../Courses/CoursesHeader";
 import Popover from "@mui/material/Popover";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-// import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import DeleteIcon from '@mui/icons-material/Delete';
 import BlockIcon from '@mui/icons-material/Block';
 
@@ -108,7 +107,7 @@ function MyTeam() {
           <tr>
             <td>
               <p className="bluePara">Sheikhshoeb194@gmail.com</p>{" "}
-              <p>+918889844180</p>
+              <p className="searchIconLogo">+918889844180</p>
             </td>
             <td>
               <p>Sheikh Shoeb</p>
@@ -148,7 +147,7 @@ function MyTeam() {
           <tr>
             <td>
               <p className="bluePara">jitendra.chandrakar@gmail.com</p>{" "}
-              <p>+911234567890</p>
+              <p className="searchIconLogo">+911234567890</p>
             </td>
             <td>
               <p>Jitendra Chandrakar</p>
@@ -162,7 +161,7 @@ function MyTeam() {
           <tr>
             <td>
               <p className="bluePara">pranab.raj@gmail.com</p>{" "}
-              <p>+917583808083</p>
+              <p className="searchIconLogo">+917583808083</p>
             </td>
             <td>
               <p>Pranab Raj</p>
@@ -176,7 +175,7 @@ function MyTeam() {
           <tr>
             <td>
               <p className="bluePara">saniakhan@gmail.com</p>{" "}
-              <p>+918889844180</p>
+              <p className="searchIconLogo">+918889844180</p>
             </td>
             <td>
               <p>Sania Khan</p>
@@ -190,7 +189,7 @@ function MyTeam() {
           <tr>
             <td>
               <p className="bluePara">ruhulamin@gmail.com</p>{" "}
-              <p>+918889844180</p>
+              <p className="searchIconLogo">+918889844180</p>
             </td>
             <td>
               <p>Ruhul Amin</p>

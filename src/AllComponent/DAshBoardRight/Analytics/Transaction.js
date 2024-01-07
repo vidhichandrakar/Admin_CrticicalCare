@@ -52,14 +52,9 @@ function Transaction() {
   return (
     <div className='main-container'>
     <div className=' m20'>
-        {/* <span className='userHead'>
-            <h3>Transaction Dashboard</h3>
-        </span>
-        <span><button className='rightDropDown'>360 Critical Care</button></span> */}
         <CourseHeader/>
 
         <div className='searchnfilter'>
-            {/* <img src="https://assets.stickpng.com/images/585e4ae1cb11b227491c3393.png"/> */}
             <Search className='searchBar'>
             <SearchIconWrapper>
               <SearchIcon />
@@ -91,7 +86,7 @@ function Transaction() {
                 <th>
                     Student Name
                 </th>
-                <th>
+                <th className='courseName'>
                     Course Name
                 </th>
                 <th>
@@ -105,16 +100,16 @@ function Transaction() {
 
     
             <tr>
-                <td><p className='bluePara'>Pranab Raj</p> <p>+918889844180</p></td>
-                <td><p>TRICS 1 FREE MOCK TEST FOR EDIC-1</p></td>
-                <td><p>19/Dec/2023</p></td>
-                <td> ₹1.00</td> 
+                <td><h4>Pranab Raj</h4> <h4 className='greyboldnumbers'>+918889844180</h4></td>
+                <td><p className='firstCourseName'>TRICS 1 FREE MOCK TEST FOR EDIC-1</p></td>
+                <td><p className='transactionDate'>19/Dec/2023</p></td>
+                <td className='transactionAmount'> ₹1.00</td> 
             </tr>
             <tr>
-                <td><p className='bluePara'>Sania Khan</p> <p>+918889844180</p></td>
-                <td><p>TRICS 1 FREE MOCK TEST FOR EDIC-1</p></td>
-                <td><p>19/Dec/2023</p></td>
-                <td> ₹1.00</td> 
+                <td><h4>Sania Khan</h4> <h4 className='greyboldnumbers'>+918889844180</h4></td>
+                <td><p className='firstCourseName'>TRICS 1 FREE MOCK TEST FOR EDIC-1</p></td>
+                <td><p className='transactionDate'>19/Dec/2023</p></td>
+                <td className='transactionAmount'> ₹1.00</td> 
             </tr>
         </table>
       
