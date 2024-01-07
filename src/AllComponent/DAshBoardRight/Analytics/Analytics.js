@@ -3,12 +3,11 @@ import "../../CSSFile/Analytics.css";
 import CourseHeader from "../../Courses/CoursesHeader";
 import { Box, Typography } from "@mui/material";
 import MenuItem from "@mui/material/MenuItem";
-import FormHelperText from "@mui/material/FormHelperText";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
-import ChevronRightIcon from '@mui/icons-material/ChevronRight';
-import CurrencyRupeeIcon from '@mui/icons-material/CurrencyRupee';
-import SignalCellularAltIcon from '@mui/icons-material/SignalCellularAlt';
+import SmallCard from "./AnalyticsCard/SmallCard";
+import BigCard from "./AnalyticsCard/BigCard";
+import { AnalyticsSmallData, AnalyticsBigData} from "../../../DAta/Analytics";
 
 function Analytics() {
   return (
@@ -41,48 +40,12 @@ function Analytics() {
           </FormControl>
         </Box>
         <Box className="CardsRow">
-          <div className="Card">
-            <div className="margin20">
-              <h4>Buy Now Clicks</h4>
-              <h1>5</h1>
-              <p>on last 7 days</p>
-            </div>
-          </div>
-          <div className="Card">
-            <div className="margin20">
-              <h4>Transactions</h4>
-              <h1>2</h1>
-              <p>on last 7 days</p>
-            </div>
-          </div>
-          <div className="Card">
-            <div className="margin20">
-              <h4>Total Revenue (INR)</h4>
-              <h1>1000</h1>
-              <p>on last 7 days</p>
-            </div>
-          </div>
-          <div className="Card">
-            <div className="margin20">
-              {" "}
-              <h4>Average Order Value</h4>
-              <h1>1000</h1>
-              <p>on last 7 days</p>
-            </div>
-          </div>
+         <SmallCard Data ={AnalyticsSmallData}/>
+          
         </Box>
         <Box className="CardsCol">
-              <div className="CardCol">
-                <div className="row">
-                    <CurrencyRupeeIcon className="RupeeIcon"/>
-                    <div className="col">
-                        <h4 >View All Transactions</h4>
-                        <p>View all your previous transaction</p>
-                    </div>
-                </div>
-                <ChevronRightIcon className="RightIcon" />
-              </div>
-              <div className="CardCol">
+            <BigCard Data={AnalyticsBigData}/>  
+              {/* <div className="CardCol">
                 <div className="row">
                     <SignalCellularAltIcon className="SignalIcon"/>
                     <div className="col">
@@ -91,7 +54,7 @@ function Analytics() {
                     </div>
                 </div>
                 <ChevronRightIcon className="RightIcon" />
-              </div>
+              </div> */}
         </Box>
       </div>
     </main>
