@@ -1,144 +1,272 @@
 body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Montserrat', sans-serif;
-    background-color: #F4F9FD;
-  }
-  
-  .icon {
-    vertical-align: middle;
-    line-height: 1px;
-    font-size: 20px;
-  }
-  .icon_header {
-    vertical-align: middle;
-    line-height: 1px;
-    font-size: 26px;
-  }
-  .icon, .icon_header {
-    margin-right: 5px;
-  }
-  
-  .close_icon {
-    color: red;
-    margin-left: 30px;
-    margin-top: 10px;
-    cursor: pointer;
-  }
-  
-  .grid-container {
-    display: grid;
-    grid-template-columns: 260px 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 3fr;
-    grid-template-areas:
-      'sidebar main main main'
-      'sidebar main main main';
-    height: 100vh;
-  }
+  margin: 0;
+  padding: 0;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #F4F9FD;
+}
 
-  /* Sidebar  */
-  #sidebar {
-    grid-area: sidebar;
-    overflow-y: auto;
-    transition: all 0.5s;
-    -webkit-transition: all 0.5s;
-    margin: 20px;
-  }
-  .Sider-Box{
-    height: 100%;
-    background-color: white;
-    border-radius: 10px;
-  }
-  
-  .sidebar-title {
-    display: flex;
-    padding: 0 23px;
+.icon {
+  vertical-align: middle;
+  line-height: 1px;
+  font-size: 20px;
+}
+.icon_header {
+  vertical-align: middle;
+  line-height: 1px;
+  font-size: 26px;
+}
+.icon, .icon_header {
+  margin-right: 5px;
+}
+.icon{
+  margin-left: 12px;
+}
+
+.close_icon {
+  color: red;
+  margin-left: 30px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 260px 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 3fr;
+  grid-template-areas:
+    'sidebar main main main'
+    'sidebar main main main';
+  height: 100vh;
+}
+
+/* Sidebar  */
+#sidebar {
+  grid-area: sidebar;
+  overflow-y: auto;
+  transition: all 0.5s;
+  -webkit-transition: all 0.5s;
+  margin: 20px;
+}
+.Sider-Box{
+  height: 100%;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.sidebar-title {
+  display: flex;
+  padding: 0 23px;
 }
 .SideBarLogo{    
-    margin-left: 5px;
-    width: 95%;
-    height: 40px;
+  margin-left: 5px;
+  width: 95%;
+  height: 40px;
 }
-  
-  .sidebar-title > span {
-    display: none;
-  }
-  
-  .sidebar-brand {
-    margin-top: 15px;
-    font-size: 20px;
-    font-weight: 700;
-  }
-  
-  .sidebar-list {
-    padding: 0;
-    margin-top: 20px;
-    list-style-type: none;
-  }
-  
-  .sidebar-list-item {
-    padding: 20px 20px 20px 20px;
-    font-size: 15px;
-  }
-  .BottomLine {
-    width: 70%;
-    margin-top: -20px;
-    margin-left: 10px;
-  }
-  
-  
-  .sidebar-list-item:hover {
-    border-radius: 8px;
-    /* background-color: #00ADE7; */
-    /* opacity: 10.2%; */
-    cursor: pointer;
-    /* color: Black !important; */
-  }
 
-  
-  .sidebar-list-item > a {
-    text-decoration: none;
-    color: grey;
-    font-size: 1rem;
-  }
-  .red a{
-    color: red;
-    width: 70%;
-    margin-left: 20px;
-  }
+.sidebar-title > span {
+  display: none;
+}
 
-  .sidebar-responsive {
-    display: inline !important;
-    position: absolute;
-    /*
-      we want the z-index of the sidebar higher so that
-      the charts are not showing over the sidebar 
-      on small screens
-    */
-    z-index: 12 !important;
-  }
-  
-  /* End Sidebar  */
-  
-   /* Start Main  */ 
-   .menu-icon {
-    display: none;
-  }
-  .main-container {
-    grid-area: main;
-    overflow-y: auto;
-  }
-   /*End Main  */ 
+.sidebar-brand {
+  margin-top: 15px;
+  font-size: 20px;
+  font-weight: 700;
+}
 
-   /* Start Dashborad */
-   .DashBoardMAinBox{
+.sidebar-list {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin-top: 20px;
+  list-style-type: none;
+}
+
+.sidebar-list-item {
+  /* padding: 20px 20px 20px 20px;  */
+   /* padding: 7px 4px; */
+   font-size: 15px;
+}
+.BottomLine {
+  /* margin-top: -20px; */
+  margin-left: 20px;
+} 
+
+.hoverrr{
+  width: 84%;
+    padding: 6px 0px !important;
+    align-items: center;
+    margin-top: -18px;
+    border-radius: 10px;
+
+}
+
+.hoverrr:hover{ 
+  background-color: #c9dded !important; 
+  cursor: pointer;
+  color: grey !important;
+
+}
+ 
+
+
+.sidebar-list-item > a {
+  text-decoration: none;
+  margin-top: 20px;
+  color: grey;
+  /* padding: 7px 4px; */
+  font-size: 1rem;
+}
+
+.sidebar-responsive {
+  display: inline !important;
+  position: absolute;
+
+  z-index: 12 !important;
+}
+
+/* End Sidebar  */
+
+ /* Start Main  */ 
+ .menu-icon {
+  display: none;
+}
+.main-container {
+  grid-area: main;
+  overflow-y: auto;
+}
+.margin20{
     margin: 20px;
-   }
-   .Head{
-    display: flex;
-    flex-direction: row;
+}
+ /*End Main  */ 
+
+ /* Start Dashborad */
+ .DashBoardMAinBox{
+  margin: 20px;
+ }
+ .Head{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 20px;
+ }
+ .Head h1{
+   font-size: 1.3rem;
+ }
+ .Head p{
+  font-weight: 600;
+  color: grey;
+  margin-left: 1px;
+  margin-top: -14px;
+  font-size: 0.65rem;
+ }
+ .DropDown{
+  padding: 6px 0px;
+  width: 15%;
+  height: 0%;
+  border-radius: 9px;
+  margin-top: 13px;
+  border: solid white;
+  font-size: 1rem;
+ }
+ .AdditionalBox{
+  background-color: white;
+  border-radius: 15px;
+  margin: 20px;
+
+ }
+ .TextHeading{
+  font-size: 1.2rem;
+  margin-left: 30px;
+  padding: 18px;
+ }
+ .main-cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 45px;
+  margin: 15px 45px;
+}
+.card{
+  font-size: 1rem;
+  text-align: center;
+  background-color: #e3e3e3e3;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+  color: rgb(19, 170, 235);
+  border-radius: 15px;
+}
+.AdditionalIcon{
+  margin-top: 10%;
+  vertical-align: bottom;
+  line-height: 1px;
+  font-size: 3rem !important; 
+}
+.OurOfferBox {
+  background-color: white;
+  border-radius: 15px;
+  margin: 20px;
+}
+.Offer-main-cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 45px;
+  margin: 15px 45px;
+
+}
+.Offer-card{
+  border: solid 1px black;
+  text-align: left;
+  padding-bottom: 20px;
+  margin-bottom: 25px;
+  color: rgb(19, 170, 235);
+  border-radius: 15px;
+  background-color: white;
+
+}
+.CardRow{
+  display: flex;
+  flex-direction: row;
+  margin: 15px;
+}
+.OfferIcon{
+  margin-top: 50%;
+  margin-left: 15%;
+  font-size: 3rem !important; 
+}
+.OfferCardText{
+  font-size: 1.2rem;
+  color: black;
+  margin-left: 7%;
+}
+.OfferCardText p{
+  margin-top: -13%;
+  color: grey;
+  font-size: 1rem;
+}
+.OfferButton{
+  display: flex;
+  flex-direction: row;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 5% ;
+}
+.ArrowIcon{
+  margin-top: -2px;
+  margin-left: 1%;
+}
+ /* End Dashborad */
+
+ @media screen and (max-width: 992px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas:
+      'sidebar main'
+      'sidebar main';
+  }
+  .header{
     justify-content: space-between;
-    margin: 20px;
+  }
+    /* margin: 20px; */
    }
    .Head h1{
      font-size: 1.3rem;
@@ -274,7 +402,6 @@ body {
   display: flex;
   flex-direction: row;
   margin-bottom: 3%;
-  /* justify-content: space-between; */
 }
 .boxNoOne, .boxNoThree{
   background-color: #FFFFFF;
@@ -294,8 +421,6 @@ body {
 .boxValue{
   font-size: small !important;
   text-align: left !important;
-  /* margin-right: 104% !important; */
-  /* margin-left: -77% !important; */
   margin: 0 -77% !important;
 }
 .boxNumber{
@@ -316,6 +441,22 @@ body {
   padding: 20px 35px;
   font-size: small;
   padding-bottom: 14%;
+}
+.courseName{
+  text-align: center !important;
+  align-items: center !important;
+}
+.greyboldnumbers{
+ color: grey;
+}
+.firstCourseName{
+  margin-left: 25%;
+}
+.transactionDate{
+  margin-left: 8%;
+}
+.transactionAmount{
+  margin-left: 5%;
 }
 
 
@@ -356,7 +497,6 @@ body {
 
 
 .TestPortalSearchBarSection{
-  /* width: 50%; */
   display: flex !important;
   flex-direction: row !important;
 }
@@ -415,9 +555,6 @@ body {
   font-size: small;
   padding-bottom: 21% !important;
 }
-.testimonialsComments{
-  /* padding-right: 46%; */
-}
 
    /* END OF ADMIN TESTIMONIAL  */
 
@@ -426,7 +563,6 @@ body {
 
 .allTheContent{
   background-color: #FFFFFF;
-  /* padding: 27px 19px; */
   padding-bottom: 19% !important;
   margin: 21px;
   border-radius: 10px;
@@ -434,7 +570,6 @@ body {
 }
 .discountTypediv{
   padding: 20px 20px !important;
-  /* padding-right: 20px 20px !important; */
 }
 .flatDiscountDiv{
   padding: 20px 20px !important;
@@ -485,7 +620,6 @@ body {
 .completeTricsBox{
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
   background-color: #FFFFFF;
   margin-top: 6%;
   margin-left: -27%;
@@ -497,7 +631,6 @@ body {
   width: 63% !important;
 }
 .blackPara{
-  /* font-size: large; */
   font-weight:bold;
 }
 .greyPara{
@@ -507,17 +640,13 @@ body {
 .PricenOfferPrice{
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
-  /* padding: 10px 10px; */
 }
 .offerPrice{
   margin-left: 37%;
-  
 }
 .CatagorynSubCatagory{
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
 }
 .subCatagory{
   margin-left: 34%;
@@ -525,7 +654,6 @@ body {
 .StuEnrViewAll{
   display: flex;
   flex-direction: row;
-  /* justify-content: space-between; */
 }
 .rightSideRow{
   width: 262px;
@@ -546,7 +674,6 @@ body {
   margin-right: 5%;
   border-radius: 7px;
   padding: 10px 10px;
-  /* width: 100%; */
 }
 .contentOneContent{
   display: flex;
@@ -590,115 +717,22 @@ body {
     border-radius: 15px;
     margin: 20px;
 
-   }
-   .TextHeading{
-    font-size: 1.2rem;
-    margin-left: 30px;
-    padding: 18px;
-   }
-   .main-cards {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 45px;
-    margin: 15px 45px;
+  #sidebar {
+    display: none;
   }
-  .card{
-    font-size: 1rem;
-    text-align: center;
-    background-color: #e3e3e3e3;
-    padding-bottom: 20px;
-    margin-bottom: 25px;
-    color: rgb(19, 170, 235);
-    border-radius: 15px;
-  }
-  .AdditionalIcon{
-    margin-top: 10%;
-    vertical-align: bottom;
-    line-height: 1px;
-    font-size: 3rem !important; 
-  }
-  .OurOfferBox {
-    background-color: white;
-    border-radius: 15px;
-    margin: 20px;
-  }
-  .Offer-main-cards{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 45px;
-    margin: 15px 45px;
-
-  }
-  .Offer-card{
-    border: solid 1px black;
-    text-align: left;
-    padding-bottom: 20px;
-    margin-bottom: 25px;
-    color: rgb(19, 170, 235);
-    border-radius: 15px;
-    background-color: white;
-
-  }
-  .CardRow{
-    display: flex;
-    flex-direction: row;
-    margin: 15px;
-  }
-  .OfferIcon{
-    margin-top: 50%;
-    margin-left: 15%;
-    font-size: 3rem !important; 
-  }
-  .OfferCardText{
-    font-size: 1.2rem;
-    color: black;
-    margin-left: 7%;
-  }
-  .OfferCardText p{
-    margin-top: -13%;
-    color: grey;
-    font-size: 1rem;
-  }
-  .OfferButton{
-    display: flex;
-    flex-direction: row;
-    cursor: pointer;
-    font-size: 1rem;
-    margin-left: 5% ;
-  }
-  .ArrowIcon{
-    margin-top: -2px;
-    margin-left: 1%;
-  }
-   /* End Dashborad */
-
-   @media screen and (max-width: 992px) {
-    .grid-container {
-      grid-template-columns: 1fr;
-      grid-template-rows: 0.2fr 3fr;
-      grid-template-areas:
-        'main'
-        'main';
+  .menu-icon {
+      display: inline;
     }
-    .header{
-      justify-content: space-between;
+    .main-cards {
+      grid-template-columns: 1fr 1fr;
     }
-  
-    #sidebar {
-      display: none;
-    }
-    .menu-icon {
-        display: inline;
-      }
-      .main-cards {
-        grid-template-columns: 1fr 1fr;
-      }
 }
 @media screen and (max-width: 562px) {
-    .main-cards {
-        grid-template-columns: 1fr;
-      }
-    .Offer-main-cards{
-        grid-template-columns: 1fr;
+  .main-cards {
+      grid-template-columns: 1fr;
     }
+  .Offer-main-cards{
+      grid-template-columns: 1fr;
+  }
 }
+

@@ -19,44 +19,33 @@ function SideBar({openSidebarToggle, OpenSidebar}) {
             <span className='icon close_icon' onClick={OpenSidebar}>X</span>
         </div>
 
-        <ul className='sidebar-list'>
-            <li className='sidebar-list-item BottomLine'>
-                <a href="/AllCourses">
-                    <DashboardIcon className='icon'/>DashBoard
+        <div className='sidebar-list sidebar-list-item BottomLine'>
+                <a href="/AllCourses" >
+                    <div>
+                      <p className='hoverrr'><DashboardIcon className='icon'/>DashBoard</p>
+                      </div>
                 </a>
-            </li>
-            <li className='sidebar-list-item BottomLine'>
                 <a href="/AllCourses">
-                    <MenuBookIcon className='icon'/>Courses
+                  <p className='hoverrr'> <MenuBookIcon className='icon'/>Courses</p> 
                 </a>
-            </li>
-            <li className='sidebar-list-item BottomLine'>
                 <a href="">
-                    <AssignmentIcon className='icon'/>Test Portal
+                   <p className='hoverrr'> <AssignmentIcon className='icon'/>Test Portal</p>
                 </a>
-            </li>
-            <li className='sidebar-list-item BottomLine'>
                 <a href="/AboutUs">
-                    <ForumIcon className='icon'/>Chats
+                    <p className='hoverrr'><ForumIcon className='icon'/>Chats</p>
                 </a>
-            </li>
-            <li className='sidebar-list-item BottomLine'>
                 <a href="/ContactUs">
-                    <SignalCellularAltIcon  className='icon'/>Analytics
+                <p className='hoverrr'> <SignalCellularAltIcon  className='icon'/>Analytics</p>
                 </a>
-            </li>
-            <li className='sidebar-list-item BottomLine'>
                 <a href="/PrivacyPolicy">
-                    <PersonIcon className='icon'/> People
+                <p className='hoverrr'> <PersonIcon className='icon'/> People</p>
                 </a>
-            </li>
-            <li className='sidebar-list-item BottomLine'>
                 <a href="/PrivacyPolicy">
-                    <PersonIcon className='icon'/>Push Notification
+        <p className='hoverrr'>  <PersonIcon className='icon'/>Push Notification</p>
                 </a>
-            </li>
-          
-        </ul>
+        </div>
+        
+       
         </div>
     </aside>
   )
