@@ -163,10 +163,11 @@ body {
   font-size: small;
   margin-top: -20px;
 }
+.HeaderRightofUser{
+  margin-left: 76%;
+  margin-top: -6%;
+}
 .rightDropDown{
-  /* align-items: right !important; */
-  /* justify-content: right !important; */
-
   background-color: #FFFFFF;
   border-radius: 3px !important;
   padding: 5px 29px;
@@ -176,11 +177,10 @@ body {
 .searchnfilter{
   display: flex;
   flex-direction: row;
-   margin: 20px -6px;
+   margin: 13px -6px;
   align-items: left !important;
 }
 .searchnfilter img{
-  /* margin-left: 50%; */
   height: 12%;
   width: 10%;
 }
@@ -198,20 +198,20 @@ body {
   background-color: #FFFFFF !important;
   border-radius: 15px !important;
   border: 0.5px solid grey;
-  /* width: 50% !important; */
 }
-
+.searchIconLogo{
+  color: gray;
+}
 .textFeildOfSearch{
   border-radius: 11px !important;
   padding: 7px 12px;
-  /* margin-left: -29px; */
 }
 
 .completeTable{
-  height: 95%;
+  height: 95% !important;
   width: 100%;
   background-color: #FFFFFF;
-  border-radius: 1%;
+  border-radius: 15px;
   padding: 20px 35px;
   font-size: small;
 }
@@ -223,10 +223,45 @@ body {
 }
 
 .hrLine{
-  width: 268%;
+  width: 256%;
 }
 .bluePara{
   color: dodgerblue;
+  font-weight: bold;
+}
+.sheikh{
+  margin-left: -3%;
+}
+.jitendra{
+  margin-left:-9%;
+}
+.pranab{
+ margin-left: -1%;
+}
+.sania{
+  margin-left: 0%;
+}
+.rahul{
+  margin-left: -2%;
+}
+.menka{
+  margin-left: 3%;
+}
+.ramesh{
+  margin-left: 1%;
+}
+.rakesh{
+  margin-left: -2%;
+}
+.ashutosh{
+  margin-left: 0%;
+}
+.pixel{
+  margin-left: -4%;
+}
+.phNumber{
+  color: grey;
+  font-weight:600;
 }
 
 
@@ -320,18 +355,6 @@ body {
    /* START OF TEST PORTAL  */
 
 
-/* .testPortalsearchnfilter button{
-    border-radius: 15px !important;
-    margin-left: 2%;
-    padding: 2px 28px;
-    border: 0.5px solid grey;
-    background-color: #FFFFFF;
-    font-size: large;
-    color: grey;
-  } */
-/* .filterButton{
-  padding:2px 28px !important;
-} */
 .TestPortalSearchBarSection{
   /* width: 50%; */
   display: flex !important;
@@ -460,6 +483,9 @@ body {
   flex-direction: row;
 }
 .completeTricsBox{
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-between; */
   background-color: #FFFFFF;
   margin-top: 6%;
   margin-left: -27%;
@@ -468,7 +494,7 @@ body {
   border-radius: 10px !important;
 }
 .leftSideRow{
-  width: 20% !important;
+  width: 63% !important;
 }
 .blackPara{
   /* font-size: large; */
@@ -481,27 +507,34 @@ body {
 .PricenOfferPrice{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   /* padding: 10px 10px; */
 }
 .offerPrice{
-  margin-left: 10%;
+  margin-left: 37%;
   
 }
 .CatagorynSubCatagory{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 .subCatagory{
-  margin-left: 10%;
+  margin-left: 34%;
 }
 .StuEnrViewAll{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
-
+.rightSideRow{
+  width: 262px;
+  height: 33%;
+  padding: 10px 10px;
+  margin-left: 28%;
+  background-color: white;
+  border-radius: 23px;
+}
 
 .blueViewAll{
   color: dodgerblue;
@@ -509,32 +542,38 @@ body {
 .whiteBoxOfContent{
   background-color: #FFFFFF;
   margin-left: 9%;
-  margin-top: 6%;
+  margin-top: 2%;
+  margin-right: 5%;
   border-radius: 7px;
   padding: 10px 10px;
   /* width: 100%; */
 }
 .contentOneContent{
+  display: flex;
+  flex-direction: row;
   border: 1px solid grey;
   margin: 6px 6px !important;
-  padding: 6px 19px;
+  height: 10% !important;
+  padding: 0px 22px;
   border-radius: 7px !important;
 }
 .folderIcon{
   color: dodgerblue;
 }
 .catagorytextofTrics{
-  width: 30%;
+  width: 30% !important;
   display: flex !important;
   flex-direction: row !important;
   background-color:#FFFFFF !important;
   color: dodgerblue !important;
   border-radius: 7px !important;
-  padding: 10px 10px !important;
+  border: 1px solid dodgerblue !important;
+  box-shadow: none !important;
+  padding: 10px 30px !important;
 }
-.marginscndBoxofTrics{
-  /* padding: 10px 10px !important; */
-}
+
+
+
    /* END OF COURSE->>TRICS 1 FREE MOCK TEST  */
 
    .DropDown{

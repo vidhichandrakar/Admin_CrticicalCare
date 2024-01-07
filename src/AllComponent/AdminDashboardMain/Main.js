@@ -13,13 +13,13 @@ function Main() {
   return (
     <main className="main-container">
       {/* <Dashboard /> */}
-      {/* <User/> */}
+      <User/>
       {/* <Transaction/> */}
       {/* <MyTeam/> */}
       {/* <TestPortal/> */}
       {/* <Testimonial/> */}
       {/* <CreateCoupon/> */}
-      <Trics1FreeMockTest/>
+      {/* <Trics1FreeMockTest/> */}
       {/* <MainCourses/> */}
     </main>
   );
