@@ -33,7 +33,11 @@ const CouponBox =({})=>{
       <Box className="couponLastBox">
        <MoreVertIcon aria-describedby={id} variant="contained" onClick={handleClick}/>
      
-       <Popover
+       
+      </Box>
+      </div>  
+      </Box>) }
+      <Popover
         id={id}
         open={open}
         anchorEl={anchorEl}
@@ -46,8 +50,6 @@ const CouponBox =({})=>{
         <Typography sx={{ p: 1 }}>Edit</Typography>
         <Typography sx={{ p: 1 }}>Delete</Typography>
       </Popover>
-      </Box>
-      </div>  </Box>) }
       </>
   )
 }

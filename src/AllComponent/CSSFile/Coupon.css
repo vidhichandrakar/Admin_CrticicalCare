@@ -22,12 +22,10 @@
   width:200px !important;
   background-color:#0f7af5 !important;
   text-transform: none !important;
+  margin-left: 12%;
 }
 .couponHeaderButton{
-  justify-content: flex-end;
-  position: absolute;
-  right: 0;
-  margin-right: 3%;
+  margin-left: 72%;
   margin-top: 2% !important;
 }
 .couponHeaderText{
