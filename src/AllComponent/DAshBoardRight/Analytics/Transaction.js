@@ -8,7 +8,7 @@ function Transaction() {
   return (
     <div className='main-container'>
     <div className=' m20'>
-        <CourseHeader/>
+        <CourseHeader Heading={"Transaction Dashboard"} />
 
         <div className='searchnfilter'>
            <SearchBar />

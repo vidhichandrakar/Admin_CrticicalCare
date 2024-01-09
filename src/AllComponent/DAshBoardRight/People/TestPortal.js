@@ -1,7 +1,6 @@
 import React from 'react'
 import CourseHeader from '../../Courses/CoursesHeader'
 import SearchIcon from '@mui/icons-material/Search';
-// import StyledInputBase from '@mui/material/StyledInputBase';
 import { styled, alpha } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
@@ -62,7 +61,6 @@ function TestPortal() {
             <div className='TestPortalSearchBarSection'>
             <div className='searchnfilter'>
             <div>
-            {/* <img src="https://assets.stickpng.com/images/585e4ae1cb11b227491c3393.png"/> */}
             <Search className='searchBar'>
             <SearchIconWrapper>
               <SearchIcon />
@@ -76,7 +74,6 @@ function TestPortal() {
             <button className='filterButton'> <FilterAltIcon/> Filter</button>
         </div>
             <button className='addTestButton'> + Add Test </button>
-            {/* <Button variant="contained" size="small" className='addTestButton'> + Add Test </Button> */}
         </div>
 
 
@@ -98,7 +95,6 @@ function TestPortal() {
             <tr>
                 <td><p>Module 9 Neuromonitoring</p></td>
                 <td><p>19/Dec/2023</p></td>
-                {/* <button onClick={(e)=>actionsOptions(e)}> <td><MoreVertIcon/></td> </button>  */}
                 <td><MoreVertIcon/></td>
             </tr>
             <tr>

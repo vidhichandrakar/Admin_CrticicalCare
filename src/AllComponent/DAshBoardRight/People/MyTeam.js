@@ -74,7 +74,7 @@ function MyTeam() {
   return (
     <div className="main-container">
       <div className=" m20">
-        <CourseHeader />
+        <CourseHeader Heading={"My Team (5)"} subHeading={"View, Filter & Manage all your users"} />
 
         <div className="searchnfilter">
           <div>
