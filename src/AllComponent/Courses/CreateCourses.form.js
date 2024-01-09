@@ -7,6 +7,12 @@ import MenuItem from "@mui/material/MenuItem";
 import FormHelperText from "@mui/material/FormHelperText";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
+import {
+  CommonTypography,
+  commonButton,
+  commonSelect,
+  commonTextField,
+} from "../../Util/CommonFields";
 const VisuallyHiddenInput = styled("input")({
   clip: "rect(0 0 0 0)",
   clipPath: "inset(50%)",
@@ -18,22 +24,21 @@ const VisuallyHiddenInput = styled("input")({
   whiteSpace: "nowrap",
   width: 1,
 });
-const CreateForm = ({handleTrackerPage}) => {
+const CreateForm = ({ handleTrackerPage }) => {
   return (
     <div className="formMain">
-      <Typography fontWeight={600}>Name</Typography>
-      <TextField
-        inputProps={{ className: "textField" }}
-        fullWidth
-        size="small"
-        placeholder="Enter course name"
-        id="fullWidth"
-        className="BoxShadow"
-        // onChange={(event) => handleTextChange("emailId", event.target.value)}
-      />
-      <Typography fontWeight={600} sx={{ marginTop: "5%" }}>
-        Description
-      </Typography>
+      {CommonTypography({ fontWeight: 600, label: "Name" })}
+      {commonTextField({
+        id: "fullWidth",
+        className: "BoxShadow",
+        inputClassName: "textField",
+        labels: "Enter course name",
+      })}
+      {CommonTypography({
+        fontWeight: 600,
+        sx: { marginTop: "5%" },
+        label: "Description",
+      })}
       <TextField
         inputProps={{ className: "textField" }}
         fullWidth
@@ -44,9 +49,11 @@ const CreateForm = ({handleTrackerPage}) => {
         className="BoxShadow"
         // onChange={(event) => handleTextChange("emailId", event.target.value)}
       />
-      <Typography fontWeight={600} sx={{ marginTop: "5%" }}>
-        Add Thumbnail
-      </Typography>
+      {CommonTypography({
+        fontWeight: 600,
+        sx: { marginTop: "5%" },
+        label: "Add Thumbnail",
+      })}
 
       <Box className="thumbnailUpload">
         <Button
@@ -65,59 +72,50 @@ const CreateForm = ({handleTrackerPage}) => {
       <Box className="divider"></Box>
       <Box sx={{ marginTop: "5%" }} className="categoryBox">
         <Box>
-          <Typography fontWeight={600} className="editFirstText">Category</Typography>
-          <FormControl
-            sx={{ m: 1, minWidth: 240}}
-            className="categorySelect"
-          >
-            {/* <InputLabel id="demo-simple-select-helper-label"  className="labelDesign">
-         360 Critcial Care</InputLabel> */}
-            <Select
-              // label="360 Critcial Care"
-              // className="selectDesign"
-              // placeholder=" 360 Critcial Care"
-              displayEmpty
-              size="small"
-              renderValue={() => {
-                return <em className="categorytext">Select Category</em>;
-              }}
-              inputProps={{ "aria-label": "Without label" }}
-            >
-              <MenuItem value={""}>
-                <em>360 Critcial Care</em>
-              </MenuItem>
-              <MenuItem value={10}>Ten</MenuItem>
-              <MenuItem value={20}>Twenty</MenuItem>
-              <MenuItem value={30}>Thirty</MenuItem>
-            </Select>
+          {CommonTypography(
+            { fontWeight: 600, label: "Category" },
+            (Option = {
+              className: "editFirstText",
+            })
+          )}
+
+          <FormControl sx={{ m: 1, minWidth: 240 }} className="categorySelect">
+            {commonSelect({
+              placeholder: "Select Category",
+              menuItemList: [
+                { id: 1, label: "Option 1" },
+                { id: 2, label: "Option 2" },
+                { id: 3, label: "Option 3" },
+              ],
+              className: "categorytext",
+            })}
           </FormControl>
         </Box>
         <Box className="rightCat">
-          <Typography fontWeight={600} className="editFirstText">Sub Category</Typography>
-          <FormControl
-            sx={{ m: 1, minWidth: 240}} className="categorySelect"
-          >
-            <Select
-              displayEmpty
-              size="small"
-              renderValue={() => {
-                return <em className="categorytext">Select Category</em>;
-              }}
-              inputProps={{ "aria-label": "Without label" }}
-            >
-              <MenuItem value={""}>
-                <em>360 Critcial Care</em>
-              </MenuItem>
-              <MenuItem value={10}>Ten</MenuItem>
-              <MenuItem value={20}>Twenty</MenuItem>
-              <MenuItem value={30}>Thirty</MenuItem>
-            </Select>
+          {CommonTypography(
+            { fontWeight: 600, label: "Sub Category" },
+            (Option = {
+              className: "editFirstText",
+            })
+          )}
+          <FormControl sx={{ m: 1, minWidth: 240 }} className="categorySelect">
+            {commonSelect({
+              placeholder: "Select Sub Category",
+              menuItemList: [
+                { id: 1, label: "Option 1" },
+                { id: 2, label: "Option 2" },
+                { id: 3, label: "Option 3" },
+              ],
+              className: "categorytext",
+            })}
           </FormControl>
         </Box>
       </Box>
-      <Button variant="contained"  className="coursesButton" onClick={()=>handleTrackerPage(1)}>
-       Edit price
-      </Button>
+      {commonButton({
+        handleTrackerPage: () => handleTrackerPage(1),
+        className: "coursesButton",
+        label: "Edit price",
+      })}
     </div>
   );
 };

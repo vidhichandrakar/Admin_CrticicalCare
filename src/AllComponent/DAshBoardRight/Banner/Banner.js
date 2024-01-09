@@ -3,7 +3,7 @@ import "../../CSSFile/Banner.css";
 import CourseHeader from "../../Courses/CoursesHeader";
 import Card from "@mui/material/Card";
 import BannerCard from "./BannerCard";
-import { BannerData } from "../../../Data/JsonData";
+import { BannerData } from "../../../DAta/JsonData";
 import { Fragment } from "react";
 
 function Banner() {

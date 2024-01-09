@@ -9,7 +9,7 @@ import SmallCard from "./AnalyticsCard/SmallCard";
 import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import SignalCellularAltIcon from "@mui/icons-material/SignalCellularAlt";
-import { AnalyticsSmallData } from "../../../Data/JsonData";
+import { AnalyticsSmallData } from "../../../DAta/JsonData";
 
 function Analytics() {
   return (
