@@ -556,6 +556,7 @@ body {
 .addTestimonialButton{
   background-color: dodgerblue;
   border-radius: 10px !important;
+  margin-top: 20px;
   border: none;
   color: #FFFFFF;
   padding: 0px 13px;
@@ -570,7 +571,11 @@ body {
   border-radius: 1%;
   padding: 20px 35px;
   font-size: small;
-  padding-bottom: 21% !important;
+  padding-bottom: 16% !important;
+}
+.testimonialsComments{
+  /* padding-right: 323px; */
+  width: 52%;
 }
 
    /* END OF ADMIN TESTIMONIAL  */

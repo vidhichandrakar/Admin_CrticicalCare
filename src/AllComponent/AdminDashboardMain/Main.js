@@ -19,13 +19,13 @@ export default function Main() {
   return (
     <main className="main-container">
       {/* <Dashboard /> */}
-      {/* <User/> */}
+      <User/>
       {/* <MainCourses/> */}
       {/* <Banner /> */}
       {/* <User/> */}
       {/* <Transaction/> */}
       {/* <MyTeam/> */}
-      <TestPortal/>
+      {/* <TestPortal/> */}
       {/* <SearchBar /> */}
       {/* <Testimonial/> */}
       {/* <CreateCoupon/> */}
