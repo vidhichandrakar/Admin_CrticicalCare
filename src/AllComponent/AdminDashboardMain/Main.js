@@ -13,6 +13,7 @@ import YourCourses from "../Courses/YourCourses";
 import Analytics from "../DAshBoardRight/Analytics/Analytics";
 import UpcomingCoursesMain from "../UpcomingCourses/UpcomingCourses.Main";
 import SearchBar from "../../Util/SearchBar";
+import CouponMain from "../Coupons/Coupons.main";
 
 export default function Main() {
   return (
@@ -33,7 +34,9 @@ export default function Main() {
       {/* <MainCourses/> */}
       {/* <UpcomingCoursesMain/> */}
       {/* <YourCourses /> */}
-      <Analytics />
+      {/* <Analytics /> */}
+      {/* <Analytics /> */}
+      {/* <CouponMain/> */}
     </main>
   );
 }
