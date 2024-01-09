@@ -140,9 +140,9 @@ body {
  /*End Main  */ 
 
  /* Start Dashborad */
- .DashBoardMAinBox{
+ /* .DashBoardMAinBox{
   margin: 20px;
- }
+ } */
  .Head{
   display: flex;
   flex-direction: row;
@@ -171,7 +171,7 @@ body {
  .AdditionalBox{
   background-color: white;
   border-radius: 15px;
-  margin: 20px;
+  /* margin: 20px; */
 
  }
  .TextHeading{
@@ -195,7 +195,8 @@ body {
   border-radius: 15px;
 }
 .AdditionalIcon{
-  margin-top: 10%;
+  padding-top: 30px;
+  /* margin-top: 10%; */
   vertical-align: bottom;
   line-height: 1px;
   font-size: 3rem !important; 
@@ -203,7 +204,7 @@ body {
 .OurOfferBox {
   background-color: white;
   border-radius: 15px;
-  margin: 20px;
+  /* margin: 20px; */
 }
 .Offer-main-cards{
   display: grid;
@@ -228,7 +229,7 @@ body {
   margin: 15px;
 }
 .OfferIcon{
-  margin-top: 50%;
+  margin-top: 5%;
   margin-left: 15%;
   font-size: 3rem !important; 
 }
@@ -323,6 +324,7 @@ body {
 }
 
 .searchBar{
+  height: 6vh;
   background-color: #FFFFFF !important;
   border-radius: 15px !important;
   border: 0.5px solid grey;
@@ -715,7 +717,7 @@ body {
    .AdditionalBox{
     background-color: white;
     border-radius: 15px;
-    margin: 20px;
+
    }
  
   .menu-icon {

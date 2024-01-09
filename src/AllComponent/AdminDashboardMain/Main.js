@@ -12,6 +12,7 @@ import Trics1FreeMockTest from "../DAshBoardRight/Courses/Trics1FreeMockTest";
 import YourCourses from "../Courses/YourCourses";
 import Analytics from "../DAshBoardRight/Analytics/Analytics";
 import UpcomingCoursesMain from "../UpcomingCourses/UpcomingCourses.Main";
+import SearchBar from "../../Util/SearchBar";
 import CouponMain from "../Coupons/Coupons.main";
 
 export default function Main() {
@@ -25,6 +26,7 @@ export default function Main() {
       {/* <Transaction/> */}
       {/* <MyTeam/> */}
       {/* <TestPortal/> */}
+      {/* <SearchBar /> */}
       {/* <Testimonial/> */}
       {/* <CreateCoupon/> */}
       {/* <CreateCoupon/> */}
@@ -32,6 +34,7 @@ export default function Main() {
       {/* <MainCourses/> */}
       {/* <UpcomingCoursesMain/> */}
       {/* <YourCourses /> */}
+      {/* <Analytics /> */}
       {/* <Analytics /> */}
       {/* <CouponMain/> */}
     </main>
