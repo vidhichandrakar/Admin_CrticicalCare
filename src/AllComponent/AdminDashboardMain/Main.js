@@ -32,7 +32,7 @@ export default function Main() {
       {/* <CreateCoupon/> */}
       {/* <Trics1FreeMockTest/> */}
       {/* <MainCourses/> */}
-      {/* <UpcomingCoursesMain/> */}
+      <UpcomingCoursesMain/>
       {/* <YourCourses /> */}
       {/* <Analytics /> */}
       {/* <Analytics /> */}
