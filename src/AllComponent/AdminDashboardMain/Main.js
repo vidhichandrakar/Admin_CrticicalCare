@@ -19,7 +19,7 @@ export default function Main() {
     <main className="main-container">
       {/* <Dashboard /> */}
       {/* <User/> */}
-      {/* <MainCourses/> */}
+      <MainCourses/>
       {/* <Banner /> */}
       {/* <User/> */}
       {/* <Transaction/> */}
@@ -33,7 +33,7 @@ export default function Main() {
       {/* <UpcomingCoursesMain/> */}
       {/* <YourCourses /> */}
       {/* <Analytics /> */}
-      <CouponMain/>
+      {/* <CouponMain/> */}
     </main>
   );
 }

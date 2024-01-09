@@ -14,7 +14,7 @@ const Tracker =({trackerPage,handleTrackerPage})=>{
    <Box className="trackerMainBox"> <Stepper activeStep={trackerPage} className="trackerStep"  alternativeLabel>
       {steps.map((label,index) => (
         <Step key={index} onClick={()=>handleTrackerPage(index)}>
-          <StepLabel className="trackerStepText">{label}</StepLabel>
+          <StepLabel>{label}</StepLabel>
         </Step>
       ))}
     </Stepper>

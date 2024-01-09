@@ -1,30 +1,32 @@
-import { Select,Box, Typography, TextField, Button } from "@mui/material";
+import { Select, Box, Typography, TextField, Button } from "@mui/material";
 import React from "react";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 
-const EditPrice = ({handleTrackerPage})=>{
-  return(
-<div className="formMain">
-<Box sx={{ marginTop: "5%" }} className="editFirstBox" >
+const EditPrice = ({ handleTrackerPage }) => {
+  return (
+    <div className="formMain">
+      <Box sx={{ mt: "5%" }} className="editFirstBox">
         <Box>
-          <Typography fontWeight={600} className="editFirstText">Duration</Typography>
+          <Typography fontWeight={600} className="editFirstText">
+            Duration
+          </Typography>
           <TextField
-          sx={{width:240,marginTop:"4% !important"}}
-        inputProps={{ className: "textField" }}
-        fullWidth
-        size="small"
-        placeholder="1"
-        id="fullWidth"
-        className="BoxShadow"
-        // onChange={(event) => handleTextChange("emailId", event.target.value)}
-      />
+            sx={{ width: 240, marginTop: "4% !important" }}
+            inputProps={{ className: "textField" }}
+            fullWidth
+            size="small"
+            placeholder="1"
+            id="fullWidth"
+            className="BoxShadow"
+          // onChange={(event) => handleTextChange("emailId", event.target.value)}
+          />
         </Box>
         <Box className="marginscndBox">
-          <Typography fontWeight={600} className="editFirstText">Years / Months / Days</Typography>
-          <FormControl
-            sx={{ m: 1, minWidth: 240}} 
-          >
+          <Typography fontWeight={600} className="editFirstText">
+            Years / Months / Days
+          </Typography>
+          <FormControl sx={{ m: 1, minWidth: 240 }}>
             <Select
               displayEmpty
               size="small"
@@ -43,41 +45,48 @@ const EditPrice = ({handleTrackerPage})=>{
           </FormControl>
         </Box>
       </Box>
-      <Box sx={{ marginTop: "5%" }} className="editFirstBox" >
+      <Box sx={{ marginTop: "5%" }} className="editFirstBox">
         <Box>
-          <Typography fontWeight={600} className="editFirstText">Regular Price</Typography>
+          <Typography fontWeight={600} className="editFirstText">
+            Regular Price
+          </Typography>
           <TextField
-          sx={{width:240,marginTop:"4% !important"}}
-        inputProps={{ className: "textField" }}
-        fullWidth
-        size="small"
-        placeholder="₹ 1000"
-        id="fullWidth"
-        className="BoxShadow"
-        // onChange={(event) => handleTextChange("emailId", event.target.value)}
-      />
+            sx={{ width: 240, marginTop: "4% !important" }}
+            inputProps={{ className: "textField" }}
+            fullWidth
+            size="small"
+            placeholder="₹ 1000"
+            id="fullWidth"
+            className="BoxShadow"
+          // onChange={(event) => handleTextChange("emailId", event.target.value)}
+          />
         </Box>
         <Box className="marginscndBox">
-          <Typography fontWeight={600} className="editFirstText">Offer Price</Typography>
+          <Typography fontWeight={600} className="editFirstText">
+            Offer Price
+          </Typography>
           <TextField
-          sx={{width:240,marginTop:"4% !important"}}
-        inputProps={{ className: "textField" }}
-        fullWidth
-        size="small"
-        placeholder="₹ 500"
-        id="fullWidth"
-        className="BoxShadow"
-        // onChange={(event) => handleTextChange("emailId", event.target.value)}
-      />
+            sx={{ width: 240, marginTop: "4% !important" }}
+            inputProps={{ className: "textField" }}
+            fullWidth
+            size="small"
+            placeholder="₹ 500"
+            id="fullWidth"
+            className="BoxShadow"
+          // onChange={(event) => handleTextChange("emailId", event.target.value)}
+          />
         </Box>
       </Box>
       <Box className="divider"></Box>
-      <Button variant="contained"  className="coursesButton" onClick={()=>handleTrackerPage(2)}>
-       Add Content
+      <Button
+        variant="contained"
+        className="coursesButton"
+        onClick={() => handleTrackerPage(2)}
+      >
+        Add Content
       </Button>
-</div>
-
-  )
-}
+    </div>
+  );
+};
 
 export default EditPrice;
