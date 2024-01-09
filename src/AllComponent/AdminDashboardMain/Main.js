@@ -20,7 +20,7 @@ export default function Main() {
     <main className="main-container">
       {/* <Dashboard /> */}
       {/* <User/> */}
-      <MainCourses/>
+      {/* <MainCourses/> */}
       {/* <Banner /> */}
       {/* <User/> */}
       {/* <Transaction/> */}
@@ -32,7 +32,7 @@ export default function Main() {
       {/* <CreateCoupon/> */}
       {/* <Trics1FreeMockTest/> */}
       {/* <MainCourses/> */}
-      {/* <UpcomingCoursesMain/> */}
+      <UpcomingCoursesMain/>
       {/* <YourCourses /> */}
       {/* <Analytics /> */}
       {/* <Analytics /> */}

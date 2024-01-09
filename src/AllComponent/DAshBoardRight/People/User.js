@@ -16,7 +16,7 @@ import { Box, Select } from "@mui/material";
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import SearchIcon from "@mui/icons-material/Search";
-import { MockDataForTable } from "../../../DAta/mockDataForTable";
+import { MockDataForTable } from "../../../Data/mockDataForTable";
 import Paper from "@mui/material/Paper";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";

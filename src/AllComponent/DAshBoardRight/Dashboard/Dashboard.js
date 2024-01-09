@@ -1,6 +1,6 @@
 import React from "react";
 import Header from "../../Courses/CoursesHeader"
-import {AdditionalData, OfferData} from "../../../DAta/JsonData"
+import {AdditionalData, OfferData} from "../../../Data/JsonData"
 import AdditionalCard from "./AdditionalCard";
 import OfferCard from "./OfferCard";
 
