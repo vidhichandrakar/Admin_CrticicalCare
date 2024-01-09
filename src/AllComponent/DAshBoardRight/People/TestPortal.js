@@ -5,76 +5,24 @@ import { styled, alpha } from '@mui/material/styles';
 import InputBase from '@mui/material/InputBase';
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
-import Popover from "@mui/material/Popover";
-import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
-import DeleteIcon from '@mui/icons-material/Delete';
-import BlockIcon from '@mui/icons-material/Block';
+import SearchBar from '../../../Util/SearchBar';
 
 
-const Search = styled('div')(({ theme }) => ({
-    position: 'relative',
-    borderRadius: theme.shape.borderRadius,
-    backgroundColor: alpha(theme.palette.common.white, 0.15),
-    '&:hover': {
-      backgroundColor: alpha(theme.palette.common.white, 0.25),
-    },
-    marginLeft: 0,
-    width: '100%',
-    [theme.breakpoints.up('sm')]: {
-      marginLeft: theme.spacing(1),
-      width: 'auto',
-    },
-  }));
-  
-  const SearchIconWrapper = styled('div')(({ theme }) => ({
-    padding: theme.spacing(0, 2),
-    height: '100%',
-    position: 'absolute',
-    pointerEvents: 'none',
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-  }));
-  
-  const StyledInputBase = styled(InputBase)(({ theme }) => ({
-    color: 'inherit',
-    width: '100%',
-    '& .MuiInputBase-input': {
-      padding: theme.spacing(1, 1, 1, 0),
-      // vertical padding + font size from searchIcon
-      paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-      transition: theme.transitions.create('width'),
-      [theme.breakpoints.up('sm')]: {
-        width: '20ch',
-        '&:focus': {
-          width: '20ch',
-        },
-      },
-    },
-  }));
+
 function TestPortal() {
   return (
     <div className='main-container'>
         <div className='m20'>
-            <CourseHeader/>
+            <CourseHeader Heading={"Test Portal"} subHeading={"Only published tests are shown here"}/>
             <div className='TestPortalSearchBarSection'>
             <div className='searchnfilter'>
-            <div>
-            <Search className='searchBar'>
-            <SearchIconWrapper>
-              <SearchIcon />
-            </SearchIconWrapper>
-            <StyledInputBase className='w100'
-              placeholder="Search by name"
-              inputProps={{ 'aria-label': 'search' }}
-            />
-          </Search>
-           </div>
+           
+          <SearchBar />
+           
             <button className='filterButton'> <FilterAltIcon/> Filter</button>
         </div>
             <button className='addTestButton'> + Add Test </button>
-        </div>
+             </div>
 
 
         <table className='TestPortalcompleteTable'>
@@ -95,6 +43,7 @@ function TestPortal() {
             <tr>
                 <td><p>Module 9 Neuromonitoring</p></td>
                 <td><p>19/Dec/2023</p></td>
+                {/* <button onClick={(e)=>actionsOptions(e)}> <td><MoreVertIcon/></td> </button>  */}
                 <td><MoreVertIcon/></td>
             </tr>
             <tr>

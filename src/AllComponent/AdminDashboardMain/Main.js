@@ -30,7 +30,7 @@ export default function Main() {
       {/* <Testimonial/> */}
       {/* <CreateCoupon/> */}
       {/* <CreateCoupon/> */}
-      {/* <Trics1FreeMockTest/> */}
+      <Trics1FreeMockTest/>
       {/* <MainCourses/> */}
       <UpcomingCoursesMain/>
       {/* <YourCourses /> */}
