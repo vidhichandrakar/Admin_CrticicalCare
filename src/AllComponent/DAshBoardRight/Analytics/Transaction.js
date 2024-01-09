@@ -5,6 +5,7 @@ import InputBase from '@mui/material/InputBase';
 import FilterAltIcon from '@mui/icons-material/FilterAlt';
 import MoreVertIcon from '@mui/icons-material/MoreVert';
 import CourseHeader from '../../Courses/CoursesHeader';
+import Dashboard from '../Dashboard';
 
 
 const Search = styled('div')(({ theme }) => ({
@@ -52,7 +53,7 @@ function Transaction() {
   return (
     <div className='main-container'>
     <div className=' m20'>
-        <CourseHeader/>
+        <CourseHeader Heading={"Transaction Dashboard"} />
 
         <div className='searchnfilter'>
             <Search className='searchBar'>
