@@ -96,7 +96,7 @@ body {
     padding: 6px 0px !important;
     align-items: center;
     margin-top: -18px;
-    border-radius: 10px;
+    border-radius: 5px;
 
 }
 
@@ -140,9 +140,9 @@ body {
  /*End Main  */ 
 
  /* Start Dashborad */
- .DashBoardMAinBox{
+ /* .DashBoardMAinBox{
   margin: 20px;
- }
+ } */
  .Head{
   display: flex;
   flex-direction: row;
@@ -171,7 +171,7 @@ body {
  .AdditionalBox{
   background-color: white;
   border-radius: 15px;
-  margin: 20px;
+  /* margin: 20px; */
 
  }
  .TextHeading{
@@ -179,23 +179,24 @@ body {
   margin-left: 30px;
   padding: 18px;
  }
- .main-cards {
+ .Additionalmain-cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 45px;
   margin: 15px 45px;
 }
-.card{
+.Addcard{
   font-size: 1rem;
   text-align: center;
-  background-color: #e3e3e3e3;
+  background-color: #F4F9FD !important;
   padding-bottom: 20px;
   margin-bottom: 25px;
   color: rgb(19, 170, 235);
   border-radius: 15px;
 }
 .AdditionalIcon{
-  margin-top: 10%;
+  padding-top: 30px;
+  /* margin-top: 10%; */
   vertical-align: bottom;
   line-height: 1px;
   font-size: 3rem !important; 
@@ -203,7 +204,7 @@ body {
 .OurOfferBox {
   background-color: white;
   border-radius: 15px;
-  margin: 20px;
+  /* margin: 20px; */
 }
 .Offer-main-cards{
   display: grid;
@@ -228,7 +229,7 @@ body {
   margin: 15px;
 }
 .OfferIcon{
-  margin-top: 50%;
+  margin-top: 5%;
   margin-left: 15%;
   font-size: 3rem !important; 
 }
@@ -323,6 +324,7 @@ body {
 }
 
 .searchBar{
+  height: 6vh;
   background-color: #FFFFFF !important;
   border-radius: 15px !important;
   border: 0.5px solid grey;
@@ -730,18 +732,16 @@ body {
    .AdditionalBox{
     background-color: white;
     border-radius: 15px;
-    margin: 20px;
 
-  #sidebar {
-    display: none;
-  }
+   }
+ 
   .menu-icon {
       display: inline;
     }
     .main-cards {
       grid-template-columns: 1fr 1fr;
     }
-}
+
 @media screen and (max-width: 562px) {
   .main-cards {
       grid-template-columns: 1fr;

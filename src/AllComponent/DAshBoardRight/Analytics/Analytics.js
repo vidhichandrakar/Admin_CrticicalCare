@@ -6,8 +6,10 @@ import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import Select from "@mui/material/Select";
 import SmallCard from "./AnalyticsCard/SmallCard";
-import BigCard from "./AnalyticsCard/BigCard";
-import { AnalyticsSmallData, AnalyticsBigData} from "../../../DAta/Analytics";
+import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
+import SignalCellularAltIcon from "@mui/icons-material/SignalCellularAlt";
+import { AnalyticsSmallData } from "../../../Data/JsonData";
 
 function Analytics() {
   return (
@@ -40,21 +42,35 @@ function Analytics() {
           </FormControl>
         </Box>
         <Box className="CardsRow">
-         <SmallCard Data ={AnalyticsSmallData}/>
-          
+          <SmallCard Data={AnalyticsSmallData} />
         </Box>
         <Box className="CardsCol">
-            <BigCard Data={AnalyticsBigData}/>  
-              {/* <div className="CardCol">
-                <div className="row">
-                    <SignalCellularAltIcon className="SignalIcon"/>
-                    <div className="col">
-                        <h4 >Google Analytics</h4>
-                        <p>View all your activities of website and app on the Google Analytics</p>
-                    </div>
-                </div>
-                <ChevronRightIcon className="RightIcon" />
-              </div> */}
+          <div className="CardCol">
+            <div className="row">
+              <CurrencyRupeeIcon className="RupeeIcon" />
+              <div className="col">
+                <h4>Google Analytics</h4>
+                <p>
+                  View all your activities of website and app on the Google
+                  Analytics
+                </p>
+              </div>
+            </div>
+            <ChevronRightIcon className="RightIcon" />
+          </div>
+          <div className="CardCol">
+            <div className="row">
+              <SignalCellularAltIcon className="SignalIcon" />
+              <div className="col">
+                <h4>Google Analytics</h4>
+                <p>
+                  View all your activities of website and app on the Google
+                  Analytics
+                </p>
+              </div>
+            </div>
+            <ChevronRightIcon className="RightIcon" />
+          </div>
         </Box>
       </div>
     </main>

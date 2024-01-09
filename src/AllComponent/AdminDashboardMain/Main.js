@@ -1,6 +1,6 @@
 import React from "react";
-import Dashboard from "../DAshBoardRight/Dashboard";
-import Banner from "../DAshBoardRight/Banner";
+import Dashboard from "../DAshBoardRight/Dashboard/Dashboard";
+import Banner from "../DAshBoardRight/Banner/Banner";
 import User from "../DAshBoardRight/People/User";
 import Transaction from "../DAshBoardRight/Analytics/Transaction";
 import MainCourses from "../Courses/MainCourses.component";
@@ -12,6 +12,8 @@ import Trics1FreeMockTest from "../DAshBoardRight/Courses/Trics1FreeMockTest";
 import YourCourses from "../Courses/YourCourses";
 import Analytics from "../DAshBoardRight/Analytics/Analytics";
 import UpcomingCoursesMain from "../UpcomingCourses/UpcomingCourses.Main";
+import SearchBar from "../../Util/SearchBar";
+import CouponMain from "../Coupons/Coupons.main";
 
 export default function Main() {
   return (
@@ -24,6 +26,7 @@ export default function Main() {
       {/* <Transaction/> */}
       {/* <MyTeam/> */}
       <TestPortal/>
+      {/* <SearchBar /> */}
       {/* <Testimonial/> */}
       {/* <CreateCoupon/> */}
       {/* <CreateCoupon/> */}
@@ -32,6 +35,8 @@ export default function Main() {
       {/* <UpcomingCoursesMain/> */}
       {/* <YourCourses /> */}
       {/* <Analytics /> */}
+      {/* <Analytics /> */}
+      {/* <CouponMain/> */}
     </main>
   );
 }
