@@ -9,6 +9,7 @@ import UnpublishedIcon from "@mui/icons-material/Unpublished";
 import FolderIcon from "@mui/icons-material/Folder";
 import Popover from "@mui/material/Popover";
 import DoctorsImage from "../../../Media/Images/db7187e8-b7cf-47ed-8900-6de89dabde06.png";
+import CourseHeader from "../../Courses/CoursesHeader";
 
 
 function Trics1FreeMockTest() {
@@ -25,11 +26,10 @@ function Trics1FreeMockTest() {
   const open = Boolean(anchorEl);
   const id = open ? "simple-popover" : undefined;
   return (
-    <div className="main-container">
+    <div className="mainBox">
+      <CourseHeader  Heading={"TRICS 1 FREE MOCK TEST FOR EDIC-1"} />
       <div className="another-main-container">
-        <div>
-          <h3>TRICS 1 FREE MOCK TEST FOR EDIC-1</h3>
-        </div>
+      
 
         <div className="completeTricsBox">
           <span className="leftSideRow">
@@ -86,41 +86,17 @@ function Trics1FreeMockTest() {
           </span>
         </div>
 
-        <div className="sideContentRightMost">
-          <Box className="HeaderRightofTrics">
-            <FormControl sx={{ m: 1, minWidth: 240 }}>
-              <Select
-                className="selectDesign"
-                displayEmpty
-                renderValue={() => {
-                  return <em className="labelDesign">360 Critcial Care</em>;
-                }}
-                inputProps={{ "aria-label": "Without label" }}
-                startAdornment={
-                  <div className="logoDesign">
-                    <Typography className="logoText">3CC</Typography>
-                  </div>
-                }
-              >
-                <MenuItem value={""}>
-                  <em>360 Critcial Care</em>
-                </MenuItem>
-                <MenuItem value={10}>Ten</MenuItem>
-                <MenuItem value={20}>Twenty</MenuItem>
-                <MenuItem value={30}>Thirty</MenuItem>
-              </Select>
-            </FormControl>
-          </Box>
+    
 
           <div className="whiteBoxOfContent">
             <div className="contentOneContent">
-              <span>
+              
                 <FolderIcon className="folderIcon" />
-              </span>
-              <span>
+              
+              <div className="ContentCol">
                 <p className="blackPara">Content</p>
-                <p className="greyPara">1 Content</p>
-              </span>
+                <p className="greyPara mt-10px">1 Content</p>
+              </div>
             </div>
 
             <Button
@@ -159,7 +135,6 @@ function Trics1FreeMockTest() {
               </MenuItem>
             </Popover>
           </div>
-        </div>
       </div>
     </div>
   );

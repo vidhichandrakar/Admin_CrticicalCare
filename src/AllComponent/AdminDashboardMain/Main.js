@@ -25,12 +25,12 @@ export default function Main() {
       {/* <User/> */}
       {/* <Transaction/> */}
       {/* <MyTeam/> */}
-      <TestPortal/>
+      {/* <TestPortal/> */}
       {/* <SearchBar /> */}
       {/* <Testimonial/> */}
       {/* <CreateCoupon/> */}
       {/* <CreateCoupon/> */}
-      {/* <Trics1FreeMockTest/> */}
+      <Trics1FreeMockTest/>
       {/* <MainCourses/> */}
       {/* <UpcomingCoursesMain/> */}
       {/* <YourCourses /> */}
