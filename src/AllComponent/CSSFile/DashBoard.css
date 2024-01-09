@@ -1,8 +1,8 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #F4F9FD;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f4f9fd;
 }
 
 .icon {
@@ -15,10 +15,11 @@ body {
   line-height: 1px;
   font-size: 26px;
 }
-.icon, .icon_header {
+.icon,
+.icon_header {
   margin-right: 5px;
 }
-.icon{
+.icon {
   margin-left: 12px;
 }
 
@@ -34,8 +35,8 @@ body {
   grid-template-columns: 260px 1fr 1fr 1fr;
   grid-template-rows: 0.2fr 3fr;
   grid-template-areas:
-    'sidebar main main main'
-    'sidebar main main main';
+    "sidebar main main main"
+    "sidebar main main main";
   height: 100vh;
 }
 
@@ -47,7 +48,7 @@ body {
   -webkit-transition: all 0.5s;
   margin: 20px;
 }
-.Sider-Box{
+.Sider-Box {
   height: 100%;
   background-color: white;
   border-radius: 10px;
@@ -57,7 +58,7 @@ body {
   display: flex;
   padding: 0 23px;
 }
-.SideBarLogo{    
+.SideBarLogo {
   margin-left: 5px;
   width: 95%;
   height: 40px;
@@ -83,31 +84,27 @@ body {
 
 .sidebar-list-item {
   /* padding: 20px 20px 20px 20px;  */
-   /* padding: 7px 4px; */
-   font-size: 15px;
+  /* padding: 7px 4px; */
+  font-size: 15px;
 }
 .BottomLine {
   /* margin-top: -20px; */
   margin-left: 20px;
-} 
-
-.hoverrr{
-  width: 84%;
-    padding: 6px 0px !important;
-    align-items: center;
-    margin-top: -18px;
-    border-radius: 5px;
-
 }
 
-.hoverrr:hover{ 
-  background-color: #c9dded !important; 
+.hoverrr {
+  width: 84%;
+  padding: 6px 0px !important;
+  align-items: center;
+  margin-top: -18px;
+  border-radius: 5px;
+}
+
+.hoverrr:hover {
+  background-color: #c9dded !important;
   cursor: pointer;
   color: grey !important;
-
 }
- 
-
 
 .sidebar-list-item > a {
   text-decoration: none;
@@ -126,40 +123,40 @@ body {
 
 /* End Sidebar  */
 
- /* Start Main  */ 
- .menu-icon {
+/* Start Main  */
+.menu-icon {
   display: none;
 }
 .main-container {
   grid-area: main;
   overflow-y: auto;
 }
-.margin20{
-    margin: 20px;
+.margin20 {
+  margin: 20px;
 }
- /*End Main  */ 
+/*End Main  */
 
- /* Start Dashborad */
- /* .DashBoardMAinBox{
+/* Start Dashborad */
+/* .DashBoardMAinBox{
   margin: 20px;
  } */
- .Head{
+.Head {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   margin: 20px;
- }
- .Head h1{
-   font-size: 1.3rem;
- }
- .Head p{
+}
+.Head h1 {
+  font-size: 1.3rem;
+}
+.Head p {
   font-weight: 600;
   color: grey;
   margin-left: 1px;
   margin-top: -14px;
   font-size: 0.65rem;
- }
- .DropDown{
+}
+.DropDown {
   padding: 6px 0px;
   width: 15%;
   height: 0%;
@@ -167,53 +164,51 @@ body {
   margin-top: 13px;
   border: solid white;
   font-size: 1rem;
- }
- .AdditionalBox{
+}
+.AdditionalBox {
   background-color: white;
   border-radius: 15px;
   /* margin: 20px; */
-
- }
- .TextHeading{
+}
+.TextHeading {
   font-size: 1.2rem;
   margin-left: 30px;
   padding: 18px;
- }
- .Additionalmain-cards {
+}
+.Additionalmain-cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 45px;
   margin: 15px 45px;
 }
-.Addcard{
+.Addcard {
   font-size: 1rem;
   text-align: center;
-  background-color: #F4F9FD !important;
+  background-color: #f4f9fd !important;
   padding-bottom: 20px;
   margin-bottom: 25px;
   color: rgb(19, 170, 235);
   border-radius: 15px;
 }
-.AdditionalIcon{
+.AdditionalIcon {
   padding-top: 30px;
   /* margin-top: 10%; */
   vertical-align: bottom;
   line-height: 1px;
-  font-size: 3rem !important; 
+  font-size: 3rem !important;
 }
 .OurOfferBox {
   background-color: white;
   border-radius: 15px;
   /* margin: 20px; */
 }
-.Offer-main-cards{
+.Offer-main-cards {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 45px;
   margin: 15px 45px;
-
 }
-.Offer-card{
+.Offer-card {
   border: solid 1px black;
   text-align: left;
   padding-bottom: 20px;
@@ -221,538 +216,533 @@ body {
   color: rgb(19, 170, 235);
   border-radius: 15px;
   background-color: white;
-
 }
-.CardRow{
+.CardRow {
   display: flex;
   flex-direction: row;
   margin: 15px;
 }
-.OfferIcon{
+.OfferIcon {
   margin-top: 5%;
   margin-left: 15%;
-  font-size: 3rem !important; 
+  font-size: 3rem !important;
 }
-.OfferCardText{
+.OfferCardText {
   font-size: 1.2rem;
   color: black;
   margin-left: 7%;
 }
-.OfferCardText p{
+.OfferCardText p {
   margin-top: -13%;
   color: grey;
   font-size: 1rem;
 }
-.OfferButton{
+.OfferButton {
   display: flex;
   flex-direction: row;
   cursor: pointer;
   font-size: 1rem;
-  margin-left: 5% ;
+  margin-left: 5%;
 }
-.ArrowIcon{
+.ArrowIcon {
   margin-top: -2px;
   margin-left: 1%;
 }
- /* End Dashborad */
+/* End Dashborad */
 
- @media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) {
   .grid-container {
     grid-template-columns: 1fr;
     grid-template-rows: 0.2fr 3fr;
     grid-template-areas:
-      'sidebar main'
-      'sidebar main';
+      "sidebar main"
+      "sidebar main";
   }
-  .header{
+  .header {
     justify-content: space-between;
   }
-    /* margin: 20px; */
-   }
-   .Head h1{
-     font-size: 1.3rem;
-   }
-   .Head p{
-    font-weight: 600;
-    color: grey;
-    margin-left: 1px;
-    margin-top: -14px;
-    font-size: 0.65rem;
-   }
-   /* End Dashborad */
+  /* margin: 20px; */
+}
+.Head h1 {
+  font-size: 1.3rem;
+}
+.Head p {
+  font-weight: 600;
+  color: grey;
+  margin-left: 1px;
+  margin-top: -14px;
+  font-size: 0.65rem;
+}
+/* End Dashborad */
 
-   /* START OF USER  */
+/* START OF USER  */
 
-
-.m20{
+.m20 {
   margin: 30px;
   /* margin-right: 47px; */
 }
-.userHead p{
+.userHead p {
   font-size: small;
   margin-top: -20px;
 }
-.HeaderRightofUser{
+.HeaderRightofUser {
   margin-left: 76%;
   margin-top: -6%;
 }
-.rightDropDown{
-  background-color: #FFFFFF;
+.rightDropDown {
+  background-color: #ffffff;
   border-radius: 3px !important;
   padding: 5px 29px;
   border: none !important;
   box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.352) !important;
 }
-.searchnfilter{
+.searchnfilter {
   display: flex;
   flex-direction: row;
-   margin: 13px -6px;
+  /* margin: 13px 0; */
+  width: 100%;
   align-items: left !important;
 }
-.searchnfilter img{
+.searchnfilter img {
   height: 12%;
   width: 10%;
 }
-.searchnfilter button{
+.searchnfilter button {
   border-radius: 15px !important;
   margin-left: 2%;
   padding: 2px 14px;
   border: 0.5px solid grey;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   font-size: large;
   color: grey;
+  height: 6vh;
+  margin-top: 2%;
 }
 
-.searchBar{
+.searchBar {
   height: 6vh;
-  background-color: #FFFFFF !important;
+  background-color: #ffffff !important;
   border-radius: 15px !important;
   border: 0.5px solid grey;
 }
-.searchIconLogo{
+.searchIconLogo {
   color: rgb(137, 136, 136);
 }
-.filterButton{
+.filterButton {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
 }
-.filterIcon{
+.filterIcon {
   margin-right: 10px;
 }
-.textFeildOfSearch{
+.textFeildOfSearch {
   border-radius: 11px !important;
   padding: 7px 12px;
 }
 
-.completeTable{
-  min-height: 69vh !important;
+.completeTable {
+  height: 71vh !important;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 15px;
-  /* padding: 20px 35px; */
   font-size: small;
-  /* overflow-y: scroll !important; */
+  margin-top: 2%;
+
 }
 
-.tableHeading{
+.tableHeading {
   justify-content: left !important;
   align-items: left !important;
   text-align: left !important;
+  border-bottom: solid 2px black !important;
 }
 
-.hrLine{
+.hrLine {
   width: 256%;
 }
-.bluePara{
+.bluePara {
   color: dodgerblue;
   font-weight: bold;
 }
-.sheikh{
+.sheikh {
   margin-left: -3%;
 }
-.jitendra{
-  margin-left:-9%;
+.jitendra {
+  margin-left: -9%;
 }
-.pranab{
- margin-left: -1%;
+.pranab {
+  margin-left: -1%;
 }
-.sania{
+.sania {
   margin-left: 0%;
 }
-.rahul{
+.rahul {
   margin-left: -2%;
 }
-.menka{
+.menka {
   margin-left: 3%;
 }
-.ramesh{
+.ramesh {
   margin-left: 1%;
 }
-.rakesh{
+.rakesh {
   margin-left: -2%;
 }
-.ashutosh{
+.ashutosh {
   margin-left: 0%;
 }
-.pixel{
+.pixel {
   margin-left: -4%;
 }
-.phNumber{
+.phNumber {
   color: grey;
-  font-weight:600;
+  font-weight: 600;
 }
-.parentTable .MuiTableCell-root{
+.parentTable .MuiTableCell-root {
   border-bottom: 0px !important;
 }
 
+/* END OF USER  */
 
-   /* END OF USER  */
+/* START OF TRANSACTION  */
 
-   /* START OF TRANSACTION  */
-
-
-.transactionCards{
+.transactionCards {
   display: flex;
   flex-direction: row;
   margin-bottom: 3%;
 }
-.boxNoOne, .boxNoThree{
-  background-color: #FFFFFF;
+.boxNoOne,
+.boxNoThree {
+  background-color: #ffffff;
   border-radius: 10px !important;
   /* box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.352) !important; */
   padding: 24px 106px;
   justify-content: space-between;
 }
-.boxNoTwo{
-  background-color: #FFFFFF;
+.boxNoTwo {
+  background-color: #ffffff;
   border-radius: 10px !important;
   /* box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.352) !important; */
   padding: 24px 120px;
   margin: 2px 103px;
   justify-content: space-between;
 }
-.boxValue{
+.boxValue {
   font-size: small !important;
   text-align: left !important;
   margin: 0 -77% !important;
 }
-.boxNumber{
+.boxNumber {
   font-size: large !important;
   font-weight: bold !important;
-  color:blue;
+  color: blue;
   margin-left: 141% !important;
 }
 
-.transactionTableHeading{
+.transactionTableHeading {
   text-align: left !important;
 }
-.transactionCompleteTable{
+.transactionCompleteTable {
   height: 95%;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 1%;
   padding: 20px 35px;
   font-size: small;
   padding-bottom: 14%;
 }
-.courseName{
+.courseName {
   text-align: center !important;
   align-items: center !important;
 }
-.greyboldnumbers{
- color: grey;
+.greyboldnumbers {
+  color: grey;
 }
-.firstCourseName{
+.firstCourseName {
   margin-left: 25%;
 }
-.transactionDate{
+.transactionDate {
   margin-left: 8%;
 }
-.transactionAmount{
+.transactionAmount {
   margin-left: 5%;
 }
 
+/* END OF TRANSACTION  */
 
+/* START OF MY TEAM  */
 
-   /* END OF TRANSACTION  */
-
-   /* START OF MY TEAM  */
-
-
-   
-.myTeamCompleteTable{
+.myTeamCompleteTable {
   height: 95%;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 1%;
   padding: 20px 35px;
   font-size: small;
-  padding-bottom:6%;
+  padding-bottom: 6%;
 }
-.myTeamhrLine{
-  width:245%;
+.myTeamhrLine {
+  width: 245%;
 }
-.moreVertIcon button{
-  background-color: #FFFFFF !important;
+.moreVertIcon button {
+  background-color: #ffffff !important;
   color: darkgray !important;
-  border:none !important;
+  border: none !important;
   box-shadow: none !important;
 }
-.redDelete{
+.redDelete {
   color: red !important;
 }
-.blueBlockUser{
+.blueBlockUser {
   color: rgb(68, 68, 187) !important;
 }
 
-   /* END OF MY TEAM  */
-   /* START OF TEST PORTAL  */
+/* END OF MY TEAM  */
+/* START OF TEST PORTAL  */
 
-
-.TestPortalSearchBarSection{
+.TestPortalSearchBarSection {
   display: flex !important;
   flex-direction: row !important;
   justify-content: space-between;
 }
-.freeTestButton{
+.freeTestButton {
   color: dodgerblue;
   border: none !important;
 }
-.addTestButton{
+.addTestButton {
   background-color: dodgerblue;
   border-radius: 10px !important;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 22px;
   border: none;
-  color: #FFFFFF;
-  padding: 0px 13px;
-  width: 105px;
-  height: 31px !important;
+  color: #ffffff;
+  width: 10%;
+  height: 42px !important;
 }
-.TestPortalcompleteTable{
+.TestPortalcompleteTable {
   height: 95%;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 1%;
   padding: 20px 35px;
   font-size: small;
   padding-bottom: 13% !important;
+  margin-top: 2%;
 }
-.TestPortalhrLine{
-  width:100%;
+.TestPortalhrLine {
+  width: 100%;
 }
-.lastData{
+.lastData {
   display: flex;
   flex-direction: row;
 }
 
-   /* END OF TEST PORTAL  */
+/* END OF TEST PORTAL  */
 
-   /* START OF ADMIN TESTIMONIAL  */
+/* START OF ADMIN TESTIMONIAL  */
 
-
-.addTestimonialButton{
+.addTestimonialButton {
   background-color: dodgerblue;
   border-radius: 10px !important;
   margin-top: 20px;
   border: none;
-  color: #FFFFFF;
+  color: #ffffff;
   padding: 0px 13px;
   width: 141px;
-  height: 31px !important;
-  margin-left: 692px;
-}   
-.TestimonialcompleteTable{
+  margin-top: 22px;
+  height: 42px !important;
+}
+.TestimonialcompleteTable {
   height: 95%;
   width: 100%;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   border-radius: 1%;
   padding: 20px 35px;
   font-size: small;
-  padding-bottom: 16% !important;
-}
-.testimonialsComments{
-  /* padding-right: 323px; */
-  width: 52%;
+  margin-top: 2%;
+  padding-bottom: 21% !important;
 }
 
-   /* END OF ADMIN TESTIMONIAL  */
+/* END OF ADMIN TESTIMONIAL  */
 
- /* START OF COURSES CREATE COUPON  */
+/* START OF COURSES CREATE COUPON  */
 
-
-.allTheContent{
-  background-color: #FFFFFF;
+.allTheContent {
+  background-color: #ffffff;
   padding-bottom: 19% !important;
   margin: 21px;
   border-radius: 10px;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.352) !important;;
+  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.352) !important;
 }
-.discountTypediv{
+.discountTypediv {
   padding: 20px 20px !important;
 }
-.flatDiscountDiv{
+.flatDiscountDiv {
   padding: 20px 20px !important;
 }
-.StartnEndDiv{
+.StartnEndDiv {
   padding: 20px 20px !important;
   margin: 18px 2px;
   display: flex;
   flex-direction: row;
 }
-.minOrderDiv{
+.minOrderDiv {
   padding: 20px 20px !important;
 }
-.asterisk{
+.asterisk {
   color: red;
 }
-.inputFeildOne{
+.inputFeildOne {
   border: 0.5px solid grey;
   padding: 8px 100px;
   border-radius: 7px !important;
   text-align: left !important;
 }
-.inputFeildTwo{
+.inputFeildTwo {
   border-radius: 7px !important;
   padding: 8px 197px;
   border: 0.5px solid grey;
   text-align: left !important;
 }
-.createButton{
+.createButton {
   background-color: rgb(73, 73, 227) !important;
-  border-radius:7px !important;
-  color: #FFFFFF !important;
+  border-radius: 7px !important;
+  color: #ffffff !important;
   padding: 10px 10px;
   margin-left: 2% !important;
 }
 
+/* END OF COURSES CREATE COUPON  */
 
+/* START OF COURSE->>TRICS 1 FREE MOCK TEST  */
 
-   /* END OF COURSES CREATE COUPON  */
-
-   /* START OF COURSE->>TRICS 1 FREE MOCK TEST  */
-
-
-.another-main-container{
+.another-main-container {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
 }
-.completeTricsBox{
+.completeTricsBox {
   display: flex;
-  flex-direction: row;
-  background-color: #FFFFFF;
-  margin-top: 6%;
-  margin-left: -27%;
-  width: 72%;
+  background-color: #ffffff;
   padding: 20px 30px;
   border-radius: 10px !important;
+  width: 72%;
 }
-.leftSideRow{
+.leftSideRow {
   width: 63% !important;
 }
-.blackPara{
-  font-weight:bold;
+.blackPara {
+  font-weight: bold;
 }
-.greyPara{
+.greyPara {
   color: grey;
   font-size: smaller;
 }
-.PricenOfferPrice{
+.PricenOfferPrice {
   display: flex;
   flex-direction: row;
 }
-.offerPrice{
+.offerPrice {
   margin-left: 37%;
 }
-.CatagorynSubCatagory{
+.CatagorynSubCatagory {
   display: flex;
   flex-direction: row;
 }
-.subCatagory{
+.subCatagory {
   margin-left: 34%;
 }
-.StuEnrViewAll{
+.StuEnrViewAll {
   display: flex;
   flex-direction: row;
 }
-.rightSideRow{
+.rightSideRow {
   width: 262px;
   height: 33%;
   padding: 10px 10px;
-  margin-left: 28%;
+  margin-left: 20%;
   background-color: white;
   border-radius: 23px;
 }
 
-.blueViewAll{
+.blueViewAll {
+  margin-top: 3%;
   color: dodgerblue;
+  margin-left: 2%;
 }
-.whiteBoxOfContent{
-  background-color: #FFFFFF;
-  margin-left: 9%;
-  margin-top: 2%;
-  margin-right: 5%;
-  border-radius: 7px;
-  padding: 10px 10px;
+.whiteBoxOfContent {
+  background-color: #ffffff;
+  width: 21%;
+  height: 19vh;
+  margin: 10px;
+  border-radius: 10px;
 }
-.contentOneContent{
+
+.contentOneContent {
   display: flex;
   flex-direction: row;
   border: 1px solid grey;
-  margin: 6px 6px !important;
-  height: 10% !important;
   padding: 0px 22px;
+  margin: 4%;
   border-radius: 7px !important;
 }
-.folderIcon{
+.folderIcon {
   color: dodgerblue;
+  margin-top: 12% !important;
+  background-color: rgba(72, 113, 146, 0.594);
+  border-radius: 50%;
+  width: 100%;
 }
-.catagorytextofTrics{
-  width: 30% !important;
+.ContentCol {
+  margin-left: 10px;
+}
+.mt-10px {
+  margin-top: -12px;
+}
+.catagorytextofTrics {
+  width: 92% !important;
   display: flex !important;
   flex-direction: row !important;
-  background-color:#FFFFFF !important;
+  background-color: #ffffff !important;
   color: dodgerblue !important;
   border-radius: 7px !important;
   border: 1px solid dodgerblue !important;
   box-shadow: none !important;
   padding: 10px 30px !important;
+  height: 5vh;
+  margin: 4% !important;
 }
 
+/* END OF COURSE->>TRICS 1 FREE MOCK TEST  */
 
+.DropDown {
+  padding: 6px 0px;
+  width: 15%;
+  height: 0%;
+  border-radius: 9px;
+  margin-top: 13px;
+  border: solid white;
+  font-size: 1rem;
+}
+.AdditionalBox {
+  background-color: white;
+  border-radius: 15px;
+}
 
-   /* END OF COURSE->>TRICS 1 FREE MOCK TEST  */
-
-   .DropDown{
-    padding: 6px 0px;
-    width: 15%;
-    height: 0%;
-    border-radius: 9px;
-    margin-top: 13px;
-    border: solid white;
-    font-size: 1rem;
-   }
-   .AdditionalBox{
-    background-color: white;
-    border-radius: 15px;
-
-   }
- 
-  .menu-icon {
-      display: inline;
-    }
-    .main-cards {
-      grid-template-columns: 1fr 1fr;
-    }
+.menu-icon {
+  display: inline;
+}
+.main-cards {
+  grid-template-columns: 1fr 1fr;
+}
 
 @media screen and (max-width: 562px) {
   .main-cards {
-      grid-template-columns: 1fr;
-    }
-  .Offer-main-cards{
-      grid-template-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .Offer-main-cards {
+    grid-template-columns: 1fr;
   }
 }
-
