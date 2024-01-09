@@ -12,6 +12,7 @@ import Trics1FreeMockTest from "../DAshBoardRight/Courses/Trics1FreeMockTest";
 import YourCourses from "../Courses/YourCourses";
 import Analytics from "../DAshBoardRight/Analytics/Analytics";
 import UpcomingCoursesMain from "../UpcomingCourses/UpcomingCourses.Main";
+import SearchBar from "../../Util/SearchBar";
 
 export default function Main() {
   return (
@@ -19,11 +20,12 @@ export default function Main() {
       {/* <Dashboard /> */}
       {/* <User/> */}
       {/* <MainCourses/> */}
-      <Banner />
+      {/* <Banner /> */}
       {/* <User/> */}
       {/* <Transaction/> */}
       {/* <MyTeam/> */}
-      {/* <TestPortal/> */}
+      <TestPortal/>
+      {/* <SearchBar /> */}
       {/* <Testimonial/> */}
       {/* <CreateCoupon/> */}
       {/* <CreateCoupon/> */}
@@ -31,7 +33,7 @@ export default function Main() {
       {/* <MainCourses/> */}
       {/* <UpcomingCoursesMain/> */}
       {/* <YourCourses /> */}
-      {/* <Analytics /> */}
+      <Analytics />
     </main>
   );
 }
