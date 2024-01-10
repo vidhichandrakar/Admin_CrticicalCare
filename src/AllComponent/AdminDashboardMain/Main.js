@@ -20,8 +20,9 @@ export default function Main() {
     <main className="main-container">
       {/* <Dashboard /> */}
       {/* <User/> */}
+      {/* <MainCourses/> */}
+      <User/>
       {/* <Banner /> */}
-      {/* <User/> */}
       {/* <Transaction/> */}
       {/* <MyTeam/> */}
       {/* <TestPortal/> */}
