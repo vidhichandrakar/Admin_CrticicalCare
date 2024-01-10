@@ -20,9 +20,8 @@ export default function Main() {
     <main className="main-container">
       {/* <Dashboard /> */}
       {/* <MainCourses/> */}
-      <User/>
       {/* <Banner /> */}
-      <User/>
+      {/* <User/> */}
       {/* <Transaction/> */}
       {/* <MyTeam/> */}
       {/* <TestPortal/> */}
@@ -30,7 +29,7 @@ export default function Main() {
       {/* <Testimonial/> */}
       {/* <CreateCoupon/> */}
       {/* <CreateCoupon/> */}
-      {/* <Trics1FreeMockTest/> */}
+      <Trics1FreeMockTest/>
       {/* <MainCourses/> */}
       {/* <UpcomingCoursesMain/> */}
       {/* <YourCourses /> */}
