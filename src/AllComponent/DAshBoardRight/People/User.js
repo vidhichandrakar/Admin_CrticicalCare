@@ -25,48 +25,9 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TablePagination from "@mui/material/TablePagination";
 import TableRow from "@mui/material/TableRow";
+import SearchBar from "../../../Util/SearchBar";
 
-const Search = styled("div")(({ theme }) => ({
-  position: "relative",
-  borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.common.white, 0.15),
-  "&:hover": {
-    backgroundColor: alpha(theme.palette.common.white, 0.25),
-  },
-  marginLeft: 0,
-  width: "100%",
-  [theme.breakpoints.up("sm")]: {
-    marginLeft: theme.spacing(1),
-    width: "auto",
-  },
-}));
 
-const SearchIconWrapper = styled("div")(({ theme }) => ({
-  padding: theme.spacing(0, 2),
-  height: "100%",
-  position: "absolute",
-  pointerEvents: "none",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-}));
-
-const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: "inherit",
-  width: "100%",
-  "& .MuiInputBase-input": {
-    padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-    transition: theme.transitions.create("width"),
-    [theme.breakpoints.up("sm")]: {
-      width: "20ch",
-      "&:focus": {
-        width: "20ch",
-      },
-    },
-  },
-}));
 function User() {
   const columns = [
     { id: "User_Info", label: "User Info", minWidth: 170 },
@@ -89,44 +50,45 @@ function User() {
 
   function createData(User_Info, Full_Name, Date_of_Registration, Actions) {
     // const density = population / size;
+    
     return { User_Info, Full_Name, Date_of_Registration, Actions };
   }
 
   const rows = [
     createData(
-      "sheikhshoeb194@gmail.com",
+      {name:"sheikhshoeb194@gmail.com",phone:"7589576"},
       "Sheikh Shoeb",
       "19/Dec/2023",
       <MoreVertIcon />
     ),
     createData(
-      "jitendra.chandrakar@gmail.com",
+      {name:"sheikhshoeb194@gmail.com",phone:"7589576"},
       "Jitendra Chandrakar",
       "19/Dec/2023",
       <MoreVertIcon />
     ),
     createData(
-      "pranab.raj@gmail.com",
+      {name:"sheikhshoeb194@gmail.com",phone:"7589576"},
       "Pranab Raj",
       "19/Dec/2023",
       <MoreVertIcon />
     ),
     createData(
-      "saniakhan@gmail.com",
+      {name:"sheikhshoeb194@gmail.com",phone:"7589576"},
       "Sania Khan",
       "19/Dec/2023",
       <MoreVertIcon />
     ),
     createData(
-      "rahulamin@gmail.com",
+      {name:"sheikhshoeb194@gmail.com",phone:"7589576"},
       "Rahul Amin",
       "19/Dec/2023",
       <MoreVertIcon />
     ),
-    createData("menka@gmail.com", "Menka", "19/Dec/2023", <MoreVertIcon />),
-    createData("ramesh@gmail.com", "Ramesh", "19/Dec/2023", <MoreVertIcon />),
+    createData({name:"sheikhshoeb194@gmail.com",phone:"7589576"}, "Menka", "19/Dec/2023", <MoreVertIcon />),
+    createData({name:"sheikhshoeb194@gmail.com",phone:"7589576"}, "Ramesh", "19/Dec/2023", <MoreVertIcon />),
     createData(
-      "rakeshpal825@gmail.com",
+      {name:"sheikhshoeb194@gmail.com",phone:"7589576"},
       "Rakesh Pal",
       "19/Dec/2023",
       <MoreVertIcon />
@@ -158,7 +120,6 @@ function User() {
   };
 
   return (
-    // <div className='main-container'>
     <div className=" m20">
       <span className="userHead">
         <h3>Users (357)</h3>
@@ -190,18 +151,8 @@ function User() {
       </Box>
 
       <div className="searchnfilter">
-        <div>
-          <Search className="searchBar">
-            <SearchIconWrapper>
-              <SearchIcon className="searchIconLogo" />
-            </SearchIconWrapper>
-            <StyledInputBase
-              className="w100"
-              placeholder="Search by name"
-              inputProps={{ "aria-label": "search" }}
-            />
-          </Search>
-        </div>
+    
+        <SearchBar/>
         <button className="filterButton">
           {" "}
           <FilterAltIcon className="filterIcon" /> Filter
@@ -240,9 +191,18 @@ function User() {
                     >
                       {columns.map((column) => {
                         const value = row[column.id];
-                        console.log(row,column)
+                        console.log(row,Object.keys(row),column.id)
                         return (
-                          <TableCell key={column.id} align={column.align}>
+                         column.id==="User_Info"? <TableCell key={column.id} align={column.align}>
+                           <Typography>{column.format && typeof value === "number"
+                              ? column.format(value.name)
+                              : value.name} </Typography> 
+                            <Typography>  {
+                                column.format && typeof value === "number"
+                              ? column.format(value.phone)
+                              : value.phone
+                              }</Typography> 
+                          </TableCell>: <TableCell key={column.id} align={column.align}>
                             {column.format && typeof value === "number"
                               ? column.format(value)
                               : value}
@@ -256,7 +216,6 @@ function User() {
           </Table>
         </TableContainer>
       </Paper>
-      {/* </div> */}
     </div>
   );
 }

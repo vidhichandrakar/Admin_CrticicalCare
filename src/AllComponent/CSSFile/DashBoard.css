@@ -343,13 +343,13 @@ body {
 }
 
 .completeTable {
-  min-height: 69vh !important;
+  height: 71vh !important;
   width: 100%;
   background-color: #ffffff;
   border-radius: 15px;
-  /* padding: 20px 35px; */
   font-size: small;
-  /* overflow-y: scroll !important; */
+  margin-top: 2%;
+
 }
 
 .tableHeading {
@@ -546,6 +546,7 @@ body {
 .addTestimonialButton {
   background-color: dodgerblue;
   border-radius: 10px !important;
+  margin-top: 20px;
   border: none;
   color: #ffffff;
   padding: 0px 13px;
