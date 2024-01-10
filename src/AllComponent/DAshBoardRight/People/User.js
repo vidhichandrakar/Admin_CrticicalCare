@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
 // import Search from '@mui/material/Search';
 // import SearchIconWrapper from '@mui/material/SaerchIconWrapper';
 // import SearchIcon from '@mui/icons-material/Search';
@@ -59,51 +59,91 @@ function User() {
       {name:"sheikhshoeb194@gmail.com",phone:"7589576"},
       "Sheikh Shoeb",
       "19/Dec/2023",
-      <MoreVertIcon />
+      <MoreVertIcon onClick={(event)=>handleClick(event,"id1",{
+        User_Info:{name:"sheikhshoeb194@gmail.com",phone:"7589576"},
+        full_name:"Sheikh Shoeb",
+        date:"12/10/23"
+        })}/>
     ),
     createData(
       {name:"sheikhshoeb194@gmail.com",phone:"7589576"},
       "Jitendra Chandrakar",
       "19/Dec/2023",
-      <MoreVertIcon />
+      <MoreVertIcon onClick={(event)=>handleClick(event,"id2",{
+        User_Info:{name:"sheikhshoeb194@gmail.com",phone:"7589576"},
+        full_name:"Jitendra Chandrakar",
+        date:"12/10/23"
+        })}/>
     ),
     createData(
       {name:"sheikhshoeb194@gmail.com",phone:"7589576"},
       "Pranab Raj",
       "19/Dec/2023",
-      <MoreVertIcon />
+      <MoreVertIcon onClick={(event)=>handleClick(event,"id2",{
+        User_Info:{name:"sheikhshoeb194@gmail.com",phone:"7589576"},
+        full_name:"Pranab Raj",
+        date:"12/10/23"
+        })}/>
     ),
     createData(
       {name:"sheikhshoeb194@gmail.com",phone:"7589576"},
       "Sania Khan",
       "19/Dec/2023",
-      <MoreVertIcon />
+      <MoreVertIcon onClick={(event)=>handleClick(event,"id2",{
+        User_Info:{name:"sheikhshoeb194@gmail.com",phone:"7589576"},
+        full_name:"Sania Khan",
+        date:"12/10/23"
+        })}/>
     ),
     createData(
       {name:"sheikhshoeb194@gmail.com",phone:"7589576"},
       "Rahul Amin",
       "19/Dec/2023",
-      <MoreVertIcon />
+      <MoreVertIcon onClick={(event)=>handleClick(event,"id2",{
+        User_Info:{name:"sheikhshoeb194@gmail.com",phone:"7589576"},
+        full_name:"Rahul Amin",
+        date:"12/10/23"
+        })}/>
     ),
-    createData({name:"sheikhshoeb194@gmail.com",phone:"7589576"}, "Menka", "19/Dec/2023", <MoreVertIcon />),
-    createData({name:"sheikhshoeb194@gmail.com",phone:"7589576"}, "Ramesh", "19/Dec/2023", <MoreVertIcon />),
+    createData({name:"sheikhshoeb194@gmail.com",phone:"7589576"}, "Menka", "19/Dec/2023", <MoreVertIcon onClick={(event)=>handleClick(event,"id2",{
+      User_Info:{name:"sheikhshoeb194@gmail.com",phone:"7589576"},
+      full_name:"Menka",
+      date:"12/10/23"
+      })}/>),
+    createData({name:"sheikhshoeb194@gmail.com",phone:"7589576"}, "Ramesh", "19/Dec/2023", <MoreVertIcon onClick={(event)=>handleClick(event,"id2",{
+      User_Info:{name:"sheikhshoeb194@gmail.com",phone:"7589576"},
+      full_name:"Ramesh",
+      date:"12/10/23"
+      })}/>),
     createData(
       {name:"sheikhshoeb194@gmail.com",phone:"7589576"},
       "Rakesh Pal",
       "19/Dec/2023",
-      <MoreVertIcon />
+      <MoreVertIcon onClick={(event)=>handleClick(event,"id2",{
+        User_Info:{name:"sheikhshoeb194@gmail.com",phone:"7589576"},
+        full_name:"Rakesh Pal",
+        date:"12/10/23"
+        })}/>
     ),
     createData(
       "ashutosh.a@gmail.com",
       "Ashutosh",
       "19/Dec/2023",
-      <MoreVertIcon />
+      <MoreVertIcon onClick={(event)=>handleClick(event,"id2",{
+        User_Info:{name:"sheikhshoeb194@gmail.com",phone:"7589576"},
+        full_name:"Ashutosh",
+        date:"12/10/23"
+        })}/>
     ),
     createData(
       "pixelinsource@gmail.com",
       "Pixel Insource",
       "19/Dec/2023",
-      <MoreVertIcon />
+      <MoreVertIcon onClick={(event)=>handleClick(event,"id2",{
+        User_Info:{name:"sheikhshoeb194@gmail.com",phone:"7589576"},
+        full_name:"Pixel Insource",
+        date:"12/10/23"
+        })}/>
     ),
   ];
 
@@ -118,6 +158,22 @@ function User() {
     setRowsPerPage(+event.target.value);
     setPage(0);
   };
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [openId,setOpenId]=React.useState(0);
+  const [openData,setOpenData]=React.useState("");
+  const handleClick = (event,id,data) => {
+    setAnchorEl(event.currentTarget);
+    setOpenId(id);
+    setOpenData(data);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? "simple-popover" : undefined;
+
 
   return (
     <div className=" m20">
@@ -193,7 +249,7 @@ function User() {
                         const value = row[column.id];
                         console.log(row,Object.keys(row),column.id)
                         return (
-                         column.id==="User_Info"? <TableCell key={column.id} align={column.align}>
+                          <Fragment>{ column.id==="User_Info"? <TableCell key={column.id} align={column.align}>
                            <Typography>{column.format && typeof value === "number"
                               ? column.format(value.name)
                               : value.name} </Typography> 
@@ -202,20 +258,40 @@ function User() {
                               ? column.format(value.phone)
                               : value.phone
                               }</Typography> 
-                          </TableCell>: <TableCell key={column.id} align={column.align}>
+                          </TableCell>:<TableCell key={column.id} align={column.align}>
                             {column.format && typeof value === "number"
                               ? column.format(value)
                               : value}
-                          </TableCell>
+                          </TableCell>}
+                            
+                           </Fragment>
                         );
                       })}
+                      
                     </TableRow>
                   );
+                  
                 })}
+                 <Popover
+                             id={openId}
+                             open={open}
+                             anchorEl={anchorEl}
+                             onClose={handleClose}
+                             anchorOrigin={{
+                               vertical: "bottom",
+                               horizontal: "right",
+                             }}
+                           >
+                             <Typography sx={{ p: 1 }}>{openData.full_name}</Typography>
+                             <Typography sx={{ p: 1 }}>Edit + {openId}</Typography>
+                             <Typography sx={{ p: 1 }}>Delete</Typography>
+                           </Popover>
             </TableBody>
           </Table>
         </TableContainer>
       </Paper>
+    
+    
     </div>
   );
 }
