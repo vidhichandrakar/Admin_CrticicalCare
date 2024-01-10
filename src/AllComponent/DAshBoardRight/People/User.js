@@ -25,48 +25,9 @@ import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TablePagination from "@mui/material/TablePagination";
 import TableRow from "@mui/material/TableRow";
+import SearchBar from "../../../Util/SearchBar";
 
-const Search = styled("div")(({ theme }) => ({
-  position: "relative",
-  borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.common.white, 0.15),
-  "&:hover": {
-    backgroundColor: alpha(theme.palette.common.white, 0.25),
-  },
-  marginLeft: 0,
-  width: "100%",
-  [theme.breakpoints.up("sm")]: {
-    marginLeft: theme.spacing(1),
-    width: "auto",
-  },
-}));
 
-const SearchIconWrapper = styled("div")(({ theme }) => ({
-  padding: theme.spacing(0, 2),
-  height: "100%",
-  position: "absolute",
-  pointerEvents: "none",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-}));
-
-const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: "inherit",
-  width: "100%",
-  "& .MuiInputBase-input": {
-    padding: theme.spacing(1, 1, 1, 0),
-    // vertical padding + font size from searchIcon
-    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-    transition: theme.transitions.create("width"),
-    [theme.breakpoints.up("sm")]: {
-      width: "20ch",
-      "&:focus": {
-        width: "20ch",
-      },
-    },
-  },
-}));
 function User() {
   const columns = [
     { id: "User_Info", label: "User Info", minWidth: 170 },
@@ -158,7 +119,6 @@ function User() {
   };
 
   return (
-    // <div className='main-container'>
     <div className=" m20">
       <span className="userHead">
         <h3>Users (357)</h3>
@@ -190,63 +150,14 @@ function User() {
       </Box>
 
       <div className="searchnfilter">
-        <div>
-          <Search className="searchBar">
-            <SearchIconWrapper>
-              <SearchIcon className="searchIconLogo" />
-            </SearchIconWrapper>
-            <StyledInputBase
-              className="w100"
-              placeholder="Search by name"
-              inputProps={{ "aria-label": "search" }}
-            />
-          </Search>
-        </div>
+    
+        <SearchBar/>
         <button className="filterButton">
           {" "}
           <FilterAltIcon className="filterIcon" /> Filter
         </button>
       </div>
 
-      {/* <Box className='completeTable'>
-        <table className='completeTable'>
-            <tr className='tableHeading'>
-                <th>
-                    User Info
-                </th>
-                <th>
-                    Full Name
-                </th>
-                <th>
-                    Date of Registration
-                </th>
-                <th>
-                    Actions
-                </th>
-            </tr>
-            <hr className='hrLine'/>
-
-    {MockDataForTable.map((data)=>{
-      return( <tr>
-        <td><div className='/'>{data['Full name']}</div>
-         <div className='phNumber'>{data['Date of registration']}</div></td>
-        <td><p className='/'>{data.Actions}</p></td>
-        <td><p>19/Dec/2023</p></td>
-        <td><MoreVertIcon/></td>
-    </tr>)
-    })}
-            {/* <tr>
-                <td><div className='/'>Sheikhshoeb194@gmail.com</div> <div className='phNumber'>+918889844180</div></td>
-                <td><p className='/'>Sheikh Shoeb</p></td>
-                <td><p>19/Dec/2023</p></td>
-                <td><MoreVertIcon/></td>
-            </tr> */}
-      {/* </table> */}
-      {/* </Box> */}
-
-      {/* ..........MUI TABLE STARTS HERE........  */}
-
-      {/* <div className='completeTable'> */}
       <Paper
         sx={{ width: "100%", overflow: "hidden" }}
         className="completeTable"
@@ -294,7 +205,6 @@ function User() {
           </Table>
         </TableContainer>
       </Paper>
-      {/* </div> */}
     </div>
   );
 }

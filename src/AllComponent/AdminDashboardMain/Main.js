@@ -19,24 +19,23 @@ export default function Main() {
   return (
     <main className="main-container">
       {/* <Dashboard /> */}
-      <User/>
-      {/* <MainCourses/>
-      <Banner />
-      <User/>
-      <Transaction/>
-      <MyTeam/>
-      <TestPortal/>
-      <SearchBar />
-      <Testimonial/>
-      <CreateCoupon/>
-      <CreateCoupon/>
-      <Trics1FreeMockTest/>
-      <MainCourses/>
-      <UpcomingCoursesMain/>
-      <YourCourses />
+      {/* <User/> */}
+      {/* <MainCourses/> */}
+      {/* <Banner /> */}
+      {/* <User/> */}
+      {/* <Transaction/> */}
+      {/* <MyTeam/> */}
+      {/* <TestPortal/> */}
+      {/* <SearchBar /> */}
+      {/* <Testimonial/> */}
+      {/* <CreateCoupon/> */}
+      {/* <CreateCoupon/> */}
+      {/* <Trics1FreeMockTest/> */}
+      {/* <MainCourses/> */}
+      {/* <UpcomingCoursesMain/> */}
+      {/* <YourCourses /> */}
       <Analytics />
-      <Analytics />
-      <CouponMain/> */}
+      {/* <CouponMain/> */}
     </main>
   );
 }
