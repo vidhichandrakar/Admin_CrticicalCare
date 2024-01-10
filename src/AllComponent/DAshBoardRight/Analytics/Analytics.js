@@ -1,15 +1,14 @@
 import React from "react";
 import "../../CSSFile/Analytics.css";
 import CourseHeader from "../../Courses/CoursesHeader";
-import { Box, Typography } from "@mui/material";
-import MenuItem from "@mui/material/MenuItem";
+import { Box } from "@mui/material";
 import FormControl from "@mui/material/FormControl";
-import Select from "@mui/material/Select";
 import SmallCard from "./AnalyticsCard/SmallCard";
 import CurrencyRupeeIcon from "@mui/icons-material/CurrencyRupee";
 import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import SignalCellularAltIcon from "@mui/icons-material/SignalCellularAlt";
 import { AnalyticsSmallData } from "../../../Data/JsonData";
+import { commonSelect } from "../../../Util/CommonFields";
 
 function Analytics() {
   return (
@@ -21,26 +20,18 @@ function Analytics() {
         }
       />
       <div>
-        <Box className="TodayDropDown">
-          <FormControl
-            sx={{ m: 0, minWidth: 120 }}
-            className="FromControlDropDown"
-          >
-            <Select
-              className="selectDesign"
-              displayEmpty
-              renderValue={() => {
-                return <em className="labelDesign">Today</em>;
-              }}
-              inputProps={{ "aria-label": "Without label" }}
-              sx={{ textAlign: "left" }}
-            >
-              <MenuItem value={10}>Ten</MenuItem>
-              <MenuItem value={20}>Twenty</MenuItem>
-              <MenuItem value={30}>Thirty</MenuItem>
-            </Select>
+        
+         <FormControl sx={{ mt: 2, minWidth: 100, backgroundColor: '#fff', borderRadius: 3 }}>
+            {commonSelect({
+              placeholder: "Today",
+              menuItemList: [
+                { id: 1, label: "Option 1" },
+                { id: 2, label: "Option 2" },
+                { id: 3, label: "Option 3" },
+              ],
+              className: "categorytext",
+            })}
           </FormControl>
-        </Box>
         <Box className="CardsRow">
           <SmallCard Data={AnalyticsSmallData} />
         </Box>
