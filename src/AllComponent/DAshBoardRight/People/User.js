@@ -207,46 +207,7 @@ function User() {
           <FilterAltIcon className="filterIcon" /> Filter
         </button>
       </div>
-
-      {/* <Box className='completeTable'>
-        <table className='completeTable'>
-            <tr className='tableHeading'>
-                <th>
-                    User Info
-                </th>
-                <th>
-                    Full Name
-                </th>
-                <th>
-                    Date of Registration
-                </th>
-                <th>
-                    Actions
-                </th>
-            </tr>
-            <hr className='hrLine'/>
-
-    {MockDataForTable.map((data)=>{
-      return( <tr>
-        <td><div className='/'>{data['Full name']}</div>
-         <div className='phNumber'>{data['Date of registration']}</div></td>
-        <td><p className='/'>{data.Actions}</p></td>
-        <td><p>19/Dec/2023</p></td>
-        <td><MoreVertIcon/></td>
-    </tr>)
-    })}
-            {/* <tr>
-                <td><div className='/'>Sheikhshoeb194@gmail.com</div> <div className='phNumber'>+918889844180</div></td>
-                <td><p className='/'>Sheikh Shoeb</p></td>
-                <td><p>19/Dec/2023</p></td>
-                <td><MoreVertIcon/></td>
-            </tr> */}
-      {/* </table> */}
-      {/* </Box> */}
-
-      {/* ..........MUI TABLE STARTS HERE........  */}
-
-      {/* <div className='completeTable'> */}
+     
       <Paper
         sx={{ width: "100%", overflow: "hidden" }}
         className="completeTable"
@@ -279,6 +240,7 @@ function User() {
                     >
                       {columns.map((column) => {
                         const value = row[column.id];
+                        console.log(row,column)
                         return (
                           <TableCell key={column.id} align={column.align}>
                             {column.format && typeof value === "number"
