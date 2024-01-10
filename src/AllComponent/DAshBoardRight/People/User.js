@@ -154,7 +154,6 @@ function User() {
     
         <SearchBar/>
         <button className="filterButton">
-          {" "}
           <FilterAltIcon className="filterIcon" /> Filter
         </button>
       </div>

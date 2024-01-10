@@ -18,13 +18,8 @@ import CouponMain from "../Coupons/Coupons.main";
 export default function Main() {
   return (
     <main className="main-container">
-<<<<<<< HEAD
-      {/* <Dashboard /> */}
-      {/* <User/> */}
-=======
       <Dashboard />
       <User/>
->>>>>>> 6dff8fb1bed2778a0064e18e2f438344b701d552
       {/* <MainCourses/> */}
       {/* <Banner /> */}
       {/* <User/> */}
