@@ -279,7 +279,6 @@ body {
 
 .m20 {
   margin: 30px;
-  /* margin-right: 47px; */
 }
 .userHead p {
   font-size: small;
@@ -299,7 +298,6 @@ body {
 .searchnfilter {
   display: flex;
   flex-direction: row;
-  /* margin: 13px 0; */
   width: 100%;
   align-items: left !important;
 }
@@ -341,7 +339,6 @@ body {
   border-radius: 11px !important;
   padding: 7px 12px;
 }
-
 .completeTable {
   height: 71vh !important;
   width: 100%;
@@ -351,50 +348,18 @@ body {
   margin-top: 2%;
 
 }
-
 .tableHeading {
   justify-content: left !important;
   align-items: left !important;
   text-align: left !important;
   border-bottom: solid 2px black !important;
 }
-
 .hrLine {
   width: 256%;
 }
 .bluePara {
   color: dodgerblue;
   font-weight: bold;
-}
-.sheikh {
-  margin-left: -3%;
-}
-.jitendra {
-  margin-left: -9%;
-}
-.pranab {
-  margin-left: -1%;
-}
-.sania {
-  margin-left: 0%;
-}
-.rahul {
-  margin-left: -2%;
-}
-.menka {
-  margin-left: 3%;
-}
-.ramesh {
-  margin-left: 1%;
-}
-.rakesh {
-  margin-left: -2%;
-}
-.ashutosh {
-  margin-left: 0%;
-}
-.pixel {
-  margin-left: -4%;
 }
 .phNumber {
   color: grey;
@@ -554,7 +519,7 @@ body {
   margin-top: 22px;
   height: 42px !important;
 }
-.TestimonialcompleteTable {
+.testimonialCompleteTable {
   height: 95%;
   width: 100%;
   background-color: #ffffff;

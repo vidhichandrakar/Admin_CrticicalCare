@@ -21,7 +21,7 @@ function Testimonial() {
           <button className="addTestimonialButton"> + Add Testimonial </button>
         </div>
 
-        <table className="TestimonialcompleteTable">
+        <table className="testimonialCompleteTable">
           <tr className="tableHeading">
             <th>Comments</th>
             <th>Author</th>

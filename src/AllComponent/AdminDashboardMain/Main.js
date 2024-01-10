@@ -19,7 +19,6 @@ export default function Main() {
   return (
     <main className="main-container">
       {/* <Dashboard /> */}
-      <User/>
       {/* <MainCourses/> */}
       {/* <Banner /> */}
       {/* <User/> */}
@@ -27,12 +26,12 @@ export default function Main() {
       {/* <MyTeam/> */}
       {/* <TestPortal/> */}
       {/* <SearchBar /> */}
-      {/* <Testimonial/> */}
+      <Testimonial/>
       {/* <CreateCoupon/> */}
       {/* <CreateCoupon/> */}
       {/* <Trics1FreeMockTest/> */}
       {/* <MainCourses/> */}
-      <UpcomingCoursesMain/>
+      {/* <UpcomingCoursesMain/> */}
       {/* <YourCourses /> */}
       {/* <Analytics /> */}
       {/* <Analytics /> */}
