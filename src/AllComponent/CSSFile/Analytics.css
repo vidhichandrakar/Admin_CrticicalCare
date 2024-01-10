@@ -23,7 +23,7 @@
 }
 .Card {
     
-  box-shadow: 1px 1px 1px 1px #17090930!important;
+  box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.2) !important;
   padding: 0;
   border-radius: 15px;
   color: black;
@@ -38,7 +38,7 @@ font-weight: 500;
 .Card h1 {
   font-size: 1.6rem;
   color: rgb(0, 153, 255);
-  margin-top: -20px;
+  margin-top: -17px;
 }
 .Card p {
   font-size: 0.8rem;
@@ -60,7 +60,7 @@ font-weight: 500;
   background-color: white;
   padding: 10px 0;
   border-radius: 15px;  
-  box-shadow: 1px 1px 1px 1px #17090930!important;
+  box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.2)!important;
 }
 .row{
     display: flex;

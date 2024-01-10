@@ -20,6 +20,7 @@ export default function Main() {
     <main className="main-container">
       {/* <Dashboard /> */}
       {/* <MainCourses/> */}
+      <User/>
       {/* <Banner /> */}
       <User/>
       {/* <Transaction/> */}
@@ -33,7 +34,6 @@ export default function Main() {
       {/* <MainCourses/> */}
       {/* <UpcomingCoursesMain/> */}
       {/* <YourCourses /> */}
-      {/* <Analytics /> */}
       {/* <Analytics /> */}
       {/* <CouponMain/> */}
     </main>

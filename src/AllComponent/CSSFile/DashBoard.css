@@ -631,7 +631,9 @@ body {
   background-color: white;
   border-radius: 23px;
 }
-
+.Today{
+  background-color: #ffffff !important;
+}
 .blueViewAll {
   margin-top: 3%;
   color: dodgerblue;

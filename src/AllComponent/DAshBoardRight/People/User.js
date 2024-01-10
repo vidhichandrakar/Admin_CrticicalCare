@@ -1,4 +1,8 @@
-import React, { useState } from "react";
+import React, { Fragment, useState } from "react";
+// import Search from '@mui/material/Search';
+// import SearchIconWrapper from '@mui/material/SaerchIconWrapper';
+// import SearchIcon from '@mui/icons-material/Search';
+// import StyledInputBase from '@mui/material/StyledInputBase';
 import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
@@ -24,36 +28,24 @@ import SearchBar from "../../../Util/SearchBar";
 import Popover from "@mui/material/Popover";
 import CourseHeader from "../../Courses/CoursesHeader";
 
-
-
-const User=()=> {
-  
-  const [anchorEl, setAnchorEl] = React.useState(null);
-
-  const handleClick = (event) => {
-    setAnchorEl(event.currentTarget);
-  };
-
-  const handleClose = () => {
-    setAnchorEl(null);
-  };
-
-  const open = Boolean(anchorEl);
-  const id = open ? "simple-popover" : undefined;
-
+const User = () => {
   const columns = [
-    { id: "User_Info", label: "User Info", 
-    // minWidth: 170
-   },
-    { id: "Full_Name", label: "Full Name",
-    align: 'center',
-    //  minWidth: 100
-     },
+    {
+      id: "User_Info",
+      label: "User Info",
+      // minWidth: 170
+    },
+    {
+      id: "Full_Name",
+      label: "Full Name",
+      align: "center",
+      //  minWidth: 100
+    },
     {
       id: "Date_of_Registration",
       label: "Date of registration",
       // minWidth: 170,
-      align: 'center',
+      align: "center",
       // format: (value) => value.toLocaleString('en-US'),
     },
     {
@@ -67,60 +59,150 @@ const User=()=> {
 
   function createData(User_Info, Full_Name, Date_of_Registration, Actions) {
     // const density = population / size;
-    
+
     return { User_Info, Full_Name, Date_of_Registration, Actions };
   }
 
   const rows = [
     createData(
-      {name:"sheikhshoeb194@gmail.com",phone:"7589576"},
+      { name: "sheikhshoeb194@gmail.com", phone: "7589576" },
       "Sheikh Shoeb",
       "19/Dec/2023",
-      <MoreVertIcon onClick={handleClick} />
+      <MoreVertIcon
+        onClick={(event) =>
+          handleClick(event, "id1", {
+            User_Info: { name: "sheikhshoeb194@gmail.com", phone: "7589576" },
+            full_name: "Sheikh Shoeb",
+            date: "12/10/23",
+          })
+        }
+      />
     ),
     createData(
-      {name:"jitendra.chandrakar@gmail.com",phone:"7589576"},
+      { name: "jitendra.chandrakar@gmail.com", phone: "7589576" },
       "Jitendra Chandrakar",
       "19/Dec/2023",
-      <MoreVertIcon />
+      <MoreVertIcon
+        onClick={(event) =>
+          handleClick(event, "id2", {
+            User_Info: { name: "sheikhshoeb194@gmail.com", phone: "7589576" },
+            full_name: "Jitendra Chandrakar",
+            date: "12/10/23",
+          })
+        }
+      />
     ),
     createData(
-      {name:"pranab.raj@gmail.com",phone:"7589576"},
+      { name: "pranab.raj@gmail.com", phone: "7589576" },
       "Pranab Raj",
       "19/Dec/2023",
-      <MoreVertIcon />
+      <MoreVertIcon
+        onClick={(event) =>
+          handleClick(event, "id2", {
+            User_Info: { name: "sheikhshoeb194@gmail.com", phone: "7589576" },
+            full_name: "Pranab Raj",
+            date: "12/10/23",
+          })
+        }
+      />
     ),
     createData(
-      {name:"saniakhan@gmail.com",phone:"7589576"},
+      { name: "saniakhan@gmail.com", phone: "7589576" },
       "Sania Khan",
       "19/Dec/2023",
-      <MoreVertIcon />
+      <MoreVertIcon
+        onClick={(event) =>
+          handleClick(event, "id2", {
+            User_Info: { name: "sheikhshoeb194@gmail.com", phone: "7589576" },
+            full_name: "Sania Khan",
+            date: "12/10/23",
+          })
+        }
+      />
     ),
     createData(
-      {name:"rahulamin@gmail.com",phone:"7589576"},
+      { name: "rahulamin@gmail.com", phone: "7589576" },
       "Rahul Amin",
       "19/Dec/2023",
-      <MoreVertIcon />
+      <MoreVertIcon
+        onClick={(event) =>
+          handleClick(event, "id2", {
+            User_Info: { name: "sheikhshoeb194@gmail.com", phone: "7589576" },
+            full_name: "Rahul Amin",
+            date: "12/10/23",
+          })
+        }
+      />
     ),
-    createData({name:"sheikhshoeb194@gmail.com",phone:"7589576"}, "Menka", "19/Dec/2023", <MoreVertIcon />),
-    createData({name:"sheikhshoeb194@gmail.com",phone:"7589576"}, "Ramesh", "19/Dec/2023", <MoreVertIcon />),
     createData(
-      {name:"sheikhshoeb194@gmail.com",phone:"7589576"},
+      { name: "sheikhshoeb194@gmail.com", phone: "7589576" },
+      "Menka",
+      "19/Dec/2023",
+      <MoreVertIcon
+        onClick={(event) =>
+          handleClick(event, "id2", {
+            User_Info: { name: "sheikhshoeb194@gmail.com", phone: "7589576" },
+            full_name: "Menka",
+            date: "12/10/23",
+          })
+        }
+      />
+    ),
+    createData(
+      { name: "sheikhshoeb194@gmail.com", phone: "7589576" },
+      "Ramesh",
+      "19/Dec/2023",
+      <MoreVertIcon
+        onClick={(event) =>
+          handleClick(event, "id2", {
+            User_Info: { name: "sheikhshoeb194@gmail.com", phone: "7589576" },
+            full_name: "Ramesh",
+            date: "12/10/23",
+          })
+        }
+      />
+    ),
+    createData(
+      { name: "sheikhshoeb194@gmail.com", phone: "7589576" },
       "Rakesh Pal",
       "19/Dec/2023",
-      <MoreVertIcon />
+      <MoreVertIcon
+        onClick={(event) =>
+          handleClick(event, "id2", {
+            User_Info: { name: "sheikhshoeb194@gmail.com", phone: "7589576" },
+            full_name: "Rakesh Pal",
+            date: "12/10/23",
+          })
+        }
+      />
     ),
     createData(
       "ashutosh.a@gmail.com",
       "Ashutosh",
       "19/Dec/2023",
-      <MoreVertIcon />
+      <MoreVertIcon
+        onClick={(event) =>
+          handleClick(event, "id2", {
+            User_Info: { name: "sheikhshoeb194@gmail.com", phone: "7589576" },
+            full_name: "Ashutosh",
+            date: "12/10/23",
+          })
+        }
+      />
     ),
     createData(
       "pixelinsource@gmail.com",
       "Pixel Insource",
       "19/Dec/2023",
-      <MoreVertIcon />
+      <MoreVertIcon
+        onClick={(event) =>
+          handleClick(event, "id2", {
+            User_Info: { name: "sheikhshoeb194@gmail.com", phone: "7589576" },
+            full_name: "Pixel Insource",
+            date: "12/10/23",
+          })
+        }
+      />
     ),
   ];
 
@@ -135,19 +217,37 @@ const User=()=> {
     setRowsPerPage(+event.target.value);
     setPage(0);
   };
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [openId, setOpenId] = React.useState(0);
+  const [openData, setOpenData] = React.useState("");
+  const handleClick = (event, id, data) => {
+    setAnchorEl(event.currentTarget);
+    setOpenId(id);
+    setOpenData(data);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? "simple-popover" : undefined;
 
   return (
     <div className=" m20">
-      <CourseHeader Heading={'Users (357)'} subHeading={'View, Filter & Manage all your users'}/>
+      <CourseHeader
+        Heading={"Users (357)"}
+        subHeading={"View, Filter & Manage all your users"}
+      />
 
       <div className="searchnfilter">
-         <SearchBar/>
+        <SearchBar />
         <button className="filterButton">
           {" "}
           <FilterAltIcon className="filterIcon" /> Filter
         </button>
       </div>
-     
+
       <Paper
         sx={{ width: "100%", overflow: "hidden" }}
         className="completeTable"
@@ -180,48 +280,50 @@ const User=()=> {
                     >
                       {columns.map((column) => {
                         const value = row[column.id];
-                        console.log(row,Object.keys(row),column.id)
+                        console.log(row, Object.keys(row), column.id);
                         return (
-                         column.id==="User_Info"? <TableCell key={column.id} align={column.align}>
-                           <Typography className="bluePara">{column.format && typeof value === "number"
-                              ? column.format(value.name)
-                              : value.name} </Typography> 
-                            <Typography className="phNumber">  {
-                                column.format && typeof value === "number"
-                              ? column.format(value.phone)
-                              : value.phone}
-                              </Typography> 
-                          </TableCell>: <TableCell key={column.id} align={column.align}>
-                            {column.format && typeof value === "number"
-                              ? column.format(value)
-                              : value}
-                          </TableCell>
+                          <Fragment>
+                            {column.id === "User_Info" ? (
+                              <TableCell key={column.id} align={column.align}>
+                                <Typography className="bluePara">
+                                 {value.name}
+                                </Typography>
+                                <Typography className="phNumber">
+                                 
+                                 { value.phone}
+                                </Typography>
+                              </TableCell>
+                            ) : (
+                              <TableCell key={column.id} align={column.align}>
+                              { value}
+                              </TableCell>
+                            )}
+                          </Fragment>
                         );
                       })}
                     </TableRow>
                   );
                 })}
+              <Popover
+                id={openId}
+                open={open}
+                anchorEl={anchorEl}
+                onClose={handleClose}
+                anchorOrigin={{
+                  vertical: "bottom",
+                  horizontal: "right",
+                }}
+              >
+                <Typography sx={{ p: 1 }}>{openData.full_name}</Typography>
+                <Typography sx={{ p: 1 }}>Edit </Typography>
+                <Typography sx={{ p: 1 }}>Delete</Typography>
+              </Popover>
             </TableBody>
           </Table>
         </TableContainer>
       </Paper>
-
-
-      <Popover
-        id={id}
-        open={open}
-        anchorEl={anchorEl}
-        onClose={handleClose}
-        anchorOrigin={{
-          vertical: "bottom",
-          horizontal: "right",
-        }}
-      >
-        <Typography sx={{ p: 1 }}>Edit</Typography>
-        <Typography sx={{ p: 1 }}>Delete</Typography>
-      </Popover>
     </div>
   );
-}
+};
 
 export default User;
