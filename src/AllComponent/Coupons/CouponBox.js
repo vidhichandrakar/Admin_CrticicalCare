@@ -18,6 +18,7 @@ const CouponBox = ({}) => {
   const open = Boolean(anchorEl);
   const id = open ? "simple-popover" : undefined;
 
+  
   return (
     <>
       {arrayColumn.map((data) => (

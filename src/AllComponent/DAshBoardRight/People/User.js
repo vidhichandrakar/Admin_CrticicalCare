@@ -1,13 +1,8 @@
 import React, { useState } from "react";
-// import Search from '@mui/material/Search';
-// import SearchIconWrapper from '@mui/material/SaerchIconWrapper';
-// import SearchIcon from '@mui/icons-material/Search';
-// import StyledInputBase from '@mui/material/StyledInputBase';
 import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-import Popover from "@mui/material/Popover";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 import DeleteIcon from "@mui/icons-material/Delete";
@@ -26,23 +21,45 @@ import TableHead from "@mui/material/TableHead";
 import TablePagination from "@mui/material/TablePagination";
 import TableRow from "@mui/material/TableRow";
 import SearchBar from "../../../Util/SearchBar";
+import Popover from "@mui/material/Popover";
+import CourseHeader from "../../Courses/CoursesHeader";
 
 
-function User() {
+
+const User=()=> {
+  
+  const [anchorEl, setAnchorEl] = React.useState(null);
+
+  const handleClick = (event) => {
+    setAnchorEl(event.currentTarget);
+  };
+
+  const handleClose = () => {
+    setAnchorEl(null);
+  };
+
+  const open = Boolean(anchorEl);
+  const id = open ? "simple-popover" : undefined;
+
   const columns = [
-    { id: "User_Info", label: "User Info", minWidth: 170 },
-    { id: "Full_Name", label: "Full Name", minWidth: 100 },
+    { id: "User_Info", label: "User Info", 
+    // minWidth: 170
+   },
+    { id: "Full_Name", label: "Full Name",
+    align: 'center',
+    //  minWidth: 100
+     },
     {
       id: "Date_of_Registration",
       label: "Date of registration",
-      minWidth: 170,
-      // align: 'right',
+      // minWidth: 170,
+      align: 'center',
       // format: (value) => value.toLocaleString('en-US'),
     },
     {
       id: "Actions",
       label: "Actions",
-      minWidth: 170,
+      // minWidth: 170,
       align: "center",
       // format: (value) => value.toLocaleString('en-US'),
     },
@@ -59,28 +76,28 @@ function User() {
       {name:"sheikhshoeb194@gmail.com",phone:"7589576"},
       "Sheikh Shoeb",
       "19/Dec/2023",
-      <MoreVertIcon />
+      <MoreVertIcon onClick={handleClick} />
     ),
     createData(
-      {name:"sheikhshoeb194@gmail.com",phone:"7589576"},
+      {name:"jitendra.chandrakar@gmail.com",phone:"7589576"},
       "Jitendra Chandrakar",
       "19/Dec/2023",
       <MoreVertIcon />
     ),
     createData(
-      {name:"sheikhshoeb194@gmail.com",phone:"7589576"},
+      {name:"pranab.raj@gmail.com",phone:"7589576"},
       "Pranab Raj",
       "19/Dec/2023",
       <MoreVertIcon />
     ),
     createData(
-      {name:"sheikhshoeb194@gmail.com",phone:"7589576"},
+      {name:"saniakhan@gmail.com",phone:"7589576"},
       "Sania Khan",
       "19/Dec/2023",
       <MoreVertIcon />
     ),
     createData(
-      {name:"sheikhshoeb194@gmail.com",phone:"7589576"},
+      {name:"rahulamin@gmail.com",phone:"7589576"},
       "Rahul Amin",
       "19/Dec/2023",
       <MoreVertIcon />
@@ -121,38 +138,10 @@ function User() {
 
   return (
     <div className=" m20">
-      <span className="userHead">
-        <h3>Users (357)</h3>
-        <p>View, Filter & Manage all your users</p>
-      </span>
-      <Box className="HeaderRightofUser">
-        <FormControl sx={{ m: 1, minWidth: 240 }}>
-          <Select
-            className="selectDesign"
-            displayEmpty
-            renderValue={() => {
-              return <em className="labelDesign">360 Critcial Care</em>;
-            }}
-            inputProps={{ "aria-label": "Without label" }}
-            startAdornment={
-              <div className="logoDesign">
-                <Typography className="logoText">3CC</Typography>
-              </div>
-            }
-          >
-            <MenuItem value={""}>
-              <em>360 Critcial Care</em>
-            </MenuItem>
-            <MenuItem value={10}>Ten</MenuItem>
-            <MenuItem value={20}>Twenty</MenuItem>
-            <MenuItem value={30}>Thirty</MenuItem>
-          </Select>
-        </FormControl>
-      </Box>
+      <CourseHeader Heading={'Users (357)'} subHeading={'View, Filter & Manage all your users'}/>
 
       <div className="searchnfilter">
-    
-        <SearchBar/>
+         <SearchBar/>
         <button className="filterButton">
           {" "}
           <FilterAltIcon className="filterIcon" /> Filter
@@ -194,14 +183,14 @@ function User() {
                         console.log(row,Object.keys(row),column.id)
                         return (
                          column.id==="User_Info"? <TableCell key={column.id} align={column.align}>
-                           <Typography>{column.format && typeof value === "number"
+                           <Typography className="bluePara">{column.format && typeof value === "number"
                               ? column.format(value.name)
                               : value.name} </Typography> 
-                            <Typography>  {
+                            <Typography className="phNumber">  {
                                 column.format && typeof value === "number"
                               ? column.format(value.phone)
-                              : value.phone
-                              }</Typography> 
+                              : value.phone}
+                              </Typography> 
                           </TableCell>: <TableCell key={column.id} align={column.align}>
                             {column.format && typeof value === "number"
                               ? column.format(value)
@@ -216,6 +205,21 @@ function User() {
           </Table>
         </TableContainer>
       </Paper>
+
+
+      <Popover
+        id={id}
+        open={open}
+        anchorEl={anchorEl}
+        onClose={handleClose}
+        anchorOrigin={{
+          vertical: "bottom",
+          horizontal: "right",
+        }}
+      >
+        <Typography sx={{ p: 1 }}>Edit</Typography>
+        <Typography sx={{ p: 1 }}>Delete</Typography>
+      </Popover>
     </div>
   );
 }
