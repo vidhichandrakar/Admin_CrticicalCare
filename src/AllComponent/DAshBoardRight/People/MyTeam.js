@@ -218,7 +218,7 @@ function MyTeam() {
 
 
         <div className="searchnfilter">
-        <SearchBar/>
+        <SearchBar mt = "2%"/>
           <button>
             {" "}
             <FilterAltIcon /> Filter

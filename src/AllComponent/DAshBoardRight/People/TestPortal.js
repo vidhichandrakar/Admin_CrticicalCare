@@ -17,7 +17,7 @@ function TestPortal() {
             <div className='TestPortalSearchBarSection'>
             <div className='searchnfilter'>
            
-          <SearchBar />
+          <SearchBar mt ="2%"/>
            
             <button className='filterButton'> <FilterAltIcon/> Filter</button>
         </div>
