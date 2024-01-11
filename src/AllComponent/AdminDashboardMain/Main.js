@@ -20,6 +20,11 @@ export default function Main() {
     <main className="main-container">
       {/* <Dashboard /> */}
       {/* <MainCourses/> */}
+<<<<<<< HEAD
+=======
+      {/* <User/> */}
+      {/* <Banner /> */}
+>>>>>>> b40e06dacad7fbc84b91fdfb7936b568a1ed778d
       {/* <User/> */}
       {/* <Banner /> */}
       <Transaction />
@@ -27,7 +32,12 @@ export default function Main() {
       {/* <TestPortal/> */}
       {/* <Testimonial/> */}
       {/* <CreateCoupon/> */}
+<<<<<<< HEAD
       {/* <Trics1FreeMockTest/> */}
+=======
+      {/* <CreateCoupon/> */}
+      <Trics1FreeMockTest/>
+>>>>>>> b40e06dacad7fbc84b91fdfb7936b568a1ed778d
       {/* <MainCourses/> */}
       {/* <UpcomingCoursesMain/> */}
       {/* <YourCourses /> */}
