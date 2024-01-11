@@ -21,7 +21,7 @@ export default function Main() {
       {/* <Dashboard /> */}
       {/* <User/> */}
       {/* <MainCourses/> */}
-      <User/>
+      {/* <User/> */}
       {/* <Banner /> */}
       {/* <Transaction/> */}
       {/* <MyTeam/> */}
@@ -30,7 +30,7 @@ export default function Main() {
       {/* <Testimonial/> */}
       {/* <CreateCoupon/> */}
       {/* <CreateCoupon/> */}
-      {/* <Trics1FreeMockTest/> */}
+      <Trics1FreeMockTest/>
       {/* <MainCourses/> */}
       {/* <UpcomingCoursesMain/> */}
       {/* <YourCourses /> */}
