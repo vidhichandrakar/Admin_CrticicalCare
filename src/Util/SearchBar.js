@@ -4,11 +4,11 @@ import FormControl from '@mui/material/FormControl';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import InputAdornment from '@mui/material/InputAdornment';
 
-const SearchBar = () => {
+const SearchBar = ({mt}) => {
   return (
     
       
-     <FormControl sx={{width: '23%', mt: 3 }} variant="outlined">
+     <FormControl sx={{width: '23%', mt: mt }} variant="outlined">
           <OutlinedInput
             id="outlined-adornment-weight"
             startAdornment={<InputAdornment ><SearchIcon /></InputAdornment>}

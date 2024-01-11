@@ -22,7 +22,7 @@ export default function Main() {
       {/* <MainCourses/> */}
       {/* <User/> */}
       {/* <Banner /> */}
-      <Transaction/>
+      <Transaction />
       {/* <MyTeam/> */}
       {/* <TestPortal/> */}
       {/* <Testimonial/> */}
