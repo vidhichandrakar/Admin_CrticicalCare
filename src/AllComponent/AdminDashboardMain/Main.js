@@ -24,8 +24,8 @@ export default function Main() {
       {/* <Banner /> */}
       {/* <User/> */}
       {/* <Transaction/> */}
-      <MyTeam/>
-      {/* <TestPortal/> */}
+      {/* <MyTeam/> */}
+      <TestPortal/>
       {/* <SearchBar /> */}
       {/* <Testimonial/> */}
       {/* <CreateCoupon/> */}

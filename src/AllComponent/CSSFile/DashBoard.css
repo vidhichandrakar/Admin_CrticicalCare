@@ -281,30 +281,11 @@ body {
 .m20 {
   margin: 30px;
 }
-.userHead p {
-  font-size: small;
-  margin-top: -20px;
-}
-.HeaderRightofUser {
-  margin-left: 76%;
-  margin-top: -6%;
-}
-.rightDropDown {
-  background-color: #ffffff;
-  border-radius: 3px !important;
-  padding: 5px 29px;
-  border: none !important;
-  box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.352) !important;
-}
 .searchnfilter {
   display: flex;
   flex-direction: row;
   width: 100%;
   align-items: left !important;
-}
-.searchnfilter img {
-  height: 12%;
-  width: 10%;
 }
 .searchnfilter button {
   border-radius: 15px !important;
@@ -317,15 +298,11 @@ body {
   height: 6vh;
   margin-top: 2%;
 }
-
 .searchBar {
   height: 6vh;
   background-color: #ffffff !important;
   border-radius: 15px !important;
   border: 0.5px solid grey;
-}
-.searchIconLogo {
-  color: rgb(137, 136, 136);
 }
 .filterButton {
   display: flex;
@@ -336,10 +313,6 @@ body {
 .filterIcon {
   margin-right: 10px;
 }
-.textFeildOfSearch {
-  border-radius: 11px !important;
-  padding: 7px 12px;
-}
 .completeTable {
   height: 68vh !important;
   width: 100%;
@@ -347,16 +320,9 @@ body {
   border-radius: 15px;
   font-size: small;
   margin-top: 2%;
-
 }
-.tableHeading {
-  justify-content: left !important;
-  align-items: left !important;
-  text-align: left !important;
-  border-bottom: solid 2px black !important;
-}
-.hrLine {
-  width: 256%;
+.headingOfTable{
+  font-weight: bold;
 }
 .bluePara {
   color: dodgerblue;
@@ -374,6 +340,8 @@ body {
 
 /* START OF TRANSACTION  */
 
+
+
 .transactionCards {
   display: flex;
   flex-direction: row;
@@ -383,14 +351,12 @@ body {
 .boxNoThree {
   background-color: #ffffff;
   border-radius: 10px !important;
-  /* box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.352) !important; */
   padding: 24px 106px;
   justify-content: space-between;
 }
 .boxNoTwo {
   background-color: #ffffff;
   border-radius: 10px !important;
-  /* box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.352) !important; */
   padding: 24px 120px;
   margin: 2px 103px;
   justify-content: space-between;
@@ -417,7 +383,8 @@ body {
   border-radius: 1%;
   padding: 20px 35px;
   font-size: small;
-  padding-bottom: 14%;
+  padding-bottom: 10%;
+  margin-top: 2%;
 }
 .courseName {
   text-align: center !important;
@@ -449,9 +416,6 @@ body {
   font-size: small;
   padding-bottom: 6%;
 }
-.myTeamhrLine {
-  width: 245%;
-}
 .moreVertIcon button {
   background-color: #ffffff !important;
   color: darkgray !important;
@@ -468,7 +432,7 @@ body {
 /* END OF MY TEAM  */
 /* START OF TEST PORTAL  */
 
-.TestPortalSearchBarSection {
+.testPortalSearchBarSection {
   display: flex !important;
   flex-direction: row !important;
   justify-content: space-between;

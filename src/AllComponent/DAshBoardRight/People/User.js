@@ -1,8 +1,4 @@
 import React, { Fragment, useState } from "react";
-// import Search from '@mui/material/Search';
-// import SearchIconWrapper from '@mui/material/SaerchIconWrapper';
-// import SearchIcon from '@mui/icons-material/Search';
-// import StyledInputBase from '@mui/material/StyledInputBase';
 import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
@@ -33,33 +29,25 @@ const User = () => {
     {
       id: "User_Info",
       label: "User Info",
-      // minWidth: 170
     },
     {
       id: "Full_Name",
       label: "Full Name",
       align: "center",
-      //  minWidth: 100
     },
     {
       id: "Date_of_Registration",
       label: "Date of registration",
-      // minWidth: 170,
       align: "center",
-      // format: (value) => value.toLocaleString('en-US'),
     },
     {
       id: "Actions",
       label: "Actions",
-      // minWidth: 170,
       align: "center",
-      // format: (value) => value.toLocaleString('en-US'),
     },
   ];
 
   function createData(User_Info, Full_Name, Date_of_Registration, Actions) {
-    // const density = population / size;
-
     return { User_Info, Full_Name, Date_of_Registration, Actions };
   }
 
@@ -243,7 +231,6 @@ const User = () => {
       <div className="searchnfilter">
         <SearchBar />
         <button className="filterButton">
-          {" "}
           <FilterAltIcon className="filterIcon" /> Filter
         </button>
       </div>
@@ -260,7 +247,8 @@ const User = () => {
                   <TableCell
                     key={column.id}
                     align={column.align}
-                    style={{ minWidth: column.minWidth }}
+                    style={{ minWidth: column.minWidth, fontWeight: 600}}
+                    className="headingOfTable"
                   >
                     {column.label}
                   </TableCell>
