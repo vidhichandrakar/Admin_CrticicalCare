@@ -343,34 +343,32 @@ body {
 
 
 .transactionCards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+  margin-top: 2%;
+}
+.boxNoOne{
   display: flex;
   flex-direction: row;
-  margin-bottom: 3%;
-}
-.boxNoOne,
-.boxNoThree {
   background-color: #ffffff;
-  border-radius: 10px !important;
-  padding: 24px 106px;
+  border-radius: 15px !important;
   justify-content: space-between;
-}
-.boxNoTwo {
-  background-color: #ffffff;
-  border-radius: 10px !important;
-  padding: 24px 120px;
-  margin: 2px 103px;
-  justify-content: space-between;
+  align-items: center;
+  padding: 3%;
+  box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.2)!important;
 }
 .boxValue {
-  font-size: small !important;
-  text-align: left !important;
-  margin: 0 -77% !important;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgb(41, 41, 41);
+  margin-left: 4%;
 }
 .boxNumber {
-  font-size: large !important;
-  font-weight: bold !important;
-  color: blue;
-  margin-left: 141% !important;
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: #0075ff;
+  margin-right: 7%;
 }
 
 .transactionTableHeading {
@@ -383,7 +381,7 @@ body {
   border-radius: 1%;
   padding: 20px 35px;
   font-size: small;
-  padding-bottom: 10%;
+  padding-bottom: 14%;
   margin-top: 2%;
 }
 .courseName {
@@ -675,6 +673,9 @@ body {
     grid-template-columns: 1fr;
   }
   .Offer-main-cards {
+    grid-template-columns: 1fr;
+  }
+  .transactionCards {
     grid-template-columns: 1fr;
   }
 }

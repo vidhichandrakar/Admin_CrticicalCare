@@ -107,3 +107,19 @@ export const OfferData = [
     },
 ]
 
+export const TranscationCardData =[
+    {
+        Head : " Transactions ",
+        number: "2"
+    },
+    {
+        Head : " Transactions Amount",
+        number: " ₹2"
+    },
+    {
+        Head : " Avg Order Value ",
+        number: "₹1"
+    },
+]
+
+

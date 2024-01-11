@@ -157,10 +157,12 @@ function TestPortal() {
             <CourseHeader Heading={"Test Portal"} subHeading={"Only published tests are shown here"}/>
             <div className='testPortalSearchBarSection'>
             <div className='searchnfilter'>
-            <SearchBar />
-          <button className='filterButton'> <FilterAltIcon/> Filter</button>
-            </div>
-          <button className='addTestButton'> + Add Test </button>
+           
+          <SearchBar mt ="2%"/>
+           
+            <button className='filterButton'> <FilterAltIcon/> Filter</button>
+        </div>
+            <button className='addTestButton'> + Add Test </button>
              </div>
 
 <Paper
