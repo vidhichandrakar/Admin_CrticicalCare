@@ -23,8 +23,9 @@ export default function Main() {
       {/* <MainCourses/> */}
       {/* <User/> */}
       {/* <Banner /> */}
+      {/* <User/> */}
       {/* <Transaction/> */}
-      {/* <MyTeam/> */}
+      <MyTeam/>
       {/* <TestPortal/> */}
       {/* <SearchBar /> */}
       {/* <Testimonial/> */}
