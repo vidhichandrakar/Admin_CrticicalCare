@@ -18,23 +18,20 @@ import CouponMain from "../Coupons/Coupons.main";
 export default function Main() {
   return (
     <main className="main-container">
-      <Dashboard />
-      <User/>
+      {/* <Dashboard /> */}
       {/* <MainCourses/> */}
-      {/* <Banner /> */}
       {/* <User/> */}
-      {/* <Transaction/> */}
+      {/* <Banner /> */}
+      <Transaction/>
       {/* <MyTeam/> */}
       {/* <TestPortal/> */}
-      {/* <SearchBar /> */}
       {/* <Testimonial/> */}
-      {/* <CreateCoupon/> */}
       {/* <CreateCoupon/> */}
       {/* <Trics1FreeMockTest/> */}
       {/* <MainCourses/> */}
       {/* <UpcomingCoursesMain/> */}
       {/* <YourCourses /> */}
-      <Analytics />
+      {/* <Analytics /> */}
       {/* <CouponMain/> */}
     </main>
   );
