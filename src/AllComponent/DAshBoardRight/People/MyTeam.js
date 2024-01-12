@@ -4,12 +4,8 @@ import { styled, alpha } from "@mui/material/styles";
 import InputBase from "@mui/material/InputBase";
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-// import CourseHeader from "../../Courses/CoursesHeader";
-// import Popover from "@mui/material/Popover";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import DeleteIcon from '@mui/icons-material/Delete';
-import BlockIcon from '@mui/icons-material/Block';
 import Paper from "@mui/material/Paper";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -21,6 +17,8 @@ import TableRow from "@mui/material/TableRow";
 import SearchBar from "../../../Util/SearchBar";
 import Popover from "@mui/material/Popover";
 import CourseHeader from "../../Courses/CoursesHeader";
+import DeleteIcon from '@mui/icons-material/Delete';
+import BlockIcon from '@mui/icons-material/Block';
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -65,23 +63,6 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 function MyTeam() {
   const [action, setAction] = useState(false);
-  // const [anchorEl, setAnchorEl] = React.useState(null);
-  // const actionsOptions = (e) => {
-  //   setAction(true);
-  // };
-
-  // const handleClick = (event) => {
-  //   setAnchorEl(event.currentTarget);
-  // };
-
-  // const handleClose = () => {
-  //   setAnchorEl(null);
-  // };
-
-  // const open = Boolean(anchorEl);
-  // const id = open ? "simple-popover" : undefined;
-
-
 
   const columns = [
     {
@@ -218,120 +199,12 @@ function MyTeam() {
 
 
         <div className="searchnfilter">
-        <SearchBar/>
+        <SearchBar mt = "2%"/>
           <button>
             {" "}
             <FilterAltIcon /> Filter
           </button>
         </div>
-
-        {/* <table className="myTeamCompleteTable">
-          <tr className="transactionTableHeading">
-            <th>User Info</th>
-            <th>Full Name</th>
-            <th>Access Level</th>
-            <th>Actions</th>
-          </tr>
-          <hr className="myTeamhrLine" />
-
-          <tr>
-            <td>
-              <p className="bluePara">Sheikhshoeb194@gmail.com</p>{" "}
-              <p className="searchIconLogo">+918889844180</p>
-            </td>
-            <td>
-              <p>Sheikh Shoeb</p>
-            </td>
-            <td>
-              <p>Super Admin</p>
-            </td>
-            {/* <button onClick={(e)=>actionsOptions(e)}> <td><MoreVertIcon/></td> </button>  */}
-            {/* <div className="moreVertIcon">
-              <Button
-                aria-describedby={id}
-                variant="contained"
-                onClick={handleClick}
-              >
-                <MoreVertIcon/>
-              </Button>
-              <Popover
-                id={id}
-                open={open}
-                anchorEl={anchorEl}
-                onClose={handleClose}
-                anchorOrigin={{
-                  vertical: "bottom",
-                  horizontal: "left",
-                }}
-              >
-                <Typography sx={{ p: 2 }} className="redDelete">
-                  <DeleteIcon/> Delete
-                </Typography>
-                <Typography sx={{ p: 2 }} className="blueBlockUser">
-                  <BlockIcon/> Block User
-                </Typography>
-              </Popover>
-            </div>
-          </tr>
-
-          <tr>
-            <td>
-              <p className="bluePara">jitendra.chandrakar@gmail.com</p>{" "}
-              <p className="searchIconLogo">+911234567890</p>
-            </td>
-            <td>
-              <p>Jitendra Chandrakar</p>
-            </td>
-            <td>
-              <p>Admin</p>
-            </td>
-           <td><MoreVertIcon/></td>
-          </tr>
-
-          <tr>
-            <td>
-              <p className="bluePara">pranab.raj@gmail.com</p>{" "}
-              <p className="searchIconLogo">+917583808083</p>
-            </td>
-            <td>
-              <p>Pranab Raj</p>
-            </td>
-            <td>
-              <p>Admin</p>
-            </td>
-            <td><MoreVertIcon/></td>
-          </tr>
-
-          <tr>
-            <td>
-              <p className="bluePara">saniakhan@gmail.com</p>{" "}
-              <p className="searchIconLogo">+918889844180</p>
-            </td>
-            <td>
-              <p>Sania Khan</p>
-            </td>
-            <td>
-              <p>Admin</p>
-            </td>
-            <td><MoreVertIcon/></td>
-          </tr>
-
-          <tr>
-            <td>
-              <p className="bluePara">ruhulamin@gmail.com</p>{" "}
-              <p className="searchIconLogo">+918889844180</p>
-            </td>
-            <td>
-              <p>Ruhul Amin</p>
-            </td>
-            <td>
-              <p>Admin</p>
-            </td>
-            <td><MoreVertIcon/></td>
-          </tr>
-        </table> */} 
-        
-
 
         <Paper
         sx={{ width: "100%", overflow: "hidden" }}
@@ -345,7 +218,7 @@ function MyTeam() {
                   <TableCell
                     key={column.id}
                     align={column.align}
-                    style={{ minWidth: column.minWidth }}
+                    style={{ minWidth: column.minWidth, fontWeight: 600 }}
                   >
                     {column.label}
                   </TableCell>
@@ -399,9 +272,9 @@ function MyTeam() {
                   horizontal: "right",
                 }}
               >
-                <Typography sx={{ p: 1 }}>{openData.full_name}</Typography>
-                <Typography sx={{ p: 1 }}>Edit </Typography>
-                <Typography sx={{ p: 1 }}>Delete</Typography>
+                {/* <Typography sx={{ p: 1 }}>{openData.full_name}</Typography> */}
+                <Typography sx={{ p: 1 }} className="redDelete"> <DeleteIcon/> Delete </Typography>
+                <Typography sx={{ p: 1 }} className="blueBlockUser"> <BlockIcon/> Block User</Typography>
               </Popover>
             </TableBody>
           </Table>
