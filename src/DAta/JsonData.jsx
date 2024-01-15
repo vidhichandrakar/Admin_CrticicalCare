@@ -94,7 +94,7 @@ export const OfferData = [
     {
         icon : <CollectionsIcon />,
         head: "Total Transactions",
-        title: "3",
+        title: "30000",
         button: "Total Transactions",
         arrow: <EastIcon />
     },
