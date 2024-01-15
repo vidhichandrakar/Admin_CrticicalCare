@@ -20,12 +20,12 @@ export default function Main() {
     <main className="main-container">
       {/* <Dashboard /> */}
       {/* <User/> */}
-      {/* <MainCourses/> */}
+      <MainCourses/>
       {/* <Banner /> */}
       {/* <User/> */}
       {/* <Transaction/> */}
       {/* <MyTeam/> */}
-      <TestPortal/>
+      {/* <TestPortal/> */}
       {/* <SearchBar /> */}
       {/* <Testimonial/> */}
       {/* <CreateCoupon/> */}
