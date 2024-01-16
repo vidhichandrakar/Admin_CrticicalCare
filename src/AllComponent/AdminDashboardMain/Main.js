@@ -16,13 +16,15 @@ import SearchBar from "../../Util/SearchBar";
 import CouponMain from "../Coupons/Coupons.main";
 import LoginPage from "../LoginFiles/LoginPage";
 import LoginEmail from "../LoginFiles/LoginRight/LoginEmail";
+import LoginEmailandPassword from "../LoginFiles/LoginRight/LoginEmailandPassword";
 
 export default function Main() {
   return (
     <main className="main-container">
       {/* <Dashboard /> */}
       {/* <User/> */}
-      <LoginPage/>
+      {/* <LoginPage/> */}
+      <LoginEmailandPassword/>
       {/* <MainCourses/> */}
       {/* <Banner /> */}
       {/* <MyTeam/> */}

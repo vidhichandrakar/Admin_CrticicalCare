@@ -3,6 +3,7 @@ import LoginLeft from "./LoginLeft/LoginLeft";
 import LoginEmail from "./LoginRight/LoginEmail";
 import "../CSSFile/Login.css";
 import { Box, Typography } from "@mui/material";
+import LoginEmailandPassword from "./LoginRight/LoginEmailandPassword";
 
 const LoginPage = () => {
   return (
@@ -10,7 +11,8 @@ const LoginPage = () => {
       <Box className="MainBox">
         <Box className="loginBox">
           <LoginLeft />
-          <LoginEmail />
+          {/* <LoginEmail /> */}
+          <LoginEmailandPassword/>
         </Box>
       </Box>
     </>
