@@ -21,7 +21,6 @@ export default function Main() {
       {/* <Dashboard /> */}
       {/* <MainCourses/> */}
       {/* <Banner /> */}
-      {/* <Transaction/> */}
       {/* <MyTeam/> */}
       {/* <TestPortal/> */}
       {/* <SearchBar /> */}
