@@ -56,7 +56,6 @@
 .HeaderRight{
   width: 60%;
   justify-content: end;
-  /* background-color: red; */
   display: flex;
   flex-direction: row-reverse;
 }

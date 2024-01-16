@@ -14,28 +14,27 @@ import Analytics from "../DAshBoardRight/Analytics/Analytics";
 import UpcomingCoursesMain from "../UpcomingCourses/UpcomingCourses.Main";
 import SearchBar from "../../Util/SearchBar";
 import CouponMain from "../Coupons/Coupons.main";
+import LoginPage from "../LoginFiles/LoginPage";
+import LoginEmail from "../LoginFiles/LoginRight/LoginEmail";
 
 export default function Main() {
   return (
     <main className="main-container">
       {/* <Dashboard /> */}
+      {/* <User/> */}
+      <LoginPage/>
       {/* <MainCourses/> */}
       {/* <Banner /> */}
       {/* <MyTeam/> */}
       {/* <TestPortal/> */}
       {/* <SearchBar /> */}
-      {/* <User/> */}
-      {/* <Banner /> */}
-      <Transaction />
-      {/* <MyTeam/> */}
-      {/* <TestPortal/> */}
       {/* <Testimonial/> */}
       {/* <CreateCoupon/> */}
       {/* <Trics1FreeMockTest/> */}
       {/* <MainCourses/> */}
       {/* <UpcomingCoursesMain/> */}
       {/* <YourCourses /> */}
-      <Analytics />
+      {/* <Analytics /> */}
       {/* <CouponMain/> */}
     </main>
   );
