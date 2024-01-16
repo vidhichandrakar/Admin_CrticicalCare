@@ -22,19 +22,17 @@ export default function Main() {
       {/* <User/> */}
       {/* <MainCourses/> */}
       {/* <Banner /> */}
-      {/* <User/> */}
       {/* <Transaction/> */}
       {/* <MyTeam/> */}
-      <TestPortal/>
+      {/* <TestPortal/> */}
       {/* <SearchBar /> */}
       {/* <Testimonial/> */}
-      {/* <CreateCoupon/> */}
       {/* <CreateCoupon/> */}
       {/* <Trics1FreeMockTest/> */}
       {/* <MainCourses/> */}
       {/* <UpcomingCoursesMain/> */}
       {/* <YourCourses /> */}
-      {/* <Analytics /> */}
+      <Analytics />
       {/* <CouponMain/> */}
     </main>
   );
