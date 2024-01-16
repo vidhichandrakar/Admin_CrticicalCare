@@ -3,8 +3,8 @@ import React from "react";
 const OfferCard = (props) => {
   return (
     <>
-    {props.Data.map((value, index) => (
-      <div className="Offer-card">
+    {props.Data.map((value) => (
+      <main className="Offer-card">
         <div className="CardRow">
           <div className="OfferIcon" >
             {value.icon}
@@ -18,7 +18,7 @@ const OfferCard = (props) => {
           <span>{value.button}</span>
           <div className="ArrowIcon">{value.arrow}</div> 
         </div>
-      </div>
+      </main>
       ))}
     </>
   );
