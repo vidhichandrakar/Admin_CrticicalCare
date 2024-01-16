@@ -80,13 +80,13 @@ function Transaction() {
           />
         ),
         createData(
-          { name: "Sania Khan", phone: "7589576" },
+          { name: "Sania Khan", phone: "asdfghjkl" },
           "TRICS 1 FREE MOCK TEST FOR EDIC-1",
           "19/Dec/2023",
           <MoreVertIcon
             onClick={(event) =>
               handleClick(event, "id2", {
-                User_Info: { name: "sheikhshoeb194@gmail.com", phone: "7589576" },
+                User_Info: { name: "sheikhshoeb194@gmail.com", phone: "asdfghjkl" },
                 full_name: "TRICS 1 FREE MOCK TEST FOR EDIC-1",
                 date: "12/10/23",
               })
@@ -174,7 +174,6 @@ function Transaction() {
                                  {value.name}
                                 </Typography>
                                 <Typography className="phNumber">
-                                 
                                  { value.phone}
                                 </Typography>
                               </TableCell>

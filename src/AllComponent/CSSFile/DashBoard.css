@@ -222,10 +222,11 @@ body {
   display: flex;
   flex-direction: row;
   margin: 15px;
+  width: 100%;
 }
 .OfferIcon {
-  margin-top: 5%;
-  margin-left: 15%;
+  margin-top: 4%;
+  margin-left: 5%;
   font-size: 3rem !important;
 }
 .OfferCardText {
@@ -233,11 +234,15 @@ body {
   color: black;
   margin-left: 7%;
 }
+.OfferCardText h3 {
+padding: 2px 2px;
+}
 .OfferCardText p {
-  margin-top: -13%;
+  /* margin-top: -13%; */
   color: grey;
   font-size: 1rem;
 }
+
 .OfferButton {
   display: flex;
   flex-direction: row;

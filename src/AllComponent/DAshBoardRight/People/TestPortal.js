@@ -110,7 +110,8 @@ function TestPortal() {
           />
         ),
         createData(
-          "TRICS 1 FREE MOCK TEST FOR EDIC-1" ,
+          
+           "TRICS 1 FREE MOCK TEST FOR EDIC-1",
           "19/Dec/2023",
           <MoreVertIcon
             onClick={(event) =>
@@ -234,7 +235,7 @@ function TestPortal() {
               >
                 {/* <Typography sx={{ p: 1 }}>{openData.full_name}</Typography> */}
                 {/* <Typography sx={{ p: 1 }}>Edit </Typography> */}
-                <Typography sx={{ p: 1 }}><DeleteIcon/> Delete</Typography>
+                <Typography sx={{ p: 1 }} className='redDelete'><DeleteIcon/> Delete</Typography>
               </Popover>
             </TableBody>
           </Table>

@@ -20,15 +20,15 @@ export default function Main() {
     <main className="main-container">
       {/* <Dashboard /> */}
       {/* <User/> */}
-      <MainCourses/>
+      {/* <MainCourses/> */}
       {/* <Banner /> */}
       {/* <User/> */}
-      {/* <Transaction/> */}
+      {/* <Banner /> */}
+      {/* <Transaction /> */}
       {/* <MyTeam/> */}
       {/* <TestPortal/> */}
       {/* <SearchBar /> */}
       {/* <Testimonial/> */}
-      {/* <CreateCoupon/> */}
       {/* <CreateCoupon/> */}
       {/* <Trics1FreeMockTest/> */}
       {/* <MainCourses/> */}
