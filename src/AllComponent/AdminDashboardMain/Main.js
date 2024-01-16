@@ -36,7 +36,7 @@ export default function Main() {
       {/* <MainCourses/> */}
       {/* <UpcomingCoursesMain/> */}
       {/* <YourCourses /> */}
-      {/* <Analytics /> */}
+      <Analytics />
       {/* <CouponMain/> */}
     </main>
   );
