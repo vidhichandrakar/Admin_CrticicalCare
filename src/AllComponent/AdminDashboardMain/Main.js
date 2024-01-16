@@ -14,6 +14,7 @@ import Analytics from "../DAshBoardRight/Analytics/Analytics";
 import UpcomingCoursesMain from "../UpcomingCourses/UpcomingCourses.Main";
 import SearchBar from "../../Util/SearchBar";
 import CouponMain from "../Coupons/Coupons.main";
+import LoginPage from "../LoginFiles/LoginPage";
 
 export default function Main() {
   return (
@@ -23,6 +24,7 @@ export default function Main() {
       {/* <MainCourses/> */}
       {/* <Banner /> */}
       {/* <User/> */}
+      <LoginPage/>
       {/* <Banner /> */}
       {/* <Transaction /> */}
       {/* <MyTeam/> */}

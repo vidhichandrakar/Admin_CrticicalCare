@@ -19,7 +19,7 @@
   justify-content: center;
   height: 100%;
   width: 50%;
-  background-color: #f4f4f4;
+  background-color: #F8F8F8;
   border-right: solid 1px;
 }
 .Leftimg {
@@ -45,7 +45,7 @@ width: 50%;
   .BoxShadow{
     box-shadow: 1px 1px 5px 1px #d1d0d0 !important;
     text-align: center !important;
-    border-radius: 7px !important;
+    border-radius: 10px !important;
     font-size: 0.7rem !important;
     margin-top: 3% !important;
   }
