@@ -7,8 +7,10 @@ import AddRoundedIcon from "@mui/icons-material/AddRounded";
 import Button from "@mui/material/Button";
 import Folder from "../../Media/Images/folder.avif";
 import SearchBar from "../../Util/SearchBar";
+import YourCoursesCard from "./YourCoursesCard";
+import {YourCoursesCardData} from '../../Data/JsonData'
 
-function YourCourses() {
+const YourCourses = () => {
   return (
     <div className="main-container margin20">
       <CourseHeader
@@ -26,42 +28,7 @@ function YourCourses() {
             </Button>
           </div>
         </div>
-        <div className="card">
-          <img src={cardimg} className="cardImage" />
-          <div className="CardData">
-            <p className="Headp">TRICS 1 FREE MOCK TEST FOR EDIC-1</p>
-            <p className="Namep">Created by: Jitendra</p>
-            <p className="Yearp"> 1 year</p>
-            <p className="Pricep">$1</p>
-          </div>
-        </div>
-        <div className="card">
-          <img src={cardimg} className="cardImage" />
-          <div className="CardData">
-            <p className="Headp">TRICS 1 FREE MOCK TEST FOR EDIC-1</p>
-            <p className="Namep">Created by: Jitendra</p>
-            <p className="Yearp"> 1 year</p>
-            <p className="Pricep">$1</p>
-          </div>
-        </div>
-        <div className="card">
-          <img src={cardimg} className="cardImage" />
-          <div className="CardData">
-            <p className="Headp">TRICS 1 FREE MOCK TEST FOR EDIC-1</p>
-            <p className="Namep">Created by: Jitendra</p>
-            <p className="Yearp"> 1 year</p>
-            <p className="Pricep">$1</p>
-          </div>
-        </div>
-        <div className="card">
-          <img src={cardimg} className="cardImage" />
-          <div className="CardData">
-            <p className="Headp">TRICS 1 FREE MOCK TEST FOR EDIC-1</p>
-            <p className="Namep">Created by: Jitendra</p>
-            <p className="Yearp"> 1 year</p>
-            <p className="Pricep">$1</p>
-          </div>
-        </div>
+       <YourCoursesCard Data = {YourCoursesCardData}/>
       </div>
     </div>
   );

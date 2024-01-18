@@ -1,13 +1,13 @@
 .Add-main-cards {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    gap: 0px;
+    row-gap: 30px;
     margin: 28px 0px;
   }
   .cardImage{
    border-top-right-radius: 15px;
    border-top-left-radius: 15px;
-    height: 25vh;
+    height: 27vh;
     width: 100%;
   }
  
@@ -38,7 +38,7 @@
     border-radius: 15px !important;
   }
   .CardData{
-    margin: 5px;
+    margin-left: 12px;
     text-align: left;
   }
   .Namep{
