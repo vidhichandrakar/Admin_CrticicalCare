@@ -428,10 +428,6 @@ padding: 2px 2px;
   border: none !important;
   box-shadow: none !important;
 }
-.mr{
-  margin-right: 500% !important;
-  background-color: red !important  ;
-}
 .redDelete {
   display: flex;
   align-items: center;
