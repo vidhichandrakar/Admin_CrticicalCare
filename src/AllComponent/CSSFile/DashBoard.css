@@ -333,9 +333,12 @@ padding: 2px 2px;
   color: dodgerblue;
   font-weight: bold;
 }
-.phNumber {
-  color: grey;
-  font-weight: 600;
+.PhoneText{
+  color: grey !important;
+  font-size: 0.9rem !important;
+}
+.TableHover:hover{
+  cursor: pointer;
 }
 .parentTable .MuiTableCell-root {
   border-bottom: 0px !important;

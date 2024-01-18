@@ -262,9 +262,11 @@ const User = () => {
                   return (
                     <TableRow
                       hover
+                      className="TableHover"
                       role="checkbox"
                       tabIndex={-1}
                       key={row.code}
+
                     >
                       {columns.map((column) => {
                         const value = row[column.id];
@@ -272,12 +274,11 @@ const User = () => {
                         return (
                           <Fragment>
                             {column.id === "User_Info" ? (
-                              <TableCell key={column.id} align={column.align}>
+                              <TableCell key={column.id} align={column.align} >
                                 <Typography className="bluePara">
                                  {value.name}
                                 </Typography>
-                                <Typography className="phNumber">
-                                 
+                                <Typography className="PhoneText">
                                  { value.phone}
                                 </Typography>
                               </TableCell>
