@@ -14,6 +14,9 @@ import Analytics from "../DAshBoardRight/Analytics/Analytics";
 import UpcomingCoursesMain from "../UpcomingCourses/UpcomingCourses.Main";
 import SearchBar from "../../Util/SearchBar";
 import CouponMain from "../Coupons/Coupons.main";
+import LoginPage from "../LoginFiles/LoginPage";
+import LoginEmail from "../LoginFiles/LoginRight/LoginEmail";
+import LoginEmailandPassword from "../LoginFiles/LoginRight/LoginEmailandPassword";
 
 export default function Main() {
   return (

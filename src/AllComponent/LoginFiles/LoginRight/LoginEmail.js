@@ -21,7 +21,7 @@ function LoginEmail({ handleLoginOption }) {
         sx={{ textAlign: "center !important" }}
         fullWidth
         size="small"
-        placeholder="Email Id"
+        placeholder="Enter Your Email"
         id="fullWidth"
         className="BoxShadow"
         onChange={(event) => handleEmail("emailId", event.target.value)}

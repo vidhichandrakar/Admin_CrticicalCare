@@ -200,17 +200,16 @@ function TestPortal() {
                     >
                       {columns.map((column) => {
                         const value = row[column.id];
-                        console.log(row, Object.keys(row), column.id);
+                        console.log(row, Object.keys(row), column.id, value);
                         return (
                           <Fragment>
-                            {column.id === "User_Info" ? (
-                              <TableCell key={column.id} align={column.align}>
-                                <Typography className="bluePara">
-                                 {value.name}
+                            {column.id === "Tests" && row.Tests === "TRICS 1 FREE MOCK TEST FOR EDIC-1" ? (
+                              <TableCell key={column.id} align={column.align} className='lastTableCell'>
+                                <Typography className='lastValue'>
+                                 {value}
                                 </Typography>
                                 <Typography className="phNumber">
-                                 
-                                 { value.phone}
+                                 FREE TEST 
                                 </Typography>
                               </TableCell>
                             ) : (
@@ -234,8 +233,6 @@ function TestPortal() {
                   horizontal: "right",
                 }}
               >
-                {/* <Typography sx={{ p: 1 }}>{openData.full_name}</Typography> */}
-                {/* <Typography sx={{ p: 1 }}>Edit </Typography> */}
                 <Typography sx={{ p: 1 }} className='redDelete'><DeleteIcon/> Delete</Typography>
               </Popover>
             </TableBody>
