@@ -249,6 +249,7 @@ padding: 2px 2px;
   cursor: pointer;
   font-size: 1rem;
   margin-left: 5%;
+  text-decoration: none !important;
 }
 .ArrowIcon {
   margin-top: -2px;

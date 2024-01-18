@@ -14,6 +14,7 @@ import Analytics from '../DAshBoardRight/Analytics/Analytics';
 import UpcomingCoursesMain from '../UpcomingCourses/UpcomingCourses.Main';
 import CouponMain from '../Coupons/Coupons.main';
 import YourCourses from '../Courses/YourCourses';
+import CreateCourses from '../Courses/CreateCourse';
 
 
 const RouterMain = () => {
@@ -21,6 +22,7 @@ const RouterMain = () => {
     <div>
      <Routes>
             <Route exact path="/" element= {<Dashboard />}> </Route>
+            <Route exact path="/CreateCourses" element= {<CreateCourses />}> </Route>
             <Route exact path="/Banner" element= {<Banner />}> </Route>
             <Route exact path="/User" element= {< User />}> </Route>
             <Route exact path="/Transaction" element= {<Transaction />}> </Route>

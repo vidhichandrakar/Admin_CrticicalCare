@@ -79,7 +79,7 @@ export const AdditionalData = [
 
 export const OfferData = [
     {   
-        href : "/",
+        href : "/CreateCourses",
         icon : <CollectionsIcon />,
         head: "Course",
         title: "3 Published Course",

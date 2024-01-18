@@ -10,6 +10,7 @@ import SearchBar from "../../Util/SearchBar";
 import YourCoursesCard from "./YourCoursesCard";
 import {YourCoursesCardData} from '../../Data/JsonData'
 import SideBar from "../AdminDashboardMain/SideBar";
+import { Link } from "react-router-dom";
 
 const YourCourses = () => {
   return (
@@ -26,9 +27,9 @@ const YourCourses = () => {
         <div className="card">
           <div className="AddCourses">
             <img src={Folder} className="FolderImg" />
-            <Button variant="contained" className="AddBtn">
+            <Link to="/CreateCourses"><Button variant="contained" className="AddBtn">
               Add New Courses <AddRoundedIcon />
-            </Button>
+            </Button></Link>
           </div>
         </div>
        <YourCoursesCard Data = {YourCoursesCardData}/>

@@ -21,7 +21,7 @@ import LoginEmailandPassword from "../LoginFiles/LoginRight/LoginEmailandPasswor
 export default function Main() {
   return (
     <main className="main-container">
-      <Dashboard />
+      {/* <Dashboard /> */}
       {/* <MainCourses/> */}
       {/* <User/> */}
       {/* <Banner /> */}
