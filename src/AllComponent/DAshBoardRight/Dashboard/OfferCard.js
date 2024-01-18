@@ -1,3 +1,4 @@
+import { blue } from "@mui/material/colors";
 import React from "react";
 import { Link } from "react-router-dom";
 
@@ -15,7 +16,7 @@ const OfferCard = (props) => {
             <p>{value.title}</p>
           </div>
         </div>
-        <Link to={value.href}><div className="OfferButton">
+        <Link to={value.href} style={{textDecoration: 'none', color: "#13aaeb" }}><div className="OfferButton">
           <span>{value.button}</span>
           <div className="ArrowIcon">{value.arrow}</div> 
         </div>
