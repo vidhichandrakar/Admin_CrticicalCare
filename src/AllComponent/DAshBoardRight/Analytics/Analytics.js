@@ -9,9 +9,12 @@ import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import SignalCellularAltIcon from "@mui/icons-material/SignalCellularAlt";
 import { AnalyticsSmallData } from "../../../Data/JsonData";
 import { commonSelect } from "../../../Util/CommonFields";
+import SideBar from "../../AdminDashboardMain/SideBar";
 
 const Analytics = () => {
   return (
+    <div className='grid-container'>
+      <SideBar />
     <main className="main-container m20">
       <CourseHeader
         Heading={"Analytics"}
@@ -65,6 +68,7 @@ const Analytics = () => {
         </Box>
       </div>
     </main>
+    </div>
   );
 }
 

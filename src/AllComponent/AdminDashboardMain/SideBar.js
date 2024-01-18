@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom';
 import Logo from "../../Media/Logo.png"
 import MenuBookIcon from '@mui/icons-material/MenuBook';
 import ForumIcon from '@mui/icons-material/Forum';
@@ -20,29 +21,29 @@ function SideBar({openSidebarToggle, OpenSidebar}) {
         </div>
 
         <div className='sidebar-list sidebar-list-item BottomLine'>
-                <a href="/AllCourses" >
+                <Link to="/" >
                     <div>
                       <p className='hoverrr'><DashboardIcon className='icon'/>DashBoard</p>
                       </div>
-                </a>
-                <a href="/AllCourses">
+                </Link>
+                <Link to="/AllCourses">
                   <p className='hoverrr'> <MenuBookIcon className='icon'/>Courses</p> 
-                </a>
-                <a href="">
+                </Link>
+                <Link to="">
                    <p className='hoverrr'> <AssignmentIcon className='icon'/>Test Portal</p>
-                </a>
-                <a href="/AboutUs">
+                </Link>
+                <Link to="/AboutUs">
                     <p className='hoverrr'><ForumIcon className='icon'/>Chats</p>
-                </a>
-                <a href="/ContactUs">
+                </Link>
+                <Link to="/Analytics">
                 <p className='hoverrr'> <SignalCellularAltIcon  className='icon'/>Analytics</p>
-                </a>
-                <a href="/PrivacyPolicy">
+                </Link>
+                <Link to="/User">
                 <p className='hoverrr'> <PersonIcon className='icon'/> People</p>
-                </a>
-                <a href="/PrivacyPolicy">
+                </Link>
+                <Link to="/PrivacyPolicy">
         <p className='hoverrr'>  <PersonIcon className='icon'/>Push Notification</p>
-                </a>
+                </Link>
         </div>
         
        

@@ -15,6 +15,7 @@ import Button from "@mui/material/Button";
 import Popover from "@mui/material/Popover";
 import DeleteIcon from '@mui/icons-material/Delete';
 import Typography from '@mui/material/Typography';
+import SideBar from "../../AdminDashboardMain/SideBar";
 
 const Testimonial = () => {
 
@@ -110,6 +111,8 @@ const Testimonial = () => {
   const open = Boolean(anchorEl);
   const id = open ? "simple-popover" : undefined;
   return (
+    <div className='grid-container'>
+      <SideBar />
     <div className="main-container">
       <div className="m20">
         <CourseHeader Heading={"Testimonial"} subHeading={"Only published testimonial are shown here"}/>
@@ -201,6 +204,7 @@ const Testimonial = () => {
       </Paper>
 
       </div>
+    </div>
     </div>
   );
 }

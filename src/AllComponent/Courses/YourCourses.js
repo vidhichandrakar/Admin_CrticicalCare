@@ -9,9 +9,12 @@ import Folder from "../../Media/Images/folder.avif";
 import SearchBar from "../../Util/SearchBar";
 import YourCoursesCard from "./YourCoursesCard";
 import {YourCoursesCardData} from '../../Data/JsonData'
+import SideBar from "../AdminDashboardMain/SideBar";
 
 const YourCourses = () => {
   return (
+    <div className='grid-container'>
+      <SideBar />
     <div className="main-container margin20">
       <CourseHeader
         Heading={"Your Courses (3)"}
@@ -30,6 +33,7 @@ const YourCourses = () => {
         </div>
        <YourCoursesCard Data = {YourCoursesCardData}/>
       </div>
+    </div>
     </div>
   );
 }

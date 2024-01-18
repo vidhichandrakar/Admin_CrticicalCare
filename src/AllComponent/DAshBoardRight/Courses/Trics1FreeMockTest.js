@@ -10,6 +10,7 @@ import FolderIcon from "@mui/icons-material/Folder";
 import Popover from "@mui/material/Popover";
 import DoctorsImage from "../../../Media/Images/db7187e8-b7cf-47ed-8900-6de89dabde06.png";
 import CourseHeader from "../../Courses/CoursesHeader";
+import SideBar from "../../AdminDashboardMain/SideBar";
 
 
 const Trics1FreeMockTest = () => {
@@ -26,6 +27,8 @@ const Trics1FreeMockTest = () => {
   const open = Boolean(anchorEl);
   const id = open ? "simple-popover" : undefined;
   return (
+    <div className='grid-container'>
+      <SideBar />
     <div className="mainBox">
       <CourseHeader  Heading={"TRICS 1 FREE MOCK TEST FOR EDIC-1"} />
       <div className="another-main-container">
@@ -143,6 +146,7 @@ const Trics1FreeMockTest = () => {
           </div>
           </div>
       </div>
+    </div>
     </div>
   );
 }

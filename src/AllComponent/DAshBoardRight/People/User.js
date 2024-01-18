@@ -23,6 +23,7 @@ import TableRow from "@mui/material/TableRow";
 import SearchBar from "../../../Util/SearchBar";
 import Popover from "@mui/material/Popover";
 import CourseHeader from "../../Courses/CoursesHeader";
+import SideBar from "../../AdminDashboardMain/SideBar";
 
 const User = () => {
   const columns = [
@@ -222,6 +223,8 @@ const User = () => {
   const id = open ? "simple-popover" : undefined;
 
   return (
+    <div className='grid-container'>
+      <SideBar />
     <div className=" m20">
       <CourseHeader
         Heading={"Users (357)"}
@@ -311,6 +314,7 @@ const User = () => {
           </Table>
         </TableContainer>
       </Paper>
+    </div>
     </div>
   );
 };

@@ -19,6 +19,7 @@ import Popover from "@mui/material/Popover";
 import CourseHeader from "../../Courses/CoursesHeader";
 import DeleteIcon from '@mui/icons-material/Delete';
 import BlockIcon from '@mui/icons-material/Block';
+import SideBar from "../../AdminDashboardMain/SideBar";
 
 const Search = styled("div")(({ theme }) => ({
   position: "relative",
@@ -193,6 +194,8 @@ const MyTeam = () => {
   const id = open ? "simple-popover" : undefined;
 
   return (
+    <div className='grid-container'>
+      <SideBar />
     <div className="main-container">
       <div className=" m20">
         <CourseHeader Heading={"My Team (5)"} subHeading={"View, Filter & Manage all your users"} />
@@ -281,6 +284,7 @@ const MyTeam = () => {
         </TableContainer>
       </Paper>
       </div>
+    </div>
     </div>
   );
 }

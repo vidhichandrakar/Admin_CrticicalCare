@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const OfferCard = (props) => {
   return (
@@ -14,10 +15,11 @@ const OfferCard = (props) => {
             <p>{value.title}</p>
           </div>
         </div>
-        <div className="OfferButton">
+        <Link to={value.href}><div className="OfferButton">
           <span>{value.button}</span>
           <div className="ArrowIcon">{value.arrow}</div> 
         </div>
+        </Link>
       </main>
       ))}
     </>

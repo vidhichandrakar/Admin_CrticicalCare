@@ -18,6 +18,7 @@ import Popover from "@mui/material/Popover";
 import DeleteIcon from "@mui/icons-material/Delete";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
+import SideBar from "../../AdminDashboardMain/SideBar";
 
 const TestPortal = () => {
   const columns = [
@@ -149,6 +150,8 @@ const TestPortal = () => {
   const open = Boolean(anchorEl);
   const id = open ? "simple-popover" : undefined;
   return (
+    <div className='grid-container'>
+      <SideBar />
     <div className="main-container">
       <div className="m20">
         <CourseHeader
@@ -250,6 +253,7 @@ const TestPortal = () => {
           </TableContainer>
         </Paper>
       </div>
+    </div>
     </div>
   );
 }
