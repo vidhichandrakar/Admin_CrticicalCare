@@ -12,6 +12,9 @@ import TablePagination from "@mui/material/TablePagination";
 import TableRow from "@mui/material/TableRow";
 import SearchBar from "../../../Util/SearchBar";
 import Button from "@mui/material/Button";
+import Popover from "@mui/material/Popover";
+import DeleteIcon from '@mui/icons-material/Delete';
+import Typography from '@mui/material/Typography';
 
 function Testimonial() {
 
