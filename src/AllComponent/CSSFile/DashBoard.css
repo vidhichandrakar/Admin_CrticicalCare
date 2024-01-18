@@ -428,8 +428,21 @@ padding: 2px 2px;
   border: none !important;
   box-shadow: none !important;
 }
+.mr{
+  margin-right: 500% !important;
+  background-color: red !important  ;
+}
 .redDelete {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   color: red !important;
+  padding: 6px 25px !important;
+  font-weight: 700 !important;
+}
+.Deleticon{
+  width: 30% !important;
+  margin-right: 25%;
 }
 .blueBlockUser {
   color: rgb(68, 68, 187) !important;
@@ -448,13 +461,13 @@ padding: 2px 2px;
   border: none !important;
 }
 .addTestButton {
-  background-color: dodgerblue;
+  background-color: dodgerblue !important;
   border-radius: 10px !important;
-  align-items: center;
-  margin-top: 22px;
-  border: none;
-  color: #ffffff;
-  width: 10%;
+  align-items: center !important;
+  margin-top: 22px !important;
+  border: none !important;
+  color: #ffffff !important;
+  width: 15% !important;
   height: 42px !important;
 }
 .TestPortalcompleteTable {
