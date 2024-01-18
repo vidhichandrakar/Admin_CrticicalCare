@@ -29,7 +29,7 @@ import TablePagination from "@mui/material/TablePagination";
 import TableRow from "@mui/material/TableRow";
 import Popover from "@mui/material/Popover";
 
-function Transaction() {
+const Transaction = () => {
     const columns = [
         {
           id: "User_Info",

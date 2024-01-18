@@ -6,7 +6,7 @@ import BannerCard from "./BannerCard";
 import { BannerData } from "../../../Data/JsonData";
 import { Fragment } from "react";
 
-function Banner() {
+const Banner = () => {
   return (
     <Fragment>
       <div className="BannerMain main-container">

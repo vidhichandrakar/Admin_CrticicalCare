@@ -19,7 +19,7 @@ import DeleteIcon from "@mui/icons-material/Delete";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
-function TestPortal() {
+const TestPortal = () => {
   const columns = [
     {
       id: "Tests",
@@ -37,7 +37,7 @@ function TestPortal() {
     },
   ];
 
-  function createData(Tests, Date, Actions) {
+  const createData = (Tests, Date, Actions) => {
     return { Tests, Date, Actions };
   }
 

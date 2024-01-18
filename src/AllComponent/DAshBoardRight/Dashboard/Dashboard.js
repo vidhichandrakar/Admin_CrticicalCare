@@ -4,7 +4,7 @@ import {AdditionalData, OfferData} from "../../../Data/JsonData"
 import AdditionalCard from "./AdditionalCard";
 import OfferCard from "./OfferCard";
 
-function Dashboard({ OpenSidebar }) {
+const Dashboard = ({ OpenSidebar }) => {
   return (
     <main className="mainBox">
       <div className="DashBoardMAinBox">

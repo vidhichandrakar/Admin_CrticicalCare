@@ -30,7 +30,6 @@ export const AnalyticsSmallData = [
 
 ]
 
-
 export const BannerData = [
     {
         Head: "Image",

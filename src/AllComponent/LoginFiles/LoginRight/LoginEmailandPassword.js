@@ -4,7 +4,7 @@ import TextField from "@mui/material/TextField";
 import { Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 
-function LoginEmailandPassword() {
+const LoginEmailandPassword = () => {
   const [emailValue, setEmailValue] = useState("");
   const handleEmail = (value) => {
     setEmailValue(value);

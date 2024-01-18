@@ -47,7 +47,7 @@ const User = () => {
     },
   ];
 
-  function createData(User_Info, Full_Name, Date_of_Registration, Actions) {
+  const createData = (User_Info, Full_Name, Date_of_Registration, Actions) => {
     return { User_Info, Full_Name, Date_of_Registration, Actions };
   }
 

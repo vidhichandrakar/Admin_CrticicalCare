@@ -12,7 +12,7 @@ import DoctorsImage from "../../../Media/Images/db7187e8-b7cf-47ed-8900-6de89dab
 import CourseHeader from "../../Courses/CoursesHeader";
 
 
-function Trics1FreeMockTest() {
+const Trics1FreeMockTest = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleClick = (event) => {

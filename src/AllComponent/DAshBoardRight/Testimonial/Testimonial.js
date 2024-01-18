@@ -16,7 +16,7 @@ import Popover from "@mui/material/Popover";
 import DeleteIcon from '@mui/icons-material/Delete';
 import Typography from '@mui/material/Typography';
 
-function Testimonial() {
+const Testimonial = () => {
 
   const columns = [
     {
@@ -37,7 +37,7 @@ function Testimonial() {
     },
   ];
 
-  function createData(Comments, Author, Actions) {
+  const createData = (Comments, Author, Actions) => {
     return { Comments, Author, Actions };
   }
 

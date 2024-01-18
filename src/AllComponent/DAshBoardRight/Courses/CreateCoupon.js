@@ -3,7 +3,7 @@ import Box from "@mui/material/Box";
 import CourseHeader from "../../Courses/CoursesHeader";
 import CreateCouponForm from "./CreateCoupon.form";
 
-function CreateCoupon() {
+const CreateCoupon = () => {
   return (
     <Box className="mainBox">
       <CourseHeader Heading={"Create coupon"} subHeading={""} />

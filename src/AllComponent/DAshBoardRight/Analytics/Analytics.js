@@ -10,7 +10,7 @@ import SignalCellularAltIcon from "@mui/icons-material/SignalCellularAlt";
 import { AnalyticsSmallData } from "../../../Data/JsonData";
 import { commonSelect } from "../../../Util/CommonFields";
 
-function Analytics() {
+const Analytics = () => {
   return (
     <main className="main-container m20">
       <CourseHeader

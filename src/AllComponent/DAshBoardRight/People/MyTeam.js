@@ -61,7 +61,7 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
   },
 }));
 
-function MyTeam() {
+const MyTeam = () => {
   const [action, setAction] = useState(false);
 
   const columns = [
@@ -87,7 +87,7 @@ function MyTeam() {
     },
   ];
 
-  function createData(User_Info, Full_Name, Access_Level, Actions) {
+  const createData = (User_Info, Full_Name, Access_Level, Actions) => {
 
     return { User_Info, Full_Name, Access_Level, Actions };
   }
