@@ -18,10 +18,7 @@ function Banner() {
           <div className="HeadText">
             <h2>Your Banner (3)</h2>
           </div>
-
-          <Card className="MainBox">
-            <BannerCard Data={BannerData} />
-          </Card>
+          <BannerCard Data={BannerData} />
         </div>
       </div>
     </Fragment>
@@ -29,4 +26,3 @@ function Banner() {
 }
 
 export default Banner;
-

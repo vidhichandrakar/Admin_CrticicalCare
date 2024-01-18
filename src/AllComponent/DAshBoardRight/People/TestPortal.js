@@ -17,6 +17,7 @@ import SearchBar from "../../../Util/SearchBar";
 import Popover from "@mui/material/Popover";
 import DeleteIcon from '@mui/icons-material/Delete';
 import Typography from '@mui/material/Typography';
+import Button from "@mui/material/Button";
 
 
 
@@ -161,9 +162,9 @@ function TestPortal() {
            
           <SearchBar mt ="2%"/>
            
-            <button className='filterButton'> <FilterAltIcon/> Filter</button>
+            <Button className='filterButton'> <FilterAltIcon/> Filter</Button>
         </div>
-            <button className='addTestButton'> + Add Test </button>
+            <Button className='addTestButton'> + Add Test </Button>
              </div>
 
 <Paper

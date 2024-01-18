@@ -45,14 +45,14 @@ width: 50%;
   .BoxShadow{
     box-shadow: 1px 1px 5px 1px #d1d0d0 !important;
     text-align: center !important;
-    border-radius: 7px !important;
+    border-radius: 10px !important;
     font-size: 0.7rem !important;
     margin-top: 3% !important;
   }
 .LoginBtn{
     width: 30% !important;
     height: 5vh !important;
-    margin-top: 5% !important;
+    margin-top: 10% !important;
     margin-left: 35% !important;
     background-color: #80baff !important;
     border-radius: 8px  !important;

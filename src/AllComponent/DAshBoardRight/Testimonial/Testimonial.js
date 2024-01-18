@@ -3,6 +3,7 @@ import CourseHeader from "../../Courses/CoursesHeader";
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import SearchBar from "../../../Util/SearchBar";
+import Button from "@mui/material/Button";
 
 function Testimonial() {
   return (
@@ -14,11 +15,11 @@ function Testimonial() {
             
             <SearchBar mt ="2%" />
             
-            <button className="filterButton">
+            <Button className="filterButton">
               <FilterAltIcon /> Filter
-            </button>
+            </Button>
           </div>
-          <button className="addTestimonialButton"> + Add Testimonial </button>
+          <Button className="addTestimonialButton"> + Add Testimonial </Button>
         </div>
 
         <table className="testimonialCompleteTable">
