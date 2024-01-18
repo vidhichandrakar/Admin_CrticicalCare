@@ -4,7 +4,7 @@ import FormControl from '@mui/material/FormControl';
 import OutlinedInput from '@mui/material/OutlinedInput';
 import InputAdornment from '@mui/material/InputAdornment';
 
-const SearchBar = ({mt}) => {
+const SearchBar = ({mt, placeholder}) => {
   return (
     
       
@@ -18,7 +18,7 @@ const SearchBar = ({mt}) => {
               
             }}
             className= "searchBar"
-            placeholder="Search by name"
+            placeholder= {placeholder}
           />
           </FormControl>
     

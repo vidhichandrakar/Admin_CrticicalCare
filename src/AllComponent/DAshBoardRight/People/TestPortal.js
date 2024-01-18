@@ -157,7 +157,7 @@ function TestPortal() {
         />
         <div className="testPortalSearchBarSection">
           <div className="searchnfilter">
-            <SearchBar mt="2%" />
+            <SearchBar mt="2%" placeholder="Search by name" />
 
             <Button className="filterButton">
               {" "}

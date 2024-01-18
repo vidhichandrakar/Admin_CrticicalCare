@@ -16,7 +16,7 @@ function YourCourses() {
         subHeading={"Add/View courses of your brand"}
       />
 
-      <SearchBar  mt ="2%"/>
+      <SearchBar  mt ="2%" placeholder="Search by name"/>
       <div className="Add-main-cards">
         <div className="card">
           <div className="AddCourses">

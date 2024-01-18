@@ -229,7 +229,7 @@ const User = () => {
       />
 
       <div className="searchnfilter">
-        <SearchBar mt = "2%"/>
+        <SearchBar mt = "2%" />
         <Button className="filterButton">
           <FilterAltIcon className="filterIcon" /> Filter
         </Button>

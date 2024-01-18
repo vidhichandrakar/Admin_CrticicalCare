@@ -126,7 +126,7 @@ function Transaction() {
     <div className='main-container'>
     <div className=' m20'>
         <CourseHeader Heading={"Transaction Dashboard"} />
-        <SearchBar mt = "-15px"/>
+        <SearchBar mt = "-15px" placeholder="Search by name"/>
 
        <div className='transactionCards'> 
             <TransactionCard  Data = {TranscationCardData}/>
