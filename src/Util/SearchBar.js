@@ -8,15 +8,16 @@ const SearchBar = ({mt, placeholder}) => {
   return (
     
       
-     <FormControl sx={{width: '23%', mt: mt }} variant="outlined">
+     <FormControl sx={{width: '23%', mt: mt,}} variant="outlined">
           <OutlinedInput
             id="outlined-adornment-weight"
-            startAdornment={<InputAdornment ><SearchIcon /></InputAdornment>}
+            startAdornment={<InputAdornment sx={{mr:1}}><SearchIcon/></InputAdornment>}
             aria-describedby="outlined-weight-helper-text"
             inputProps={{
               'aria-label': 'weight',
               
             }}
+            sx={{ borderRadius: 30 }}
             className= "searchBar"
             placeholder= {placeholder}
           />

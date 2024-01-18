@@ -306,9 +306,9 @@ padding: 2px 2px;
 .searchBar {
   height: 6vh;
   background-color: #ffffff !important;
-  border-radius: 15px !important;
-  border: 0.5px solid grey;
+  border:  solid 0px grey;
 }
+
 .filterButton {
   display: flex;
   flex-direction: row;
