@@ -1,7 +1,4 @@
 import React, { useState, Fragment } from "react";
-import SearchIcon from "@mui/icons-material/Search";
-import { styled, alpha } from "@mui/material/styles";
-import InputBase from "@mui/material/InputBase";
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import Typography from "@mui/material/Typography";
@@ -21,49 +18,13 @@ import DeleteIcon from '@mui/icons-material/Delete';
 import BlockIcon from '@mui/icons-material/Block';
 import SideBar from "../../AdminDashboardMain/SideBar";
 
-const Search = styled("div")(({ theme }) => ({
-  position: "relative",
-  borderRadius: theme.shape.borderRadius,
-  backgroundColor: alpha(theme.palette.common.white, 0.15),
-  "&:hover": {
-    backgroundColor: alpha(theme.palette.common.white, 0.25),
-  },
-  marginLeft: 0,
-  width: "100%",
-  [theme.breakpoints.up("sm")]: {
-    marginLeft: theme.spacing(1),
-    width: "auto",
-  },
-}));
-
-const SearchIconWrapper = styled("div")(({ theme }) => ({
-  padding: theme.spacing(0, 2),
-  height: "100%",
-  position: "absolute",
-  pointerEvents: "none",
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-}));
-
-const StyledInputBase = styled(InputBase)(({ theme }) => ({
-  color: "inherit",
-  width: "100%",
-  "& .MuiInputBase-input": {
-    padding: theme.spacing(1, 1, 1, 0),
-    paddingLeft: `calc(1em + ${theme.spacing(4)})`,
-    transition: theme.transitions.create("width"),
-    [theme.breakpoints.up("sm")]: {
-      width: "20ch",
-      "&:focus": {
-        width: "20ch",
-      },
-    },
-  },
-}));
-
 const MyTeam = () => {
   const [action, setAction] = useState(false);
+  const [page, setPage] = useState(0);
+  const [rowsPerPage, setRowsPerPage] = useState(10);
+  const [anchorEl, setAnchorEl] = useState(null);
+  const [openId, setOpenId] = useState(0);
+  const [openData, setOpenData] = useState("");
 
   const columns = [
     {
@@ -166,30 +127,21 @@ const MyTeam = () => {
     ),
   ];
 
-  const [page, setPage] = React.useState(0);
-  const [rowsPerPage, setRowsPerPage] = React.useState(10);
-
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
   };
-
   const handleChangeRowsPerPage = (event) => {
     setRowsPerPage(+event.target.value);
     setPage(0);
   };
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const [openId, setOpenId] = React.useState(0);
-  const [openData, setOpenData] = React.useState("");
   const handleClick = (event, id, data) => {
     setAnchorEl(event.currentTarget);
     setOpenId(id);
     setOpenData(data);
   };
-
   const handleClose = () => {
     setAnchorEl(null);
   };
-
   const open = Boolean(anchorEl);
   const id = open ? "simple-popover" : undefined;
 
@@ -199,16 +151,12 @@ const MyTeam = () => {
     <div className="main-container">
       <div className=" m20">
         <CourseHeader Heading={"My Team (5)"} subHeading={"View, Filter & Manage all your users"} />
-
-
         <div className="searchnfilter">
         <SearchBar mt = "2%" placeholder="Search by name"/>
           <Button>
-            {" "}
             <FilterAltIcon /> Filter
           </Button>
         </div>
-
         <Paper
         sx={{ width: "100%", overflow: "hidden" }}
         className="completeTable"
@@ -275,7 +223,6 @@ const MyTeam = () => {
                   horizontal: "right",
                 }}
               >
-                {/* <Typography sx={{ p: 1 }}>{openData.full_name}</Typography> */}
                 <Typography sx={{ p: 1 }} className="redDelete"> <DeleteIcon/> Delete </Typography>
                 <Typography sx={{ p: 1 }} className="blueBlockUser"> <BlockIcon/> Block User</Typography>
               </Popover>

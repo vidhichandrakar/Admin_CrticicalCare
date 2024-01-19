@@ -162,4 +162,26 @@ export const YourCoursesCardData = [
         Year : "1 Year",
         Price: " ₹1"
     },
-    ]
+]
+
+export const columns = [
+        {
+          id: "User_Info",
+          label: "User Info",
+        },
+        {
+          id: "Full_Name",
+          label: "Full Name",
+          align: "center",
+        },
+        {
+          id: "Date_of_Registration",
+          label: "Date of registration",
+          align: "center",
+        },
+        {
+          id: "Actions",
+          label: "Actions",
+          align: "center",
+        },
+];

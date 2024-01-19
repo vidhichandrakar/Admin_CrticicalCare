@@ -9,7 +9,6 @@ import SignalCellularAltIcon from "@mui/icons-material/SignalCellularAlt";
 import PersonIcon from "@mui/icons-material/Person";
 import Popover from "@mui/material/Popover";
 import Typography from "@mui/material/Typography";
-import Button from "@mui/material/Button";
 
 function SideBar({ openSidebarToggle, OpenSidebar }) {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -17,20 +16,21 @@ function SideBar({ openSidebarToggle, OpenSidebar }) {
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
+    console.log(event.currentTarget);
   };
-  const handleClick2 = (event) => {
-    setAnchorE2(event.currentTarget);
-  };
-
   const handleClose = () => {
     setAnchorEl(null);
+  };
+  const open = Boolean(anchorEl);
+  const id = open ? "simple-popover" : undefined;
+
+
+  const handleClick2 = (event) => {
+    setAnchorE2(event.currentTarget);
   };
   const handleClose2 = () => {
     setAnchorE2(null);
   };
-
-  const open = Boolean(anchorEl);
-  const id = open ? "simple-popover" : undefined;
   const opens = Boolean(anchorE2);
   const ids = opens ? "simple-popover" : undefined;
 
@@ -180,6 +180,9 @@ function SideBar({ openSidebarToggle, OpenSidebar }) {
               Testimonial
             </Typography>
           </Link>
+          
+          
+          
         </div>
       </div>
     </aside>

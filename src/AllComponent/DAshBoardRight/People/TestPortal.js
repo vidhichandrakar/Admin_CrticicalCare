@@ -1,8 +1,5 @@
-import React, { Fragment } from "react";
+import React, { Fragment, useState } from "react";
 import CourseHeader from "../../Courses/CoursesHeader";
-import SearchIcon from "@mui/icons-material/Search";
-import { styled, alpha } from "@mui/material/styles";
-import InputBase from "@mui/material/InputBase";
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import Paper from "@mui/material/Paper";
@@ -11,7 +8,6 @@ import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
-import TablePagination from "@mui/material/TablePagination";
 import TableRow from "@mui/material/TableRow";
 import SearchBar from "../../../Util/SearchBar";
 import Popover from "@mui/material/Popover";
@@ -21,6 +17,11 @@ import Button from "@mui/material/Button";
 import SideBar from "../../AdminDashboardMain/SideBar";
 
 const TestPortal = () => {
+  const [page, setPage] = useState(0);
+  const [rowsPerPage, setRowsPerPage] = useState(10);
+  const [anchorEl, setAnchorEl] = useState(null);
+  const [openId, setOpenId] = useState(0);
+  const [openData, setOpenData] = useState("");
   const columns = [
     {
       id: "Tests",
@@ -37,11 +38,9 @@ const TestPortal = () => {
       align: "center",
     },
   ];
-
   const createData = (Tests, Date, Actions) => {
     return { Tests, Date, Actions };
   }
-
   const rows = [
     createData(
       "Module 9 Neuromonitoring",
@@ -122,31 +121,21 @@ const TestPortal = () => {
       />
     ),
   ];
-
-  const [page, setPage] = React.useState(0);
-  const [rowsPerPage, setRowsPerPage] = React.useState(10);
-
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
   };
-
   const handleChangeRowsPerPage = (event) => {
     setRowsPerPage(+event.target.value);
     setPage(0);
   };
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const [openId, setOpenId] = React.useState(0);
-  const [openData, setOpenData] = React.useState("");
   const handleClick = (event, id, data) => {
     setAnchorEl(event.currentTarget);
     setOpenId(id);
     setOpenData(data);
   };
-
   const handleClose = () => {
     setAnchorEl(null);
   };
-
   const open = Boolean(anchorEl);
   const id = open ? "simple-popover" : undefined;
   return (
@@ -169,7 +158,6 @@ const TestPortal = () => {
           </div>
           <Button className="addTestButton"> + Add Test </Button>
         </div>
-
         <Paper
           sx={{ width: "100%", overflow: "hidden" }}
           className="completeTable"
