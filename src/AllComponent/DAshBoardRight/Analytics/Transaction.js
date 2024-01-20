@@ -176,7 +176,7 @@ const Transaction = () => {
                                 <Typography >
                                  {value.name}
                                 </Typography>
-                                <Typography className="phNumber">
+                                <Typography className="PhoneText">
                                  { value.phone}
                                 </Typography>
                               </TableCell>

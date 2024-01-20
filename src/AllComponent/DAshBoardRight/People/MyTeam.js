@@ -197,8 +197,7 @@ const MyTeam = () => {
                                 <Typography className="bluePara">
                                  {value.name}
                                 </Typography>
-                                <Typography className="phNumber">
-                                 
+                                <Typography className="PhoneText">
                                  { value.phone}
                                 </Typography>
                               </TableCell>
