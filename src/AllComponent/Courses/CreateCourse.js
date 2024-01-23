@@ -13,13 +13,11 @@ const CreateCourses =({handleHeaderLabels})=>{
     handleHeaderLabels(page)
   }
   return(
-    <div className='grid-container'>
-    <SideBar />
     <Box className="courseMainTrack">
     <Tracker trackerPage={trackerPage} handleTrackerPage={handleTrackerPage}/>
      {trackerPage===0?<CreateForm handleTrackerPage={handleTrackerPage}/>:trackerPage===1?<EditPrice handleTrackerPage={handleTrackerPage}/>:<AddContent/>}
     </Box>
-    </div>
+    
   )
 }
 

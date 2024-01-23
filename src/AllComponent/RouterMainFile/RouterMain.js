@@ -14,7 +14,7 @@ import Analytics from '../DAshBoardRight/Analytics/Analytics';
 import UpcomingCoursesMain from '../UpcomingCourses/UpcomingCourses.Main';
 import CouponMain from '../Coupons/Coupons.main';
 import YourCourses from '../Courses/YourCourses';
-import CreateCourses from '../Courses/CreateCourse';
+import CreateCourses from '../Courses/MainCourses.component';
 
 
 const RouterMain = () => {
