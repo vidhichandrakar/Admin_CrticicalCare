@@ -24,13 +24,13 @@ export default function Main() {
       {/* <Dashboard /> */}
       {/* <User/> */}
       {/* <LoginPage/> */}
-      <LoginEmailandPassword/>
+      {/* <LoginEmailandPassword/> */}
       {/* <MainCourses/> */}
       {/* <Banner /> */}
       {/* <MyTeam/> */}
       {/* <TestPortal/> */}
       {/* <SearchBar /> */}
-      {/* <Testimonial/> */}
+      <Testimonial/>
       {/* <CreateCoupon/> */}
       {/* <Trics1FreeMockTest/> */}
       {/* <MainCourses/> */}
