@@ -28,8 +28,9 @@ import TableHead from "@mui/material/TableHead";
 import TablePagination from "@mui/material/TablePagination";
 import TableRow from "@mui/material/TableRow";
 import Popover from "@mui/material/Popover";
+import SideBar from '../../AdminDashboardMain/SideBar';
 
-function Transaction() {
+const Transaction = () => {
     const columns = [
         {
           id: "User_Info",
@@ -123,10 +124,12 @@ function Transaction() {
       const id = open ? "simple-popover" : undefined;
     
     return (
+      <div className='grid-container'>
+      <SideBar />
     <div className='main-container'>
     <div className=' m20'>
         <CourseHeader Heading={"Transaction Dashboard"} />
-        <SearchBar mt = "-15px"/>
+        <SearchBar mt = "-15px" placeholder="Search by name"/>
 
        <div className='transactionCards'> 
             <TransactionCard  Data = {TranscationCardData}/>
@@ -173,7 +176,7 @@ function Transaction() {
                                 <Typography >
                                  {value.name}
                                 </Typography>
-                                <Typography className="phNumber">
+                                <Typography className="PhoneText">
                                  { value.phone}
                                 </Typography>
                               </TableCell>
@@ -206,6 +209,7 @@ function Transaction() {
           </Table>
         </TableContainer>
       </Paper>
+    </div>
     </div>
     </div>
 

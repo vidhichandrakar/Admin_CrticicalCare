@@ -3,9 +3,12 @@ import Header from "../../Courses/CoursesHeader"
 import {AdditionalData, OfferData} from "../../../Data/JsonData"
 import AdditionalCard from "./AdditionalCard";
 import OfferCard from "./OfferCard";
+import SideBar from "../../AdminDashboardMain/SideBar";
 
-function Dashboard({ OpenSidebar }) {
+const Dashboard = ({ OpenSidebar }) => {
   return (
+    <div className='grid-container'>
+      <SideBar />
     <main className="mainBox">
       <div className="DashBoardMAinBox">
          <Header Heading={"Hi 360 Critical Care,"} subHeading={"Welcome to your Dashboard"}/>
@@ -23,6 +26,7 @@ function Dashboard({ OpenSidebar }) {
         </div>
       </div>
     </main>
+    </div>
   );
 }
 

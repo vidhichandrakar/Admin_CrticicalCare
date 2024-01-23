@@ -22,15 +22,13 @@ export default function Main() {
   return (
     <main className="main-container">
       {/* <Dashboard /> */}
-      {/* <User/> */}
-      {/* <LoginPage/> */}
-      {/* <LoginEmailandPassword/> */}
       {/* <MainCourses/> */}
+      {/* <User/> */}
       {/* <Banner /> */}
+      {/* <Transaction /> */}
       {/* <MyTeam/> */}
       {/* <TestPortal/> */}
-      {/* <SearchBar /> */}
-      <Testimonial/>
+      {/* <Testimonial/> */}
       {/* <CreateCoupon/> */}
       {/* <Trics1FreeMockTest/> */}
       {/* <MainCourses/> */}

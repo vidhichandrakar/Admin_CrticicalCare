@@ -1,17 +1,8 @@
 import React, { Fragment, useState } from "react";
-import { styled, alpha } from "@mui/material/styles";
-import InputBase from "@mui/material/InputBase";
 import FilterAltIcon from "@mui/icons-material/FilterAlt";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
-import DeleteIcon from "@mui/icons-material/Delete";
-import BlockIcon from "@mui/icons-material/Block";
-import { Box, Select } from "@mui/material";
-import MenuItem from "@mui/material/MenuItem";
-import FormControl from "@mui/material/FormControl";
-import SearchIcon from "@mui/icons-material/Search";
-import { MockDataForTable } from "../../../Data/mockDataForTable";
 import Paper from "@mui/material/Paper";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
@@ -23,34 +14,21 @@ import TableRow from "@mui/material/TableRow";
 import SearchBar from "../../../Util/SearchBar";
 import Popover from "@mui/material/Popover";
 import CourseHeader from "../../Courses/CoursesHeader";
+import SideBar from "../../AdminDashboardMain/SideBar";
+import {columns} from "../../../Data/JsonData"
 
 const User = () => {
-  const columns = [
-    {
-      id: "User_Info",
-      label: "User Info",
-    },
-    {
-      id: "Full_Name",
-      label: "Full Name",
-      align: "center",
-    },
-    {
-      id: "Date_of_Registration",
-      label: "Date of registration",
-      align: "center",
-    },
-    {
-      id: "Actions",
-      label: "Actions",
-      align: "center",
-    },
-  ];
+  const [page, setPage] = React.useState(0);
+  const [rowsPerPage, setRowsPerPage] = React.useState(10);
+  const [anchorEl, setAnchorEl] = React.useState(null);
+  const [openId, setOpenId] = React.useState(0);
+  const [openData, setOpenData] = React.useState("");
 
-  function createData(User_Info, Full_Name, Date_of_Registration, Actions) {
+  
+  
+  const createData = (User_Info, Full_Name, Date_of_Registration, Actions) => {
     return { User_Info, Full_Name, Date_of_Registration, Actions };
   }
-
   const rows = [
     createData(
       { name: "sheikhshoeb194@gmail.com", phone: "7589576" },
@@ -193,10 +171,6 @@ const User = () => {
       />
     ),
   ];
-
-  const [page, setPage] = React.useState(0);
-  const [rowsPerPage, setRowsPerPage] = React.useState(10);
-
   const handleChangePage = (event, newPage) => {
     setPage(newPage);
   };
@@ -205,11 +179,9 @@ const User = () => {
     setRowsPerPage(+event.target.value);
     setPage(0);
   };
-  const [anchorEl, setAnchorEl] = React.useState(null);
-  const [openId, setOpenId] = React.useState(0);
-  const [openData, setOpenData] = React.useState("");
+  
   const handleClick = (event, id, data) => {
-    setAnchorEl(event.currentTarget);
+    setAnchorEl(event.currentTarget)
     setOpenId(id);
     setOpenData(data);
   };
@@ -222,6 +194,8 @@ const User = () => {
   const id = open ? "simple-popover" : undefined;
 
   return (
+    <div className='grid-container'>
+      <SideBar />
     <div className=" m20">
       <CourseHeader
         Heading={"Users (357)"}
@@ -229,12 +203,11 @@ const User = () => {
       />
 
       <div className="searchnfilter">
-        <SearchBar mt = "2%"/>
-        <button className="filterButton">
+        <SearchBar mt = "2%" />
+        <Button className="filterButton">
           <FilterAltIcon className="filterIcon" /> Filter
-        </button>
+        </Button>
       </div>
-
       <Paper
         sx={{ width: "100%", overflow: "hidden" }}
         className="completeTable"
@@ -262,9 +235,11 @@ const User = () => {
                   return (
                     <TableRow
                       hover
+                      className="TableHover"
                       role="checkbox"
                       tabIndex={-1}
                       key={row.code}
+
                     >
                       {columns.map((column) => {
                         const value = row[column.id];
@@ -272,12 +247,11 @@ const User = () => {
                         return (
                           <Fragment>
                             {column.id === "User_Info" ? (
-                              <TableCell key={column.id} align={column.align}>
+                              <TableCell key={column.id} align={column.align} >
                                 <Typography className="bluePara">
                                  {value.name}
                                 </Typography>
-                                <Typography className="phNumber">
-                                 
+                                <Typography className="PhoneText">
                                  { value.phone}
                                 </Typography>
                               </TableCell>
@@ -310,6 +284,7 @@ const User = () => {
           </Table>
         </TableContainer>
       </Paper>
+    </div>
     </div>
   );
 };

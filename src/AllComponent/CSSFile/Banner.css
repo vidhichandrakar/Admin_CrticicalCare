@@ -1,5 +1,5 @@
 .BannerMain{
-    margin: 50px;
+    margin: 30px;
 }
 .BannerBox{
     height: 66vh;
@@ -8,13 +8,13 @@
     background-color: white;
     
 }
-.MainBox{
+.BannerMainBox{
     display: grid;
     grid-template-columns: 1fr;
 }
 .HeadText h2{
     margin-left: 20px;
-    margin-top: 20px;
+    /* margin-top: 20px; */
 }
 .HeadText{
     display: flex;

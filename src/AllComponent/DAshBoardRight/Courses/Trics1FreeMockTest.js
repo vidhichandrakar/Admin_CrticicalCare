@@ -10,9 +10,10 @@ import FolderIcon from "@mui/icons-material/Folder";
 import Popover from "@mui/material/Popover";
 import DoctorsImage from "../../../Media/Images/db7187e8-b7cf-47ed-8900-6de89dabde06.png";
 import CourseHeader from "../../Courses/CoursesHeader";
+import SideBar from "../../AdminDashboardMain/SideBar";
 
 
-function Trics1FreeMockTest() {
+const Trics1FreeMockTest = () => {
   const [anchorEl, setAnchorEl] = React.useState(null);
 
   const handleClick = (event) => {
@@ -26,13 +27,15 @@ function Trics1FreeMockTest() {
   const open = Boolean(anchorEl);
   const id = open ? "simple-popover" : undefined;
   return (
+    <div className='grid-container'>
+      <SideBar />
     <div className="mainBox">
       <CourseHeader  Heading={"TRICS 1 FREE MOCK TEST FOR EDIC-1"} />
       <div className="another-main-container">
       
 
         <div className="completeTricsBox">
-          <span className="leftSideRow">
+          <div className="leftSideRow">
             <p className="blackPara">Course Name</p>
             <p className="greyPara">TRICS 1 FREE MOCK TEST FOR EDIC-1</p>
             <hr />
@@ -45,25 +48,25 @@ function Trics1FreeMockTest() {
             <hr />
 
             <div className="PricenOfferPrice">
-              <span>
+              <div>
                 <p className="blackPara">Price</p>
                 <p className="greyPara"> ₹ 1000/-</p>
-              </span>
-              <span className="offerPrice">
+              </div>
+              <div className="offerPrice">
                 <p className="blackPara">Offer Price</p>
                 <p className="greyPara">₹ 499/-</p>
-              </span>
+              </div>
             </div>
             <hr />
 
             <div className="CatagorynSubCatagory">
-              <span>
+              <div>
                 <p className="blackPara">Catagory</p>
                 <p className="greyPara">OTHERS</p>
-              </span>
-              <span className="subCatagory">
+              </div>
+              <div className="subCatagory">
                 <p className="blackPara">Sub Catagory</p>
-              </span>
+              </div>
             </div>
             <hr />
 
@@ -72,18 +75,18 @@ function Trics1FreeMockTest() {
             <hr />
 
             <div className="StuEnrViewAll">
-              <span>
+              <div>
                 {" "}
                 <p className="blackPara">Student Enrolled</p>
-              </span>
+              </div>
               <span className="blueViewAll">View All</span>
             </div>
             <p className="greyPara">44</p>
-          </span>
+          </div>
 
-          <span>
+          <div>
             <img src={DoctorsImage} className="rightSideRow" />
-          </span>
+          </div>
         </div>
 
     
@@ -106,8 +109,9 @@ function Trics1FreeMockTest() {
               className="catagorytextofTrics"
             >
               <MoreHorizIcon />
-              <p>More Options </p>
+              More Options
             </Button>
+            <div className="Widthhh">
             <Popover
               id={id}
               open={open}
@@ -117,25 +121,32 @@ function Trics1FreeMockTest() {
                 vertical: "bottom",
                 horizontal: "left",
               }}
+              sx={{mt: "5px",}}
+              
+
             >
-              <MenuItem value={10} className="greyPara">
+             
+              <MenuItem sx={{width: "230px"}} value={10} className="greyPara">
                 {" "}
-                <EditIcon />
+                <EditIcon className="PoPIcon"/>
                 Edit
               </MenuItem>
               <MenuItem value={20} className="greyPara">
                 {" "}
-                <DeleteIcon />
+                <DeleteIcon className="PoPIcon"/>
                 Delete
               </MenuItem>
               <MenuItem value={30} className="greyPara">
                 {" "}
-                <UnpublishedIcon />
+                <UnpublishedIcon  className="PoPIcon"/>
                 Unpublish
               </MenuItem>
+             
             </Popover>
           </div>
+          </div>
       </div>
+    </div>
     </div>
   );
 }
