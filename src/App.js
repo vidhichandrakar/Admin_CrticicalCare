@@ -3,15 +3,13 @@ import "./AllComponent/CSSFile/DashBoard.css"
 import Sidebar from './AllComponent/AdminDashboardMain/SideBar'
 import Home from './AllComponent/AdminDashboardMain/Main'
 import LoginPage from './AllComponent/LoginFiles/LoginPage'
+import RouterMain from './AllComponent/RouterMainFile/RouterMain'
+import Dashboard from './AllComponent/DAshBoardRight/Dashboard/Dashboard'
 
 function App() {
-  const [openSidebarToggle, setOpenSidebarToggle] = useState(false)
-
-  const OpenSidebar = () => {
-    setOpenSidebarToggle(!openSidebarToggle)
-  }
 
   return (
+<<<<<<< HEAD
     <div className='grid-container'>
       <Sidebar openSidebarToggle={openSidebarToggle} OpenSidebar={OpenSidebar}/>
       <Home />
@@ -19,6 +17,12 @@ function App() {
     // <>
     //   <LoginPage />
     // </>
+=======
+    <>
+       <RouterMain />
+       {/* <Dashboard /> */}
+    </>
+>>>>>>> 599c393c10bfafe90897f36c831e7459335607f8
   )
 }
 

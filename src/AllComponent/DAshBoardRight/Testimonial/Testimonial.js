@@ -11,11 +11,13 @@ import TableHead from "@mui/material/TableHead";
 import TablePagination from "@mui/material/TablePagination";
 import TableRow from "@mui/material/TableRow";
 import SearchBar from "../../../Util/SearchBar";
+import Button from "@mui/material/Button";
 import Popover from "@mui/material/Popover";
 import DeleteIcon from '@mui/icons-material/Delete';
 import Typography from '@mui/material/Typography';
+import SideBar from "../../AdminDashboardMain/SideBar";
 
-function Testimonial() {
+const Testimonial = () => {
 
   const columns = [
     {
@@ -36,7 +38,7 @@ function Testimonial() {
     },
   ];
 
-  function createData(Comments, Author, Actions) {
+  const createData = (Comments, Author, Actions) => {
     return { Comments, Author, Actions };
   }
 
@@ -109,19 +111,21 @@ function Testimonial() {
   const open = Boolean(anchorEl);
   const id = open ? "simple-popover" : undefined;
   return (
+    <div className='grid-container'>
+      <SideBar />
     <div className="main-container">
       <div className="m20">
         <CourseHeader Heading={"Testimonial"} subHeading={"Only published testimonial are shown here"}/>
         <div className="testPortalSearchBarSection">
           <div className="searchnfilter">
             
-            <SearchBar mt ="2%" />
+            <SearchBar mt ="2%" placeholder="Search by name" />
             
-            <button className="filterButton">
+            <Button className="filterButton">
               <FilterAltIcon /> Filter
-            </button>
+            </Button>
           </div>
-          <button className="addTestimonialButton"> + Add Testimonial </button>
+          <Button className="addTestimonialButton"> + Add Testimonial </Button>
         </div>
 
 
@@ -200,6 +204,7 @@ function Testimonial() {
       </Paper>
 
       </div>
+    </div>
     </div>
   );
 }

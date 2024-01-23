@@ -11,7 +11,8 @@ const BannerCard = (props) => {
   return (
     <>
       {props.Data.map((value, index) => (
-        <div className="InsideBannerBox">
+       <div className="BannerMainBox">
+       <div className="InsideBannerBox">
           <main className="InsideMainBox" key={index}>
             <CardActions className="BannerHead">
               <Typography>{value.Head}</Typography>
@@ -29,11 +30,11 @@ const BannerCard = (props) => {
                 // style={{width:"100%"}}
               />
               <div class="middle">
-                <button class="text">
+                <Button class="text">
                   {" "}
                   <ModeIcon className="PencilIcon" />
                   change
-                </button>
+                </Button>
               </div>
             </div>
             <CardContent>
@@ -44,6 +45,7 @@ const BannerCard = (props) => {
               <Button className="changeBtn">Change</Button>
             </div>
           </main>
+        </div>
         </div>
       ))}
     </>

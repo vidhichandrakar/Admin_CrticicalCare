@@ -7,62 +7,34 @@ import AddRoundedIcon from "@mui/icons-material/AddRounded";
 import Button from "@mui/material/Button";
 import Folder from "../../Media/Images/folder.avif";
 import SearchBar from "../../Util/SearchBar";
+import YourCoursesCard from "./YourCoursesCard";
+import {YourCoursesCardData} from '../../Data/JsonData'
+import SideBar from "../AdminDashboardMain/SideBar";
+import { Link } from "react-router-dom";
 
-function YourCourses() {
+const YourCourses = () => {
   return (
+    <div className='grid-container'>
+      <SideBar />
     <div className="main-container margin20">
       <CourseHeader
         Heading={"Your Courses (3)"}
         subHeading={"Add/View courses of your brand"}
       />
 
-      <SearchBar  mt ="2%"/>
+      <SearchBar  mt ="2%" placeholder="Search by name"/>
       <div className="Add-main-cards">
         <div className="card">
           <div className="AddCourses">
             <img src={Folder} className="FolderImg" />
-            <Button variant="contained" className="AddBtn">
+            <Link to="/CreateCourses"><Button variant="contained" className="AddBtn">
               Add New Courses <AddRoundedIcon />
-            </Button>
+            </Button></Link>
           </div>
         </div>
-        <div className="card">
-          <img src={cardimg} className="cardImage" />
-          <div className="CardData">
-            <p className="Headp">TRICS 1 FREE MOCK TEST FOR EDIC-1</p>
-            <p className="Namep">Created by: Jitendra</p>
-            <p className="Yearp"> 1 year</p>
-            <p className="Pricep">$1</p>
-          </div>
-        </div>
-        <div className="card">
-          <img src={cardimg} className="cardImage" />
-          <div className="CardData">
-            <p className="Headp">TRICS 1 FREE MOCK TEST FOR EDIC-1</p>
-            <p className="Namep">Created by: Jitendra</p>
-            <p className="Yearp"> 1 year</p>
-            <p className="Pricep">$1</p>
-          </div>
-        </div>
-        <div className="card">
-          <img src={cardimg} className="cardImage" />
-          <div className="CardData">
-            <p className="Headp">TRICS 1 FREE MOCK TEST FOR EDIC-1</p>
-            <p className="Namep">Created by: Jitendra</p>
-            <p className="Yearp"> 1 year</p>
-            <p className="Pricep">$1</p>
-          </div>
-        </div>
-        <div className="card">
-          <img src={cardimg} className="cardImage" />
-          <div className="CardData">
-            <p className="Headp">TRICS 1 FREE MOCK TEST FOR EDIC-1</p>
-            <p className="Namep">Created by: Jitendra</p>
-            <p className="Yearp"> 1 year</p>
-            <p className="Pricep">$1</p>
-          </div>
-        </div>
+       <YourCoursesCard Data = {YourCoursesCardData}/>
       </div>
+    </div>
     </div>
   );
 }

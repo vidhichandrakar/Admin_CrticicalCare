@@ -5,7 +5,7 @@ import { Typography } from "@mui/material";
 import Button from "@mui/material/Button";
 
 
-function LoginEmail({ handleLoginOption }) {
+const LoginEmail = ({ handleLoginOption }) => {
   const [emailValue, setEmailValue] = useState("");
   const handleEmail = (value) => {
     setEmailValue(value);

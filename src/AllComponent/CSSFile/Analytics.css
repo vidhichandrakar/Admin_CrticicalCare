@@ -62,6 +62,7 @@ font-weight: 500;
   border-radius: 15px;  
   box-shadow: 0 0px 2px 0 rgba(0, 0, 0, 0.2)!important;
 }
+
 .row{
     display: flex;
     flex-direction: row;

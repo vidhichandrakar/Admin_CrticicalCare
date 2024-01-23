@@ -5,10 +5,13 @@ import Card from "@mui/material/Card";
 import BannerCard from "./BannerCard";
 import { BannerData } from "../../../Data/JsonData";
 import { Fragment } from "react";
+import SideBar from "../../AdminDashboardMain/SideBar";
 
-function Banner() {
+const Banner = () => {
   return (
     <Fragment>
+      <div className='grid-container'>
+      <SideBar />
       <div className="BannerMain main-container">
         <CourseHeader
           Heading="Manage Banners"
@@ -18,15 +21,12 @@ function Banner() {
           <div className="HeadText">
             <h2>Your Banner (3)</h2>
           </div>
-
-          <Card className="MainBox">
-            <BannerCard Data={BannerData} />
-          </Card>
+          <BannerCard Data={BannerData} />
         </div>
+      </div>
       </div>
     </Fragment>
   );
 }
 
 export default Banner;
-
